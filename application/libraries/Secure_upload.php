@@ -43,6 +43,17 @@ class Secure_upload {
 			],
 			'max_size_kb'=> 5120, // 5 Mo
 		],
+		// Variante CV étendue acceptant le format texte (utilisée pour les pièces de recrutement)
+		'cv_etendu' => [
+			'extensions' => ['pdf', 'doc', 'docx', 'txt'],
+			'mimes'      => [
+				'application/pdf',
+				'application/msword',
+				'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+				'text/plain',
+			],
+			'max_size_kb'=> 5120,
+		],
 		'scenario' => [
 			'extensions' => ['pdf', 'doc', 'docx', 'odt'],
 			'mimes'      => [

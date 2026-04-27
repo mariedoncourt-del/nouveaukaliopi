@@ -57,11 +57,11 @@
 
 					<tr>
 
-						<td><?php echo $programme['nom'] ?></td>
+						<td><?php echo e($programme['nom']) ?></td>
 
 						
 
-						<td><button class="btn bnt-xs btn-info btnEditProgramme" data-id="<?php echo $programme['id'] ?>" data-nom="<?php echo $programme['nom'] ?>">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('/admin/delete_programme/').$programme['id'] ?>">Supprimer</button></td>
+						<td><button class="btn bnt-xs btn-info btnEditProgramme" data-id="<?php echo e_attr($programme['id']) ?>" data-nom="<?php echo e_attr($programme['nom']) ?>">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('/admin/delete_programme/').rawurlencode($programme['id']) ?>">Supprimer</button></td>
 
 					</tr>
 

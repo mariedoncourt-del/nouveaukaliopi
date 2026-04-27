@@ -32,16 +32,16 @@
 				<tbody>
 					<?php foreach($documents as $document): ?>
 					<tr>
-						<td><?php echo $document['nom'] ?></td>
+						<td><?php echo e($document['nom']) ?></td>
 						<td>
 							<?php if($document['lien']!=''): ?>
-							 		<a class="btn btn-info" href="<?php echo $document['lien'] ?>">Voir</a>
+							 		<a class="btn btn-info" href="<?php echo e_url($document['lien']) ?>">Voir</a>
 							 	<?php else: ?>
-							 		<a class="btn btn-info" href="<?php echo base_url('/assets/handicap/').$document['link'] ?>">Voir</a>
+							 		<a class="btn btn-info" href="<?php echo base_url('/assets/handicap/').rawurlencode($document['link']) ?>">Voir</a>
 							<?php endif; ?>
 						</td>
-						<td><?php echo $categories[$document['category']] ?></td>
-						<td><button class="btn bnt-xs btn-info btnEditHandicap" data-id="<?php echo $document['id'] ?>" data-link="<?php echo $document['link'] ?>" data-lien="<?php echo $document['lien'] ?>" data-nom="<?php echo $document['nom'] ?>" data-category="<?php echo $document['category'] ?>">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('/admin/delete_document/').$document['id'] ?>">Supprimer</button></td>
+						<td><?php echo e($categories[$document['category']]) ?></td>
+						<td><button class="btn bnt-xs btn-info btnEditHandicap" data-id="<?php echo e_attr($document['id']) ?>" data-link="<?php echo e_attr($document['link']) ?>" data-lien="<?php echo e_attr($document['lien']) ?>" data-nom="<?php echo e_attr($document['nom']) ?>" data-category="<?php echo e_attr($document['category']) ?>">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('/admin/delete_document/').rawurlencode($document['id']) ?>">Supprimer</button></td>
 					</tr>
 					<?php endforeach; ?>
 				</tbody>

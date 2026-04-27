@@ -22,22 +22,22 @@
 				<tbody>
 					<?php foreach($profs as $prof): ?>
 					<tr>
-						<td><?php echo $prof['nom'] ?></td>
-						<td><?php echo $prof['prenom'] ?></td>
-						<td><a href="<?php echo base_url('/assets/cv/').$prof['profile'] ?>">
+						<td><?php echo e($prof['nom']) ?></td>
+						<td><?php echo e($prof['prenom']) ?></td>
+						<td><a href="<?php echo base_url('/assets/cv/').rawurlencode($prof['profile']) ?>">
 							<?php if($prof['profile']!='') echo 'CV'; ?>
 						</a></td>
 						<td>
 							<?php if($prof['charte']!=''): ?>
-							 <a class="btn btn-info" href="<?php echo base_url('/assets/charte/').$prof['charte'] ?>">Charte Qualité</a>
+							 <a class="btn btn-info" href="<?php echo base_url('/assets/charte/').rawurlencode($prof['charte']) ?>">Charte Qualité</a>
 							<?php endif; ?>
 						</td>
 						<td>
 							<?php if($prof['maj']!=''): ?>
-							 <a class="btn btn-primary" href="<?php echo base_url('/assets/maj/').$prof['maj'] ?>">Mise à jour</a>
+							 <a class="btn btn-primary" href="<?php echo base_url('/assets/maj/').rawurlencode($prof['maj']) ?>">Mise à jour</a>
 							<?php endif; ?>
 						</td>
-						<td><button data-nom="<?php echo $prof['nom'] ?>" data-id="<?php echo $prof['id'] ?>" data-prenom="<?php echo $prof['prenom'] ?>" class="btn bnt-xs btn-info btnEditProf">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('admin/delete_prof/').$prof['id'] ?>">Supprimer</a></td>
+						<td><button data-nom="<?php echo e_attr($prof['nom']) ?>" data-id="<?php echo e_attr($prof['id']) ?>" data-prenom="<?php echo e_attr($prof['prenom']) ?>" class="btn bnt-xs btn-info btnEditProf">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('admin/delete_prof/').rawurlencode($prof['id']) ?>">Supprimer</a></td>
 					</tr>
 					<?php endforeach; ?>
 				</tbody>

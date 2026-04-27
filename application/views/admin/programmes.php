@@ -10,7 +10,7 @@
             <option value="">- Programmes -</option>
             <?php foreach ($programmes as $programme): ?>
                 <option value="<?php echo base_url('assets/programmes/').$programme['link'] ?>">
-                	<?php echo $programme['nom']; ?>
+                	<?php echo e($programme['nom']); ?>
 				</option>
             <?php endforeach; ?>
         </select>

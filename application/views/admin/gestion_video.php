@@ -60,17 +60,17 @@
 
 					<tr>
 
-						<td><?php echo $video['cours'] ?></td>
+						<td><?php echo e($video['cours']) ?></td>
 
-						<td><?php echo $video['link'] ?></td>
+						<td><?php echo e($video['link']) ?></td>
 
-						<td><?php echo $video['id_formation'] ?></td>
+						<td><?php echo e($video['id_formation']) ?></td>
 
-						<td><?php echo $video['pseudo'] ?></td>
+						<td><?php echo e($video['pseudo']) ?></td>
 
-						<td><?php echo $video['password'] ?></td>
+						<td><?php echo e($video['password']) ?></td>
 
-						<td><button class="btn bnt-xs btn-info btnEditVideo" data-id="<?php echo $video['id'] ?>" data-cours="<?php echo $video['cours'] ?>" data-pseudo="<?php echo $video['pseudo'] ?>" data-password="<?php echo $video['password'] ?>" data-link="<?php echo $video['link'] ?>" data-id_formation="<?php echo $video['id_formation'] ?>">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('/admin/delete_video/').$video['id'] ?>">Supprimer</button></td>
+						<td><button class="btn bnt-xs btn-info btnEditVideo" data-id="<?php echo e_attr($video['id']) ?>" data-cours="<?php echo e_attr($video['cours']) ?>" data-pseudo="<?php echo e_attr($video['pseudo']) ?>" data-password="<?php echo e_attr($video['password']) ?>" data-link="<?php echo e_attr($video['link']) ?>" data-id_formation="<?php echo e_attr($video['id_formation']) ?>">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('/admin/delete_video/').rawurlencode($video['id']) ?>">Supprimer</button></td>
 
 					</tr>
 
@@ -135,7 +135,7 @@ aria-hidden="true">
 
 						<?php foreach($videoss as $video): ?>
 
-							<option value="<?php echo $video->lien ?>"><?php echo $video->cours ?></option>
+							<option value="<?php echo e_attr($video->lien) ?>"><?php echo e($video->cours) ?></option>
 
 						<?php endforeach; ?>
 

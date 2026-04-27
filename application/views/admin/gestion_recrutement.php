@@ -37,16 +37,16 @@
 				<tbody>
 					<?php foreach($recrutements as $recrutement): ?>
 					<tr>
-						<td><?php echo $recrutement['nom'] ?></td>
+						<td><?php echo e($recrutement['nom']) ?></td>
 						<td>
 							<?php if($recrutement['lien']!=''): ?>
-							 		<a class="btn btn-info" href="<?php echo $recrutement['lien'] ?>">Voir</a>
+							 		<a class="btn btn-info" href="<?php echo e_url($recrutement['lien']) ?>">Voir</a>
 							 	<?php else: ?>
-							 		<a class="btn btn-info" href="<?php echo base_url('/assets/recrutements/').$recrutement['link'] ?>">Voir</a>
+							 		<a class="btn btn-info" href="<?php echo base_url('/assets/recrutements/').rawurlencode($recrutement['link']) ?>">Voir</a>
 							<?php endif; ?>
 						</td>
-						<td><?php echo $categories[$recrutement['category']] ?></td>
-						<td><button class="btn bnt-xs btn-info btnEditRecrutement" data-id="<?php echo $recrutement['id'] ?>" data-link="<?php echo $recrutement['link'] ?>" data-lien="<?php echo $recrutement['lien'] ?>" data-nom="<?php echo $recrutement['nom'] ?>" data-category="<?php echo $recrutement['category'] ?>">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('/admin/delete_recrutement/').$recrutement['id'] ?>">Supprimer</button></td>
+						<td><?php echo e($categories[$recrutement['category']]) ?></td>
+						<td><button class="btn bnt-xs btn-info btnEditRecrutement" data-id="<?php echo e_attr($recrutement['id']) ?>" data-link="<?php echo e_attr($recrutement['link']) ?>" data-lien="<?php echo e_attr($recrutement['lien']) ?>" data-nom="<?php echo e_attr($recrutement['nom']) ?>" data-category="<?php echo e_attr($recrutement['category']) ?>">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('/admin/delete_recrutement/').rawurlencode($recrutement['id']) ?>">Supprimer</button></td>
 					</tr>
 					<?php endforeach; ?>
 				</tbody>

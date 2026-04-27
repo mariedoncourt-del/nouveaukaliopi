@@ -26,13 +26,13 @@
 				<tbody>
 					<?php foreach($procedures as $procedure): ?>
 					<tr>
-						<td><?php echo $procedure['nom'] ?></td>
+						<td><?php echo e($procedure['nom']) ?></td>
 						<td>
 							<?php if($procedure['link']!=''): ?>
-							 <a class="btn btn-info" href="<?php echo base_url('/assets/procedures/').$procedure['link'] ?>">Télecharger</a>
+							 <a class="btn btn-info" href="<?php echo base_url('/assets/procedures/').rawurlencode($procedure['link']) ?>">Télecharger</a>
 							<?php endif; ?>
 						</td>
-						<td><button class="btn bnt-xs btn-info btnEditProcedure" data-id="<?php echo $procedure['id'] ?>" data-nom="<?php echo $procedure['nom'] ?>">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('/admin/delete_procedure/').$procedure['id'] ?>">Supprimer</button></td>
+						<td><button class="btn bnt-xs btn-info btnEditProcedure" data-id="<?php echo e_attr($procedure['id']) ?>" data-nom="<?php echo e_attr($procedure['nom']) ?>">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('/admin/delete_procedure/').rawurlencode($procedure['id']) ?>">Supprimer</button></td>
 					</tr>
 					<?php endforeach; ?>
 				</tbody>

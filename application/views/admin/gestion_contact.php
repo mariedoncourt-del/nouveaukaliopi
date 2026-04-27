@@ -28,17 +28,17 @@
 				<tbody>
 					<?php foreach($contacts as $contact): ?>
 					<tr>
-						<td><?php echo $contact['titre'] ?></td>
+						<td><?php echo e($contact['titre']) ?></td>
 						<td>
-							<?php echo $contact['dept31'] ?>
+							<?php echo e($contact['dept31']) ?>
 						</td>
 						<td>
-							<?php echo $contact['dept81'] ?>
+							<?php echo e($contact['dept81']) ?>
 						</td>
 						<td>
-							<?php echo $contact['dept82'] ?>
+							<?php echo e($contact['dept82']) ?>
 						</td>
-						<td><button class="btn bnt-xs btn-info btnEditContact" data-id="<?php echo $contact['id'] ?>" data-titre="<?php echo $contact['titre'] ?>" data-dept31="<?php echo $contact['dept31'] ?>" data-dept81="<?php echo $contact['dept81'] ?>" data-dept82="<?php echo $contact['dept82'] ?>">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('/admin/delete_contact/').$contact['id'] ?>">Supprimer</button></td>
+						<td><button class="btn bnt-xs btn-info btnEditContact" data-id="<?php echo e_attr($contact['id']) ?>" data-titre="<?php echo e_attr($contact['titre']) ?>" data-dept31="<?php echo e_attr($contact['dept31']) ?>" data-dept81="<?php echo e_attr($contact['dept81']) ?>" data-dept82="<?php echo e_attr($contact['dept82']) ?>">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('/admin/delete_contact/').rawurlencode($contact['id']) ?>">Supprimer</button></td>
 					</tr>
 					<?php endforeach; ?>
 				</tbody>
