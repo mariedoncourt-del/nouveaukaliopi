@@ -18,21 +18,53 @@ class Admin extends CI_Controller {
 			$this->load->view('admin/index',$data);
 
 			}else{
-				$login = $this->input->post('login');
-				$password = md5($this->input->post('password'));
+				// SECURITY P0.1 - Le mot de passe est désormais transmis en clair au modèle
+				// qui se charge lui-même de la vérification bcrypt + migration MD5 transparente.
+				// SECURITY P1.1 - Rate limiting (5 tentatives / 15 min / IP)
+				$this->load->library('rate_limiter');
+				$ip = $this->input->ip_address();
+				if (!$this->rate_limiter->allow('admin_login', $ip, 5, 900)) {
+					log_message('warning', 'Rate limit dépassé pour admin login depuis IP ' . $ip);
+					$this->session->set_flashdata('login_failed', 'Trop de tentatives. Réessayez dans 15 minutes.');
+					redirect('/admin/index');
+					return;
+				}
 
-				$loginid = $this->WelcomeModel->login_admin($login,$password);
+				$login = $this->input->post('login');
+				$password = $this->input->post('password'); // Plus de md5() ici
+
+				$loginid = $this->WelcomeModel->login_admin($login, $password);
+
+				// Audit log P1.6 : traçabilité authentification (RGPD article 32)
+				$this->load->library('audit_log');
 
 				if($loginid){
+					// SECURITY - Régénération de l'ID de session après authentification (anti session-fixation)
+					$this->session->sess_regenerate(TRUE);
+
 					$user_data = array(
 						'user_id' => $loginid,
-						'logged_admin' => true
+						'logged_admin' => true,
+						'login_time' => time(),
+						'login_ip'   => $ip
 					);
 
 					$this->session->set_userdata($user_data);
+					$this->rate_limiter->reset('admin_login', $ip);
 
+					$this->audit_log->record('admin.login.success', [
+						'table_name' => 'admin',
+						'record_id'  => $loginid,
+					]);
+
+					log_message('info', 'Connexion admin réussie : ' . $login . ' depuis ' . $ip);
 					redirect('admin/dashboard');
 				}else{
+					$this->audit_log->record('admin.login.failure', [
+						'table_name' => 'admin',
+						'record_id'  => $login,
+					]);
+					log_message('warning', 'Échec connexion admin login=' . $login . ' depuis ' . $ip);
 					$this->session->set_flashdata('login_failed', 'Login ou mot de passe invalide');
 					redirect('/admin/index');
 				}		
@@ -41,6 +73,15 @@ class Admin extends CI_Controller {
  	}
 
  	public function logout_admin(){
+ 		// Audit log P1.6 : traçabilité déconnexion (RGPD article 32)
+ 		$user_id = $this->session->userdata('user_id');
+ 		if ($user_id) {
+ 			$this->load->library('audit_log');
+ 			$this->audit_log->record('admin.logout', [
+ 				'table_name' => 'admin',
+ 				'record_id'  => $user_id,
+ 			]);
+ 		}
  		$this->session->unset_userdata('logged_admin');
 		$this->session->unset_userdata('user_id');
 			
@@ -149,17 +190,13 @@ class Admin extends CI_Controller {
  			redirect('admin/gestion_programme');
  		}else{
 
-        	//book file upload
-				$config_file['upload_path']='./assets/programmes/';
-				$config_file['allowed_types']='jpg';
-				$this->load->library('upload',$config_file);
-				$this->upload->initialize($config_file);
-				if($this->upload->do_upload('link')){
-					$upload_data=$this->upload->data();
-					$pdf=$upload_data['file_name'];
-				}else{
-					$pdf="";
-				}
+			// SECURITY P1.4 - Upload sécurisé via Secure_upload (whitelist MIME, renommage aléatoire, .htaccess deny PHP)
+			$this->load->library('secure_upload');
+			$result = $this->secure_upload->process('link', 'programme', './assets/programmes/');
+			$pdf = $result['success'] ? $result['file_name'] : "";
+			if (!$result['success'] && $result['error']) {
+				log_message('warning', 'Upload programme refusé : ' . $result['error']);
+			}
 
         	if($this->FormationModel->add_programme($pdf)){
         		$this->session->set_flashdata('msg','<br><div class="alert alert-success alert-dismissible fade show" role="alert">Données enregistrées<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
@@ -189,19 +226,13 @@ class Admin extends CI_Controller {
  			redirect('admin/gestion_programme');
  		}else{
 
-        	//book file upload
-				$config_file['upload_path']='./assets/programmes/';
-				$config_file['allowed_types']='jpg';
-				$this->load->library('upload',$config_file);
-				$this->upload->initialize($config_file);
-				if($this->upload->do_upload('link')){
-					$upload_data=$this->upload->data();
-					$pdf=$upload_data['file_name'];
-				}else{
-					$pdf="";
-				}
-
-			
+			// SECURITY P1.4 - Upload sécurisé via Secure_upload
+			$this->load->library('secure_upload');
+			$result = $this->secure_upload->process('link', 'programme', './assets/programmes/');
+			$pdf = $result['success'] ? $result['file_name'] : "";
+			if (!$result['success'] && $result['error']) {
+				log_message('warning', 'Upload programme (update) refusé : ' . $result['error']);
+			}
 
 			$id=$this->input->post('id');
 
@@ -387,7 +418,16 @@ class Admin extends CI_Controller {
 				redirect('welcome/index');
 		}
 
+		// Audit log P1.6 : capturer l'état avant suppression
+		$this->load->library('audit_log');
+		$row_before = $this->FormationModel->get_formation($id);
+
 		if($this->FormationModel->delete_formation($id)){
+			$this->audit_log->record('formation.delete', [
+				'table_name'  => 'formation',
+				'record_id'   => $id,
+				'data_before' => $row_before,
+			]);
 			$this->session->set_flashdata('msg','<br><div class="alert alert-success alert-dismissible fade show" role="alert">Données supprimées<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
 		}
 		redirect('/admin/formation');
@@ -509,15 +549,12 @@ class Admin extends CI_Controller {
  		}else{
 
         	//book file upload
-				$config_file['upload_path']='./assets/recrutements/';
-				$config_file['allowed_types']='pdf|txt|doc|docx';
-				$this->load->library('upload',$config_file);
-				$this->upload->initialize($config_file);
-				if($this->upload->do_upload('link')){
-					$upload_data=$this->upload->data();
-					$pdf=$upload_data['file_name'];
-				}else{
-					$pdf='';
+				// SECURITY P1.4 - Upload sécurisé via Secure_upload
+				$this->load->library('secure_upload');
+				$_su_result = $this->secure_upload->process('link', 'cv_etendu', './assets/recrutements/');
+				$pdf = $_su_result['success'] ? $_su_result['file_name'] : '';
+				if (!$_su_result['success'] && $_su_result['error']) {
+					log_message('warning', 'Upload recrutements refusé : ' . $_su_result['error']);
 				}
 
         	if($this->FormationModel->add_recrutement($pdf)){
@@ -548,15 +585,12 @@ class Admin extends CI_Controller {
  		}else{
 
         	//book file upload
-				$config_file['upload_path']='./assets/recrutements/';
-				$config_file['allowed_types']='pdf|txt|doc|docx';
-				$this->load->library('upload',$config_file);
-				$this->upload->initialize($config_file);
-				if($this->upload->do_upload('link')){
-					$upload_data=$this->upload->data();
-					$pdf=$upload_data['file_name'];
-				}else{
-					$pdf='';
+				// SECURITY P1.4 - Upload sécurisé via Secure_upload
+				$this->load->library('secure_upload');
+				$_su_result = $this->secure_upload->process('link', 'cv_etendu', './assets/recrutements/');
+				$pdf = $_su_result['success'] ? $_su_result['file_name'] : '';
+				if (!$_su_result['success'] && $_su_result['error']) {
+					log_message('warning', 'Upload recrutements refusé : ' . $_su_result['error']);
 				}
 
 			
@@ -615,15 +649,12 @@ class Admin extends CI_Controller {
  		}else{
 
         	//book file upload
-				$config_file['upload_path']='./assets/documents/';
-				$config_file['allowed_types']='pdf|txt|doc|docx';
-				$this->load->library('upload',$config_file);
-				$this->upload->initialize($config_file);
-				if($this->upload->do_upload('link')){
-					$upload_data=$this->upload->data();
-					$pdf=$upload_data['file_name'];
-				}else{
-					$pdf='';
+				// SECURITY P1.4 - Upload sécurisé via Secure_upload
+				$this->load->library('secure_upload');
+				$_su_result = $this->secure_upload->process('link', 'scenario', './assets/documents/');
+				$pdf = $_su_result['success'] ? $_su_result['file_name'] : '';
+				if (!$_su_result['success'] && $_su_result['error']) {
+					log_message('warning', 'Upload documents refusé : ' . $_su_result['error']);
 				}
 
         	if($this->FormationModel->add_document($pdf)){
@@ -654,15 +685,12 @@ class Admin extends CI_Controller {
  		}else{
 
         	//book file upload
-				$config_file['upload_path']='./assets/documents/';
-				$config_file['allowed_types']='pdf|txt|doc|docx';
-				$this->load->library('upload',$config_file);
-				$this->upload->initialize($config_file);
-				if($this->upload->do_upload('link')){
-					$upload_data=$this->upload->data();
-					$pdf=$upload_data['file_name'];
-				}else{
-					$pdf='';
+				// SECURITY P1.4 - Upload sécurisé via Secure_upload
+				$this->load->library('secure_upload');
+				$_su_result = $this->secure_upload->process('link', 'scenario', './assets/documents/');
+				$pdf = $_su_result['success'] ? $_su_result['file_name'] : '';
+				if (!$_su_result['success'] && $_su_result['error']) {
+					log_message('warning', 'Upload documents refusé : ' . $_su_result['error']);
 				}
 
 
@@ -720,15 +748,12 @@ class Admin extends CI_Controller {
  		}else{
 
         	//book file upload
-				$config_file['upload_path']='./assets/handicap/';
-				$config_file['allowed_types']='pdf|txt|doc|docx';
-				$this->load->library('upload',$config_file);
-				$this->upload->initialize($config_file);
-				if($this->upload->do_upload('link')){
-					$upload_data=$this->upload->data();
-					$pdf=$upload_data['file_name'];
-				}else{
-					$pdf='';
+				// SECURITY P1.4 - Upload sécurisé via Secure_upload
+				$this->load->library('secure_upload');
+				$_su_result = $this->secure_upload->process('link', 'scenario', './assets/handicap/');
+				$pdf = $_su_result['success'] ? $_su_result['file_name'] : '';
+				if (!$_su_result['success'] && $_su_result['error']) {
+					log_message('warning', 'Upload handicap refusé : ' . $_su_result['error']);
 				}
 
         	if($this->FormationModel->add_handicap($pdf)){
@@ -760,15 +785,12 @@ class Admin extends CI_Controller {
  		}else{
 
         	//book file upload
-				$config_file['upload_path']='./assets/handicap/';
-				$config_file['allowed_types']='pdf|txt|doc|docx';
-				$this->load->library('upload',$config_file);
-				$this->upload->initialize($config_file);
-				if($this->upload->do_upload('link')){
-					$upload_data=$this->upload->data();
-					$pdf=$upload_data['file_name'];
-				}else{
-					$pdf='';
+				// SECURITY P1.4 - Upload sécurisé via Secure_upload
+				$this->load->library('secure_upload');
+				$_su_result = $this->secure_upload->process('link', 'scenario', './assets/handicap/');
+				$pdf = $_su_result['success'] ? $_su_result['file_name'] : '';
+				if (!$_su_result['success'] && $_su_result['error']) {
+					log_message('warning', 'Upload handicap refusé : ' . $_su_result['error']);
 				}
 
 			
@@ -826,16 +848,13 @@ class Admin extends CI_Controller {
  			redirect('admin/organigramme');	
  		}else{
 
- 			$config_file['upload_path']='./assets/organigramme/';
-			$config_file['allowed_types']='jpg|png';
-			$this->load->library('upload',$config_file);
-			$this->upload->initialize($config_file);
-			if($this->upload->do_upload('orga')){
-				$upload_data=$this->upload->data();
-				$img=$upload_data['file_name'];
-			}else{
-				$img='';
-			}
+ 			// SECURITY P1.4 - Upload sécurisé via Secure_upload
+				$this->load->library('secure_upload');
+				$_su_result = $this->secure_upload->process('orga', 'image', './assets/organigramme/');
+				$img = $_su_result['success'] ? $_su_result['file_name'] : '';
+				if (!$_su_result['success'] && $_su_result['error']) {
+					log_message('warning', 'Upload organigramme refusé : ' . $_su_result['error']);
+				}
 
 
         	if($this->FormationModel->update_organigramme($img)){
@@ -925,15 +944,12 @@ class Admin extends CI_Controller {
  		}else{
 
         	//book file upload
-				$config_file['upload_path']='./assets/procedures/';
-				$config_file['allowed_types']='pdf|doc|docx';
-				$this->load->library('upload',$config_file);
-				$this->upload->initialize($config_file);
-				if($this->upload->do_upload('link')){
-					$upload_data=$this->upload->data();
-					$pdf=$upload_data['file_name'];
-				}else{
-					$pdf="";
+				// SECURITY P1.4 - Upload sécurisé via Secure_upload
+				$this->load->library('secure_upload');
+				$_su_result = $this->secure_upload->process('link', 'scenario', './assets/procedures/');
+				$pdf = $_su_result['success'] ? $_su_result['file_name'] : '';
+				if (!$_su_result['success'] && $_su_result['error']) {
+					log_message('warning', 'Upload procedures refusé : ' . $_su_result['error']);
 				}
 
         	if($this->FormationModel->add_procedure($pdf)){
@@ -964,15 +980,12 @@ class Admin extends CI_Controller {
  		}else{
 
         	//book file upload
-				$config_file['upload_path']='./assets/procedures/';
-				$config_file['allowed_types']='pdf|doc|docx';
-				$this->load->library('upload',$config_file);
-				$this->upload->initialize($config_file);
-				if($this->upload->do_upload('link')){
-					$upload_data=$this->upload->data();
-					$pdf=$upload_data['file_name'];
-				}else{
-					$pdf="";
+				// SECURITY P1.4 - Upload sécurisé via Secure_upload
+				$this->load->library('secure_upload');
+				$_su_result = $this->secure_upload->process('link', 'scenario', './assets/procedures/');
+				$pdf = $_su_result['success'] ? $_su_result['file_name'] : '';
+				if (!$_su_result['success'] && $_su_result['error']) {
+					log_message('warning', 'Upload procedures refusé : ' . $_su_result['error']);
 				}
 
 			
@@ -1044,15 +1057,12 @@ class Admin extends CI_Controller {
  		}else{
 
         	//book file upload
-				$config_file['upload_path']='./assets/certificat/';
-				$config_file['allowed_types']='pdf|doc|docx';
-				$this->load->library('upload',$config_file);
-				$this->upload->initialize($config_file);
-				if($this->upload->do_upload('link')){
-					$upload_data=$this->upload->data();
-					$pdf=$upload_data['file_name'];
-				}else{
-					$pdf="";
+				// SECURITY P1.4 - Upload sécurisé via Secure_upload
+				$this->load->library('secure_upload');
+				$_su_result = $this->secure_upload->process('link', 'scenario', './assets/certificat/');
+				$pdf = $_su_result['success'] ? $_su_result['file_name'] : '';
+				if (!$_su_result['success'] && $_su_result['error']) {
+					log_message('warning', 'Upload certificat refusé : ' . $_su_result['error']);
 				}
 
         	if($this->FormationModel->add_certificat($pdf)){
@@ -1083,15 +1093,12 @@ class Admin extends CI_Controller {
  		}else{
 
         	//book file upload
-				$config_file['upload_path']='./assets/certificat/';
-				$config_file['allowed_types']='pdf|doc|docx';
-				$this->load->library('upload',$config_file);
-				$this->upload->initialize($config_file);
-				if($this->upload->do_upload('link')){
-					$upload_data=$this->upload->data();
-					$pdf=$upload_data['file_name'];
-				}else{
-					$pdf="";
+				// SECURITY P1.4 - Upload sécurisé via Secure_upload
+				$this->load->library('secure_upload');
+				$_su_result = $this->secure_upload->process('link', 'scenario', './assets/certificat/');
+				$pdf = $_su_result['success'] ? $_su_result['file_name'] : '';
+				if (!$_su_result['success'] && $_su_result['error']) {
+					log_message('warning', 'Upload certificat refusé : ' . $_su_result['error']);
 				}
 
 			
@@ -1190,15 +1197,12 @@ class Admin extends CI_Controller {
  		}else{
 
         	//book file upload
-				$config_file['upload_path']='./assets/support/';
-				$config_file['allowed_types']='pdf';
-				$this->load->library('upload',$config_file);
-				$this->upload->initialize($config_file);
-				if($this->upload->do_upload('link')){
-					$upload_data=$this->upload->data();
-					$pdf=$upload_data['file_name'];
-				}else{
-					$pdf="";
+				// SECURITY P1.4 - Upload sécurisé via Secure_upload
+				$this->load->library('secure_upload');
+				$_su_result = $this->secure_upload->process('link', 'support', './assets/support/');
+				$pdf = $_su_result['success'] ? $_su_result['file_name'] : '';
+				if (!$_su_result['success'] && $_su_result['error']) {
+					log_message('warning', 'Upload support refusé : ' . $_su_result['error']);
 				}
 
         	if($this->FormationModel->add_support($pdf)){
@@ -1229,15 +1233,12 @@ class Admin extends CI_Controller {
  		}else{
 
         	//book file upload
-				$config_file['upload_path']='./assets/support/';
-				$config_file['allowed_types']='pdf';
-				$this->load->library('upload',$config_file);
-				$this->upload->initialize($config_file);
-				if($this->upload->do_upload('link')){
-					$upload_data=$this->upload->data();
-					$pdf=$upload_data['file_name'];
-				}else{
-					$pdf="";
+				// SECURITY P1.4 - Upload sécurisé via Secure_upload
+				$this->load->library('secure_upload');
+				$_su_result = $this->secure_upload->process('link', 'support', './assets/support/');
+				$pdf = $_su_result['success'] ? $_su_result['file_name'] : '';
+				if (!$_su_result['success'] && $_su_result['error']) {
+					log_message('warning', 'Upload support refusé : ' . $_su_result['error']);
 				}
 
 			
@@ -1342,7 +1343,14 @@ class Admin extends CI_Controller {
 				redirect('admin/index');
 		}
 
+		// Audit log P1.6 : Qualiopi indicateur 32 - traçabilité actions pédagogiques
+		$this->load->library('audit_log');
+
 		if($this->FormationModel->delete_qcm($id)){
+			$this->audit_log->record('qcm.delete', [
+				'table_name' => 'qcm',
+				'record_id'  => $id,
+			]);
 			$this->session->set_flashdata('msg','<br><div class="alert alert-success alert-dismissible fade show" role="alert">Données supprimées<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
 		}else{
 			$this->session->set_flashdata('msg','<br><div class="alert alert-danger alert-dismissible fade show" role="alert">Il y a eu une erreur, veuillez réessayer<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
@@ -1623,38 +1631,25 @@ class Admin extends CI_Controller {
  		}else{
 
         	//book file upload
-				$config_file['upload_path']='./assets/cv/';
-				$config_file['allowed_types']='pdf';
-				$this->load->library('upload',$config_file);
-				$this->upload->initialize($config_file);
-				if($this->upload->do_upload('cv')){
-					$upload_data=$this->upload->data();
-					$pdf=$upload_data['file_name'];
-				}else{
-					$pdf="";
+				// SECURITY P1.4 - Upload sécurisé via Secure_upload
+				$this->load->library('secure_upload');
+				$_su_result = $this->secure_upload->process('cv', 'cv', './assets/cv/');
+				$pdf = $_su_result['success'] ? $_su_result['file_name'] : '';
+				if (!$_su_result['success'] && $_su_result['error']) {
+					log_message('warning', 'Upload cv refusé : ' . $_su_result['error']);
 				}
-			//charte
-				$config_file_charte['upload_path']='./assets/charte/';
-				$config_file_charte['allowed_types']='pdf';
-				$this->load->library('upload',$config_file_charte);
-				$this->upload->initialize($config_file_charte);
-				if($this->upload->do_upload('charte')){
-					$upload_data_charte=$this->upload->data();
-					$charte=$upload_data_charte['file_name'];
-				}else{
-					$charte="";
+				// SECURITY P1.4 - Upload sécurisé charte
+				$_su_charte = $this->secure_upload->process('charte', 'cv', './assets/charte/');
+				$charte = $_su_charte['success'] ? $_su_charte['file_name'] : '';
+				if (!$_su_charte['success'] && $_su_charte['error']) {
+					log_message('warning', 'Upload charte refusé : ' . $_su_charte['error']);
 				}
 
-				//maj
-				$config_file_maj['upload_path']='./assets/maj/';
-				$config_file_maj['allowed_types']='pdf';
-				$this->load->library('upload',$config_file_maj);
-				$this->upload->initialize($config_file_maj);
-				if($this->upload->do_upload('maj')){
-					$upload_data_maj=$this->upload->data();
-					$maj=$upload_data_maj['file_name'];
-				}else{
-					$maj="";
+				// SECURITY P1.4 - Upload sécurisé maj
+				$_su_maj = $this->secure_upload->process('maj', 'cv', './assets/maj/');
+				$maj = $_su_maj['success'] ? $_su_maj['file_name'] : '';
+				if (!$_su_maj['success'] && $_su_maj['error']) {
+					log_message('warning', 'Upload maj refusé : ' . $_su_maj['error']);
 				}
 
         	if($this->FormationModel->add_prof($pdf,$charte,$maj)){
@@ -1685,43 +1680,29 @@ class Admin extends CI_Controller {
  		}else{
 
         	//book file upload
-				$config_file['upload_path']='./assets/cv/';
-				$config_file['allowed_types']='pdf';
-				$this->load->library('upload',$config_file);
-				$this->upload->initialize($config_file);
-				if($this->upload->do_upload('cv')){
-					$upload_data=$this->upload->data();
-					$pdf=$upload_data['file_name'];
-				}else{
-					$pdf="";
+				// SECURITY P1.4 - Upload sécurisé via Secure_upload
+				$this->load->library('secure_upload');
+				$_su_result = $this->secure_upload->process('cv', 'cv', './assets/cv/');
+				$pdf = $_su_result['success'] ? $_su_result['file_name'] : '';
+				if (!$_su_result['success'] && $_su_result['error']) {
+					log_message('warning', 'Upload cv refusé : ' . $_su_result['error']);
 				}
 
-			//charte
-				$config_file_charte['upload_path']='./assets/charte/';
-				$config_file_charte['allowed_types']='pdf';
-				$this->load->library('upload',$config_file_charte);
-				$this->upload->initialize($config_file_charte);
-				if($this->upload->do_upload('charte')){
-					$upload_data_charte=$this->upload->data();
-					$charte=$upload_data_charte['file_name'];
-				}else{
-					$charte="";
+			// SECURITY P1.4 - Upload sécurisé charte (update)
+				$_su_charte = $this->secure_upload->process('charte', 'cv', './assets/charte/');
+				$charte = $_su_charte['success'] ? $_su_charte['file_name'] : '';
+				if (!$_su_charte['success'] && $_su_charte['error']) {
+					log_message('warning', 'Upload charte (update) refusé : ' . $_su_charte['error']);
 				}
 
-			//maj
-				$config_file_maj['upload_path']='./assets/maj/';
-				$config_file_maj['allowed_types']='pdf';
-				$this->load->library('upload',$config_file_maj);
-				$this->upload->initialize($config_file_maj);
-				if($this->upload->do_upload('maj')){
-					$upload_data_maj=$this->upload->data();
-					$maj=$upload_data_maj['file_name'];
-				}else{
-					$maj="";
+				// SECURITY P1.4 - Upload sécurisé maj (update)
+				$_su_maj = $this->secure_upload->process('maj', 'cv', './assets/maj/');
+				$maj = $_su_maj['success'] ? $_su_maj['file_name'] : '';
+				if (!$_su_maj['success'] && $_su_maj['error']) {
+					log_message('warning', 'Upload maj (update) refusé : ' . $_su_maj['error']);
 				}
 
 			$id=$this->input->post('id');
-			//die($charte.''.$pdf);
         	if($this->FormationModel->update_prof($pdf,$charte,$maj,$id)){
         		$this->session->set_flashdata('msg','<br><div class="alert alert-success alert-dismissible fade show" role="alert">Données enregistrées<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
         	}
@@ -1739,7 +1720,16 @@ class Admin extends CI_Controller {
 				redirect('admin/index');
 		}
 
+		// Audit log P1.6 : capturer l'état avant suppression
+		$this->load->library('audit_log');
+		$row_before = $this->FormationModel->get_prof($id);
+
 		if($this->FormationModel->delete_prof($id)){
+			$this->audit_log->record('prof.delete', [
+				'table_name'  => 'prof',
+				'record_id'   => $id,
+				'data_before' => $row_before,
+			]);
 			$this->session->set_flashdata('msg','<br><div class="alert alert-success alert-dismissible fade show" role="alert">Données supprimées<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
 		}else{
 			$this->session->set_flashdata('msg','<br><div class="alert alert-danger alert-dismissible fade show" role="alert">Il y a eu une erreur, veuillez réessayer<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
@@ -1818,7 +1808,16 @@ class Admin extends CI_Controller {
 				redirect('welcome/index');
 		}
 
+		// Audit log P1.6 : RGPD article 30 - traçabilité suppression données personnelles
+		$this->load->library('audit_log');
+		$row_before = $this->FormationModel->get_apprenant($id);
+
 		if($this->FormationModel->delete_apprenant($id)){
+			$this->audit_log->record('apprenant.delete', [
+				'table_name'  => 'apprenant',
+				'record_id'   => $id,
+				'data_before' => $row_before,
+			]);
 			$this->session->set_flashdata('msg','<br><div class="alert alert-success alert-dismissible fade show" role="alert">Données supprimées<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
 		}else{
 			$this->session->set_flashdata('msg','<br><div class="alert alert-danger alert-dismissible fade show" role="alert">Il y a eu une erreur, veuillez réessayer<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');

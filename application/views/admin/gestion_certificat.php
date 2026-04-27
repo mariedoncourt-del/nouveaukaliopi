@@ -27,13 +27,13 @@
 				<tbody>
 					<?php foreach($certificats as $certificat): ?>
 					<tr>
-						<td><?php echo $certificat['nom'] ?></td>
+						<td><?php echo e($certificat['nom']) ?></td>
 						<td>
 							<?php if($certificat['link']!=''): ?>
-							 <a class="btn btn-info" href="<?php echo base_url('/assets/certificat/').$certificat['link'] ?>">Télecharger</a>
+							 <a class="btn btn-info" href="<?php echo base_url('/assets/certificat/').rawurlencode($certificat['link']) ?>">Télecharger</a>
 							<?php endif; ?>
 						</td>
-						<td><button class="btn bnt-xs btn-info btnEditCertificat" data-id="<?php echo $certificat['id'] ?>" data-nom="<?php echo $certificat['nom'] ?>">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('/admin/delete_certificat/').$certificat['id'] ?>">Supprimer</button></td>
+						<td><button class="btn bnt-xs btn-info btnEditCertificat" data-id="<?php echo e_attr($certificat['id']) ?>" data-nom="<?php echo e_attr($certificat['nom']) ?>">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('/admin/delete_certificat/').rawurlencode($certificat['id']) ?>">Supprimer</button></td>
 					</tr>
 					<?php endforeach; ?>
 				</tbody>

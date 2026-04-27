@@ -19,9 +19,9 @@
 				<tbody>
 					<?php foreach($les_cours as $cours): ?>
 					<tr>
-						<td><?php echo $cours['id'] ?></td>
-						<td><?php echo $cours['titre'] ?></td>
-						<td><button class="btn bnt-xs btn-info btnEditCours" data-key="<?php echo $cours['id_key'] ?>" data-id="<?php echo $cours['id'] ?>" data-titre="<?php echo $cours['titre'] ?>">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('admin/delete_cours/').$cours['id'] ?>">Supprimer</a></td>
+						<td><?php echo e($cours['id']) ?></td>
+						<td><?php echo e($cours['titre']) ?></td>
+						<td><button class="btn bnt-xs btn-info btnEditCours" data-key="<?php echo e_attr($cours['id_key']) ?>" data-id="<?php echo e_attr($cours['id']) ?>" data-titre="<?php echo e_attr($cours['titre']) ?>">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('admin/delete_cours/').rawurlencode($cours['id']) ?>">Supprimer</a></td>
 					</tr>
 					<?php endforeach; ?>
 				</tbody>

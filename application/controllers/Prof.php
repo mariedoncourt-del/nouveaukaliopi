@@ -17,21 +17,38 @@ class Prof extends CI_Controller {
 			$this->load->view('prof/index',$data);
 
 			}else{
-				$login = $this->input->post('login');
-				$password = md5($this->input->post('password'));
+				// SECURITY P0.1 + P1.1 - Idem que Admin::index() : plus de md5(), rate limiting actif
+				$this->load->library('rate_limiter');
+				$ip = $this->input->ip_address();
+				if (!$this->rate_limiter->allow('prof_login', $ip, 5, 900)) {
+					log_message('warning', 'Rate limit dépassé pour prof login depuis IP ' . $ip);
+					$this->session->set_flashdata('login_failed', 'Trop de tentatives. Réessayez dans 15 minutes.');
+					redirect('/prof/index');
+					return;
+				}
 
-				$loginid = $this->WelcomeModel->login_admin($login,$password);
+				$login = $this->input->post('login');
+				$password = $this->input->post('password'); // Plus de md5() ici - le modèle gère bcrypt
+
+				$loginid = $this->WelcomeModel->login_admin($login, $password);
 
 				if($loginid){
+					$this->session->sess_regenerate(TRUE);
+
 					$user_data = array(
 						'user_id' => $loginid,
-						'logged_prof' => true
+						'logged_prof' => true,
+						'login_time' => time(),
+						'login_ip'   => $ip
 					);
 
 					$this->session->set_userdata($user_data);
+					$this->rate_limiter->reset('prof_login', $ip);
 
+					log_message('info', 'Connexion prof réussie : ' . $login . ' depuis ' . $ip);
 					redirect('prof/dashboard');
 				}else{
+					log_message('warning', 'Échec connexion prof login=' . $login . ' depuis ' . $ip);
 					$this->session->set_flashdata('login_failed', 'Login ou mot de passe invalide');
 					redirect('/prof/index');
 				}		

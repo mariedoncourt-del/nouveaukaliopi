@@ -64,7 +64,7 @@ class FormationModel extends CI_Model
 
    public function afficher_texte($mois)
    {
-	$query = $this->db->query("select texte from task_list where mois like '".$mois."'");
+	$query = $this->db->query("select texte from task_list where mois like ?", array($mois));
 	return $query->result();
    }
 
@@ -94,7 +94,7 @@ class FormationModel extends CI_Model
    }
    function recherche_resultat_question_1($id,$question)
    {
-	$query = $this->db->query("SELECT resultat_1 as resultat from resultat_question where id_formation like '".$id."' and substr(question,1,10) like '".$question."'");
+	$query = $this->db->query("SELECT resultat_1 as resultat from resultat_question where id_formation like ? and substr(question,1,10) like ?", array($id, $question));
 	foreach($query->result() as $row)
 	{
 		$data = $row->resultat;
@@ -104,7 +104,7 @@ class FormationModel extends CI_Model
 
    function recherche_resultat_question_depart_1($id,$question)
    {
-	$query = $this->db->query("SELECT resultat_1 as resultat from resultat_question_depart where id_formation like '".$id."' and substr(question,1,10) like '".$question."'");
+	$query = $this->db->query("SELECT resultat_1 as resultat from resultat_question_depart where id_formation like ? and substr(question,1,10) like ?", array($id, $question));
 	foreach($query->result() as $row)
 	{
 		$data = $row->resultat;
@@ -120,13 +120,13 @@ class FormationModel extends CI_Model
 
    public function modifier_resultat($id,$question)
    {
-	$query = $this->db->query("update resultat_question set resultat_1 =1, resultat_3=0 where id_formation like '".$id."' and substr(question,1,10) like '".$question."'");
+	$query = $this->db->query("update resultat_question set resultat_1 =1, resultat_3=0 where id_formation like ? and substr(question,1,10) like ?", array($id, $question));
 	return $query;
    }
 
    function parcours_resultat_question($id,$question)
    {
-	$query = $this->db->query("SELECT * from resultat_question where id_formation like '".$id."' and substr(question,1,10) like '".$question."'");
+	$query = $this->db->query("SELECT * from resultat_question where id_formation like ? and substr(question,1,10) like ?", array($id, $question));
 	foreach($query->result() as $row)
 	{
 		if($row->resultat_1==1)
@@ -153,7 +153,7 @@ class FormationModel extends CI_Model
 }
    function recherche_resultat_question_2($id,$question)
    {
-	$query = $this->db->query("SELECT resultat_2 as resultat from resultat_question where id_formation like '".$id."' and substr(question,1,10) like '".$question."'");
+	$query = $this->db->query("SELECT resultat_2 as resultat from resultat_question where id_formation like ? and substr(question,1,10) like ?", array($id, $question));
 	foreach($query->result() as $row)
 	{
 		$data = $row->resultat;
@@ -170,7 +170,7 @@ class FormationModel extends CI_Model
 
    function recherche_resultat_question_depart_2($id,$question)
    {
-	$query = $this->db->query("SELECT resultat_2 as resultat from resultat_question_depart where id_formation like '".$id."' and substr(question,1,10) like '".$question."'");
+	$query = $this->db->query("SELECT resultat_2 as resultat from resultat_question_depart where id_formation like ? and substr(question,1,10) like ?", array($id, $question));
 	foreach($query->result() as $row)
 	{
 		$data = $row->resultat;
@@ -186,7 +186,7 @@ class FormationModel extends CI_Model
 
    function recherche_resultat_question_3($id,$question)
    {
-	$query = $this->db->query("SELECT resultat_3 as resultat from resultat_question where id_formation like '".$id."' and substr(question,1,10) like '".$question."'");
+	$query = $this->db->query("SELECT resultat_3 as resultat from resultat_question where id_formation like ? and substr(question,1,10) like ?", array($id, $question));
 	foreach($query->result() as $row)
 	{
 		$data = $row->resultat;
@@ -196,7 +196,7 @@ class FormationModel extends CI_Model
 
    function recherche_resultat_question_depart_3($id,$question)
    {
-	$query = $this->db->query("SELECT resultat_3 as resultat from resultat_question_depart where id_formation like '".$id."' and substr(question,1,10) like '".$question."'");
+	$query = $this->db->query("SELECT resultat_3 as resultat from resultat_question_depart where id_formation like ? and substr(question,1,10) like ?", array($id, $question));
 	foreach($query->result() as $row)
 	{
 		$data = $row->resultat;
@@ -205,7 +205,7 @@ class FormationModel extends CI_Model
    }
    function recherche_resultat_question_4($id,$question)
    {
-	$query = $this->db->query("SELECT resultat_4 as resultat from resultat_question where id_formation like '".$id."' and substr(question,1,10) like '".$question."'");
+	$query = $this->db->query("SELECT resultat_4 as resultat from resultat_question where id_formation like ? and substr(question,1,10) like ?", array($id, $question));
 	foreach($query->result() as $row)
 	{
 		$data = $row->resultat;
@@ -216,7 +216,7 @@ class FormationModel extends CI_Model
 
    function recherche_resultat_question_depart_4($id,$question)
    {
-	$query = $this->db->query("SELECT resultat_4 as resultat from resultat_question_depart where id_formation like '".$id."' and substr(question,1,10) like '".$question."'");
+	$query = $this->db->query("SELECT resultat_4 as resultat from resultat_question_depart where id_formation like ? and substr(question,1,10) like ?", array($id, $question));
 	foreach($query->result() as $row)
 	{
 		$data = $row->resultat;
@@ -298,13 +298,13 @@ class FormationModel extends CI_Model
 
 	public function modifier_reponse($id)
 	{
-		$query = $this->db->query("update Reponse set reponse = 1 where id = ".$id."");
+		$query = $this->db->query("update Reponse set reponse = 1 where id = ?", array($id));
 		return $query;
 	}
 
 	public function recherche_courss($titre)
 	{
-		$query = $this->db->query("select id as id from cours where titre like '".$titre."'");
+		$query = $this->db->query("select id as id from cours where titre like ?", array($titre));
 		foreach($query->result() as $row)
 		{
 			$data = $row->id;
@@ -327,24 +327,24 @@ class FormationModel extends CI_Model
 
 	public function modifier_questionnaire($id,$quest)
 	{
-		$query = $this->db->query("update Questionnaire set question = \"".$quest."\" where id_questionnaire like ".$id."");
+		$query = $this->db->query("update Questionnaire set question = ? where id_questionnaire like ?", array($quest, $id));
 		return $query;
 	}
 
 	public function supprimer_questions($id)
 	{
-		$query = $this->db->query("delete from Questionnaire where id_questionnaire like '".$id."'");
+		$query = $this->db->query("delete from Questionnaire where id_questionnaire like ?", array($id));
 		return $query;
 	}
 
 	public function supprimer_reponse_depart_1($id)
 	{
-		$query = $this->db->query("delete from Reponse_depart where id like ".$id."");
+		$query = $this->db->query("delete from Reponse_depart where id like ?", array($id));
 		return $query;
 	}
 	public function supprimer_reponses($id)
 	{
-		$query = $this->db->query("delete from Reponse where id like ".$id."");
+		$query = $this->db->query("delete from Reponse where id like ?", array($id));
 		return $query;
 	}
 
@@ -352,24 +352,24 @@ class FormationModel extends CI_Model
 
 	public function supprimer_question_departs($id)
 	{
-		$query = $this->db->query("delete from Questionnaire_depart where id_questionnaire like ".$id."");
+		$query = $this->db->query("delete from Questionnaire_depart where id_questionnaire like ?", array($id));
 		return $query;
 	}
 	public function recherche_reponse($id)
 	{
-		$query = $this->db->query("select * from Reponse where id_questionnaire like '".$id."'");
+		$query = $this->db->query("select * from Reponse where id_questionnaire like ?", array($id));
 		return $query->result();
 	}
 
 	public function recherche_reponses($id,$rang)
 	{
-		$query = $this->db->query("select * from Reponse where id_questionnaire like '".$id."' and rang like ".$rang."");
+		$query = $this->db->query("select * from Reponse where id_questionnaire like ? and rang like ?", array($id, $rang));
 		return $query->result();
 	}
 
 	public function recherche_reponses_depart($id,$rang)
 	{
-		$query = $this->db->query("select * from Reponse_depart where id_questionnaire like '".$id."' and rang like ".$rang."");
+		$query = $this->db->query("select * from Reponse_depart where id_questionnaire like ? and rang like ?", array($id, $rang));
 		return $query->result();
 	}
 
@@ -377,13 +377,13 @@ class FormationModel extends CI_Model
 
 	public function recherche_reponse_depart($id)
 	{
-		$query = $this->db->query("select * from Reponse_depart where id_questionnaire like '".$id."'");
+		$query = $this->db->query("select * from Reponse_depart where id_questionnaire like ?", array($id));
 		return $query->result();
 	}
 
 	public function recherche_formationss($id)
 	{
-		$query = $this->db->query("select cours.id as id from formation,cours where formation.cours_id=cours.id_key and formation.id like '".$id."'");
+		$query = $this->db->query("select cours.id as id from formation,cours where formation.cours_id=cours.id_key and formation.id like ?", array($id));
 		foreach($query->result() as $row)
 		{
 			$data = $row->id;
@@ -394,7 +394,7 @@ class FormationModel extends CI_Model
 
 	public function nombre_etudiant_réussi($titre)
 	{
-		$query = $this->db->query("select  count(*) as compte from formation,cours,evaluation_hot where formation.cours_id=cours.id_key and formation.id = evaluation_hot.id_formation and cours.titre like \"".$titre."\" and evaluation_hot.eval_note>=10 group by cours.titre");
+		$query = $this->db->query("select  count(*) as compte from formation,cours,evaluation_hot where formation.cours_id=cours.id_key and formation.id = evaluation_hot.id_formation and cours.titre like ? and evaluation_hot.eval_note>=10 group by cours.titre", array($titre));
 		foreach($query->result() as $row)
 		{
 			$data = $row->compte;
@@ -432,7 +432,7 @@ class FormationModel extends CI_Model
 
 	public function recherche_formations_stagiaire($id)
 	{
-		$query = $this->db->query("select cours.titre as titre from formation,cours where formation.cours_id=cours.id_key and formation.id like '".$id."'");
+		$query = $this->db->query("select cours.titre as titre from formation,cours where formation.cours_id=cours.id_key and formation.id like ?", array($id));
 		foreach($query->result() as $row)
 		{
 			$data = $row->titre;
@@ -457,7 +457,7 @@ class FormationModel extends CI_Model
 
 	public function recherche_formationss_depart($id)
 	{
-		$query = $this->db->query("select cours.id as id from formation,cours where formation.cours_id=cours.id_key and formation.id like '".$id."'");
+		$query = $this->db->query("select cours.id as id from formation,cours where formation.cours_id=cours.id_key and formation.id like ?", array($id));
 		foreach($query->result() as $row)
 		{
 			$data = $row->id;
@@ -519,7 +519,7 @@ class FormationModel extends CI_Model
 
 	public function recherche_nom_stagiaire($idformation)
 	{
-		$query = $this->db->query("select apprenant.nom as nom from apprenant, formation where apprenant.id = formation.apprenant_id and formation.id like '".$idformation."'");
+		$query = $this->db->query("select apprenant.nom as nom from apprenant, formation where apprenant.id = formation.apprenant_id and formation.id like ?", array($idformation));
 		foreach($query->result() as $row)
 		{
 			$data = $row->nom;
@@ -530,7 +530,7 @@ class FormationModel extends CI_Model
 
 	public function recherche_prenom_stagiaire($idformation)
 	{
-		$query = $this->db->query("select apprenant.prenom as prenom from apprenant, formation where apprenant.id = formation.apprenant_id and formation.id like '".$idformation."'");
+		$query = $this->db->query("select apprenant.prenom as prenom from apprenant, formation where apprenant.id = formation.apprenant_id and formation.id like ?", array($idformation));
 		foreach($query->result() as $row)
 		{
 			$data = $row->prenom;
@@ -547,7 +547,7 @@ class FormationModel extends CI_Model
 
 	public function afficher_id_formation($nom,$prenom,$id)
 	{
-		$query = $this->db->query("select formation.id as id from formation,apprenant,cours where cours.id_key = formation.cours_id  and formation.apprenant_id = apprenant.id and apprenant.nom like '".$nom."' and apprenant.prenom like '".$prenom."' and cours.id like '".$id."'");
+		$query = $this->db->query("select formation.id as id from formation,apprenant,cours where cours.id_key = formation.cours_id  and formation.apprenant_id = apprenant.id and apprenant.nom like ? and apprenant.prenom like ? and cours.id like ?", array($nom, $prenom, $id));
 		foreach($query->result() as $row)
 		{
 			$data = $row->id;
@@ -581,7 +581,7 @@ class FormationModel extends CI_Model
 
 	public function recherche_stagiaires($nom,$prenom)
 	{
-		$query = $this->db->query("select * from apprenant WHERE nom LIKE \"".$nom."\" and prenom like \"".$prenom."\"");
+		$query = $this->db->query("select * from apprenant WHERE nom LIKE ? and prenom like ?", array($nom, $prenom));
     	if($query->num_rows()>0) {
                 return true;
             }
@@ -602,7 +602,7 @@ class FormationModel extends CI_Model
 
 	public function recherche_cours($id)
 	{
-		$query = $this->db->query("select * from cours WHERE id LIKE \"".$id."\"");
+		$query = $this->db->query("select * from cours WHERE id LIKE ?", array($id));
     	if($query->num_rows()>0) {
                 return true;
             }
@@ -615,7 +615,7 @@ class FormationModel extends CI_Model
 
 	public function recherche_titre($nom)
 	{
-		$query = $this->db->query("select id_key as id_key from cours WHERE titre LIKE \"".$nom."\"");
+		$query = $this->db->query("select id_key as id_key from cours WHERE titre LIKE ?", array($nom));
     	foreach ($query->result() as $row) {
                 $data = $row->id_key;
             }
@@ -625,7 +625,7 @@ class FormationModel extends CI_Model
 
 	public function recherche_id($nom)
 	{
-		$query = $this->db->query("select id_key as id_key from cours WHERE id LIKE \"".$nom."\"");
+		$query = $this->db->query("select id_key as id_key from cours WHERE id LIKE ?", array($nom));
     	foreach ($query->result() as $row) {
                 $data = $row->id_key;
             }
@@ -635,7 +635,7 @@ class FormationModel extends CI_Model
 
 	public function recherche_titre_cours($nom)
 	{
-		$query = $this->db->query("select titre as titre from cours WHERE id_key LIKE \"".$nom."\"");
+		$query = $this->db->query("select titre as titre from cours WHERE id_key LIKE ?", array($nom));
     	foreach ($query->result() as $row) {
                 $data = $row->titre;
             }
@@ -644,7 +644,7 @@ class FormationModel extends CI_Model
 	}
 	public function recherche_apprenant($nom)
 	{
-		$query = $this->db->query("select id as id from apprenant WHERE nom LIKE \"".$nom."\"");
+		$query = $this->db->query("select id as id from apprenant WHERE nom LIKE ?", array($nom));
     	foreach ($query->result() as $row) {
                 $data = $row->id;
             }
@@ -654,7 +654,7 @@ class FormationModel extends CI_Model
 
 	public function recherche_nom_apprenant($id)
 	{
-		$query = $this->db->query("select nom as nom from apprenant WHERE id LIKE \"".$id."\"");
+		$query = $this->db->query("select nom as nom from apprenant WHERE id LIKE ?", array($id));
     	foreach ($query->result() as $row) {
                 $data = $row->nom;
             }
@@ -664,13 +664,13 @@ class FormationModel extends CI_Model
 
 	public function Afficher_formations_prof($id)
 	{
-		$query = $this->db->query("select * from formation WHERE prof_id LIKE \"".$id."\"");
+		$query = $this->db->query("select * from formation WHERE prof_id LIKE ?", array($id));
 		return $query->result();
 	}
 
 	public function recherche_id_prof($nom)
 	{
-		$query = $this->db->query("select id as id from prof WHERE nom LIKE \"".$nom."\"");
+		$query = $this->db->query("select id as id from prof WHERE nom LIKE ?", array($nom));
     	foreach ($query->result() as $row) {
                 $data = $row->id;
             }
@@ -680,7 +680,7 @@ class FormationModel extends CI_Model
 
 	public function recherche_nom_prof_apprenant($id)
 	{
-		$query = $this->db->query("select nom as nom from prof WHERE id LIKE \"".$id."\"");
+		$query = $this->db->query("select nom as nom from prof WHERE id LIKE ?", array($id));
     	foreach ($query->result() as $row) {
                 $data = $row->nom;
             }
@@ -690,7 +690,7 @@ class FormationModel extends CI_Model
 
 	public function recherche_prenom_prof_apprenant($id)
 	{
-		$query = $this->db->query("select prenom as prenom from prof WHERE id LIKE \"".$id."\"");
+		$query = $this->db->query("select prenom as prenom from prof WHERE id LIKE ?", array($id));
     	foreach ($query->result() as $row) {
                 $data = $row->prenom;
             }
@@ -702,7 +702,7 @@ class FormationModel extends CI_Model
 
 	public function recherche_prenom_apprenant($id)
 	{
-		$query = $this->db->query("select prenom as prenom from apprenant WHERE id LIKE \"".$id."\"");
+		$query = $this->db->query("select prenom as prenom from apprenant WHERE id LIKE ?", array($id));
     	foreach ($query->result() as $row) {
                 $data = $row->prenom;
             }
@@ -712,7 +712,7 @@ class FormationModel extends CI_Model
 
 	public function supprimer_formation($id)
 	{
-		$query = $this->db->query("delete from formation where id like '".$id."'");
+		$query = $this->db->query("delete from formation where id like ?", array($id));
 		return $query;
 	}
 
@@ -724,7 +724,7 @@ class FormationModel extends CI_Model
 
 	public function recherche_prof($nom)
 	{
-		$query = $this->db->query("select id as prof_id from prof WHERE nom LIKE '".$nom."'");
+		$query = $this->db->query("select id as prof_id from prof WHERE nom LIKE ?", array($nom));
     	foreach ($query->result() as $row) {
                 $data = $row->prof_id;
             }
@@ -733,7 +733,7 @@ class FormationModel extends CI_Model
 	}
 	public function recherche_prof_or_create($nom,$pren)
 	{
-		$query = $this->db->query("select id as prof_id from prof WHERE nom LIKE '".$nom."'");
+		$query = $this->db->query("select id as prof_id from prof WHERE nom LIKE ?", array($nom));
 		if($query->num_rows() > 0){
 
     	foreach ($query->result() as $row) {
@@ -839,7 +839,7 @@ class FormationModel extends CI_Model
 
 	public function recherche_cv_prof($id)
 	{
-		$query = $this->db->query("select prof.profile as profile from prof,formation where prof.id = formation.prof_id and formation.id like '".$id."'");
+		$query = $this->db->query("select prof.profile as profile from prof,formation where prof.id = formation.prof_id and formation.id like ?", array($id));
 		//return $query->result();
 		foreach($query->result() as $row)
 		{
@@ -1352,7 +1352,7 @@ class FormationModel extends CI_Model
 
 	public function nombre_seance($id)
 	{
-		$query = $this->db->query("select * from seance where id_formation like '".$id."'");
+		$query = $this->db->query("select * from seance where id_formation like ?", array($id));
 		if($query->num_rows()>0)
 		{
 			return "OK";
@@ -1365,7 +1365,7 @@ class FormationModel extends CI_Model
 
 	public function nombre_scenario($id)
 	{
-		$query = $this->db->query("select * from scenario where id_formation like '".$id."'");
+		$query = $this->db->query("select * from scenario where id_formation like ?", array($id));
 		if($query->num_rows()>0)
 		{
 			return "OK";
@@ -1378,7 +1378,7 @@ class FormationModel extends CI_Model
 
 	public function nombre_evaluation($id)
 	{
-		$query = $this->db->query("select * from evaluation where id_formation like '".$id."'");
+		$query = $this->db->query("select * from evaluation where id_formation like ?", array($id));
 		if($query->num_rows()>0)
 		{
 			return "OK";
@@ -1391,7 +1391,7 @@ class FormationModel extends CI_Model
 
 	public function nombre_questionnaire($id)
 	{
-		$query = $this->db->query("select * from question where id_formation like '".$id."'");
+		$query = $this->db->query("select * from question where id_formation like ?", array($id));
 		if($query->num_rows()>0)
 		{
 			return "OK";
@@ -1404,7 +1404,7 @@ class FormationModel extends CI_Model
 
 	public function nombre_besoin($id)
 	{
-		$query = $this->db->query("select * from besoin where id_formation like '".$id."'");
+		$query = $this->db->query("select * from besoin where id_formation like ?", array($id));
 		if($query->num_rows()>0)
 		{
 			return "OK";
@@ -1417,7 +1417,7 @@ class FormationModel extends CI_Model
 
 	public function nombre_qcm($id)
 	{
-		$query = $this->db->query("select * from qcm where id_formation like '".$id."'");
+		$query = $this->db->query("select * from qcm where id_formation like ?", array($id));
 		if($query->num_rows()>0)
 		{
 			return "OK";
@@ -1430,7 +1430,7 @@ class FormationModel extends CI_Model
 
 	public function nombre_qcms($id)
 	{
-		$query = $this->db->query("select * from Resultat where id_formation like '".$id."'");
+		$query = $this->db->query("select * from Resultat where id_formation like ?", array($id));
 		if($query->num_rows()>0)
 		{
 			return "OK";
@@ -1598,7 +1598,7 @@ public function supprimer_question()
 
 public function modifier_question($id,$question,$q)
 {
-	$query = $this->db->query("update Questionnaire set question='".$question."' where id_questionnaire like ".$id." and substr(question,1,10) like '".$q."'");
+	$query = $this->db->query("update Questionnaire set question=? where id_questionnaire like ? and substr(question,1,10) like ?", array($question, $q, $id));
 	return $query;
 }
 
@@ -1624,13 +1624,13 @@ public function afficher_reponse()
 
 public function afficher_questions($id,$question)
 {
-	$query = $this->db->query("select * from Questionnaire where id_formation like '".$id."' and substr(question,1,11) like '".$question."'");
+	$query = $this->db->query("select * from Questionnaire where id_formation like ? and substr(question,1,11) like ?", array($id, $question));
 	return $query->result();
 }
 
 public function afficher_questions_depart($id,$question)
 {
-	$query = $this->db->query("select * from Questionnaire_depart where id_formation like '".$id."' and substr(question,1,11) like '".$question."'");
+	$query = $this->db->query("select * from Questionnaire_depart where id_formation like ? and substr(question,1,11) like ?", array($id, $question));
 	return $query->result();
 }
 
@@ -1648,7 +1648,7 @@ public function afficher_reponses_departs()
 
 public function afficher_note($id)
 {
-	$query = $this->db->query("select note as note from Resultat where id_formation like '".$id."'");
+	$query = $this->db->query("select note as note from Resultat where id_formation like ?", array($id));
 	foreach($query->result() as $row)
 	{
 		$data = $row->note;
@@ -1658,7 +1658,7 @@ public function afficher_note($id)
 
 public function afficher_note_depart($id)
 {
-	$query = $this->db->query("select note as note from Resultat_depart where id_formation like '".$id."'");
+	$query = $this->db->query("select note as note from Resultat_depart where id_formation like ?", array($id));
 	foreach($query->result() as $row)
 	{
 		$data = $row->note;
@@ -1684,7 +1684,7 @@ public function inserer_resultat_depart($datas=array())
 
 public function recherche_resultat($idformation)
 {
-	$query = $this->db->query("select * from Resultat where id_formation like '".$idformation."'");
+	$query = $this->db->query("select * from Resultat where id_formation like ?", array($idformation));
 	if($query->num_rows()>0)
 		{
 			return true;
@@ -1696,7 +1696,7 @@ public function recherche_resultat($idformation)
 
 public function recherche_resultat_departs($idformation)
 {
-	$query = $this->db->query("select * from Resultat_depart where id_formation like '".$idformation."'");
+	$query = $this->db->query("select * from Resultat_depart where id_formation like ?", array($idformation));
 	if($query->num_rows()>0)
 		{
 			return true;
@@ -1708,7 +1708,7 @@ public function recherche_resultat_departs($idformation)
 
 public function recherche_resultat_depart($idformation)
 {
-	$query = $this->db->query("select * from Resultat_depart where id_formation like '".$idformation."'");
+	$query = $this->db->query("select * from Resultat_depart where id_formation like ?", array($idformation));
 	if($query->num_rows()>0)
 		{
 			return true;
@@ -1761,7 +1761,7 @@ function creation_table_resultat_depart()
    }
 function Supprimer_Formations($id)
 {
-	$query = $this->db->query("DELETE FROM formation WHERE id like '".$id."'");
+	$query = $this->db->query("DELETE FROM formation WHERE id like ?", array($id));
 	return $query;
 }
 
@@ -1808,7 +1808,7 @@ function afficher_questionnaires()
 
 function Recherche_reponsess($id_formation,$question)
 {
-	$query = $this->db->query("select Reponse.reponse as reponse from Questionnaire, Reponse where Questionnaire.id_questionnaire = Reponse.id_questionnaire and Questionnaire.id_formation like '".$id_formation."' and substr(Questionnaire.question,1,11) like '".$question."' And Reponse.reponse like 1");
+	$query = $this->db->query("select Reponse.reponse as reponse from Questionnaire, Reponse where Questionnaire.id_questionnaire = Reponse.id_questionnaire and Questionnaire.id_formation like ? and substr(Questionnaire.question,1,11) like ? And Reponse.reponse like 1", array($id_formation, $question));
 	foreach($query->result() as $row)
 	{
 		$data = $row->reponse;
@@ -1818,13 +1818,13 @@ function Recherche_reponsess($id_formation,$question)
 
 function modifier_rang($id,$rang)
 {
-	$q = $this->db->query("Update Reponse set rang = ".$rang." where id like ".$id."");
+	$q = $this->db->query("Update Reponse set rang = ? where id like ?", array($rang, $id));
 	return $q;
 }
 
 function modifier_rang_depart($id,$rang)
 {
-	$q = $this->db->query("Update Reponse_depart set rang = ".$rang." where id like ".$id."");
+	$q = $this->db->query("Update Reponse_depart set rang = ? where id like ?", array($rang, $id));
 	return $q;
 }
 
@@ -1957,7 +1957,7 @@ function modifier_table_reponse_depart()
 
 	public function rechercher_nom_prof($id)
 	{
-		$query = $this->db->query("select * from prof where id like ".$id."");
+		$query = $this->db->query("select * from prof where id like ?", array($id));
 		foreach($query->result() as $row)
 		{
 			$data = $row->nom;
@@ -1967,7 +1967,7 @@ function modifier_table_reponse_depart()
 
 	public function rechercher_prenom_prof($id)
 	{
-		$query = $this->db->query("select * from prof where id like ".$id."");
+		$query = $this->db->query("select * from prof where id like ?", array($id));
 		foreach($query->result() as $row)
 		{
 			$data = $row->prenom;
@@ -2262,7 +2262,7 @@ function modifier_table_reponse_depart()
 
 public function supprimer_evaluation_a_chaud($id)
 {
-	$query = $this->db->query("delete from evaluation_hot where id_formation like '".$id."'");
+	$query = $this->db->query("delete from evaluation_hot where id_formation like ?", array($id));
 	return $query;
 }
 	//evaluations à chaud

@@ -1034,15 +1034,27 @@ class Welcome extends CI_Controller {
 	        $to_email = 'maformationsas@gmail.com'; //Webmaster email, who receive mails
 	        //$to_email = 'rgmickael@gmail.com'; //Webmaster email, who receive mails
 
+	        // SECURITY - Identifiants SMTP chargés depuis variables d'environnement
+	        // (le mot de passe en clair 'harena2021' a été retiré du dépôt - le compte
+	        // Gmail concerné DOIT être révoqué immédiatement et un mot de passe
+	        // d'application Gmail doit être généré, stocké en variable d'env serveur).
 	        $config['protocol'] = 'smtp';
-	        $config['smtp_host'] = 'ssl://smtp.gmail.com';
-	        $config['smtp_port'] = '465';
-	        $config['smtp_user'] = 'harenadesign@gmail.com'; // Your email address
-	        $config['smtp_pass'] = 'harena2021'; // Your email account password
-	        $config['mailtype'] = 'html'; // or 'text'
+	        $config['smtp_host'] = getenv('KALIOPI_SMTP_HOST') ?: 'ssl://smtp.gmail.com';
+	        $config['smtp_port'] = getenv('KALIOPI_SMTP_PORT') ?: '465';
+	        $config['smtp_user'] = getenv('KALIOPI_SMTP_USER') ?: '';
+	        $config['smtp_pass'] = getenv('KALIOPI_SMTP_PASS') ?: '';
+	        $config['smtp_crypto'] = 'ssl';
+	        $config['mailtype'] = 'html';
 	        $config['charset'] = 'utf-8';
-	        $config['wordwrap'] = TRUE; //No quotes required
-	        $config['newline'] = "\r\n"; //Double quotes required
+	        $config['wordwrap'] = TRUE;
+	        $config['newline'] = "\r\n";
+
+	        if (empty($config['smtp_user']) || empty($config['smtp_pass'])) {
+	        	log_message('error', 'SMTP non configuré : variables KALIOPI_SMTP_USER/PASS manquantes');
+	        	$this->session->set_flashdata('msg', '<br><div class="alert alert-danger">Service email indisponible. Contactez l\'administrateur.</div>');
+	        	redirect('welcome/reclamation');
+	        	return;
+	        }
 
 	        $this->email->initialize($config);                        
 

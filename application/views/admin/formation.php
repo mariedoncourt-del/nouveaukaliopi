@@ -75,21 +75,21 @@
 
 					<tr>
 
-						<td><?php echo $formation['id'] ?></td>
+						<td><?php echo e($formation['id']) ?></td>
 
-						<td><?php echo $formation['prenom_apprenant']." ".$formation['nom_apprenant'] ?></td>
+						<td><?php echo e($formation['prenom_apprenant']." ".$formation['nom_apprenant']) ?></td>
 
-						<td><?php echo $formation['prenom_prof']." ".$formation['nom_prof'] ?></td>
+						<td><?php echo e($formation['prenom_prof']." ".$formation['nom_prof']) ?></td>
 
-						<td><?php echo $formation['cours'] ?></td>
+						<td><?php echo e($formation['cours']) ?></td>
 
-						<td><a class="btn bnt-xs btn-secondary" href="<?php echo site_url('/admin/resume_formation/').$formation['id'] ?>" target="_blank">Resumé</a></td>
+						<td><a class="btn bnt-xs btn-secondary" href="<?php echo site_url('/admin/resume_formation/').rawurlencode($formation['id']) ?>" target="_blank">Resumé</a></td>
 
 						<td>
 
 							<?php if($formation['suivi']!=''): ?>
 
-								<a class="btn bnt-xs btn-info" href="<?php echo $formation['suivi'] ?>" target="_blank">Emargement</a>
+								<a class="btn bnt-xs btn-info" href="<?php echo e_url($formation['suivi']) ?>" target="_blank">Emargement</a>
 
 							<?php endif; ?>
 
@@ -99,13 +99,13 @@
 
 							<?php if($formation['drive']!=''): ?>
 
-								<a class="btn bnt-xs btn-info" href="<?php echo $formation['drive'] ?>" target="_blank">Attestation</a>
+								<a class="btn bnt-xs btn-info" href="<?php echo e_url($formation['drive']) ?>" target="_blank">Attestation</a>
 
 							<?php endif; ?>
 
 						</td>
 
-						<td><button class="btn bnt-xs btn-info btnEditFormation" data-id="<?php echo $formation['id'] ?>" data-cours="<?php echo $formation['cours_id'] ?>" data-prof="<?php echo $formation['prof_id'] ?>" data-apprenant="<?php echo $formation['apprenant_id'] ?>">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('/admin/delete_formation/').$formation['id'] ?>">Supprimer</button></td>
+						<td><button class="btn bnt-xs btn-info btnEditFormation" data-id="<?php echo e_attr($formation['id']) ?>" data-cours="<?php echo e_attr($formation['cours_id']) ?>" data-prof="<?php echo e_attr($formation['prof_id']) ?>" data-apprenant="<?php echo e_attr($formation['apprenant_id']) ?>">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('/admin/delete_formation/').rawurlencode($formation['id']) ?>">Supprimer</button></td>
 
 					</tr>
 

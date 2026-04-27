@@ -223,7 +223,8 @@ $config['allow_get_array'] = TRUE;
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 0;
+// SECURITY - Logs activés au niveau Erreur en production pour traçabilité (RGPD art. 30)
+$config['log_threshold'] = 1;
 
 /*
 |--------------------------------------------------------------------------
@@ -324,7 +325,13 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '';
+// SECURITY P1.2 - Encryption key chargée depuis variable d'environnement (.env hors dépôt)
+// Générer une clé de 32 octets avec : bin2hex(random_bytes(32))
+// La clé NE DOIT JAMAIS être committée dans Git.
+$config['encryption_key'] = getenv('KALIOPI_ENCRYPTION_KEY') ?: '';
+if (empty($config['encryption_key']) && ENVIRONMENT === 'production') {
+	log_message('error', 'KALIOPI_ENCRYPTION_KEY non définie en production');
+}
 
 /*
 |--------------------------------------------------------------------------
@@ -377,13 +384,16 @@ $config['encryption_key'] = '';
 | except for 'cookie_prefix' and 'cookie_httponly', which are ignored here.
 |
 */
+// SECURITY P1.2 - Sessions durcies
+// Driver 'database' recommandé pour la traçabilité (table ci_sessions à créer).
+// Conservé en 'files' par défaut pour compatibilité, à migrer en production.
 $config['sess_driver'] = 'files';
-$config['sess_cookie_name'] = 'ci_session';
-$config['sess_expiration'] = 7200;
+$config['sess_cookie_name'] = 'kaliopi_session';
+$config['sess_expiration'] = 3600; // Réduit de 7200 à 3600 (1h) pour limiter le vol de session
 $config['sess_save_path'] = NULL;
-$config['sess_match_ip'] = FALSE;
+$config['sess_match_ip'] = TRUE;  // Lie la session à l'IP du client (anti session-hijacking)
 $config['sess_time_to_update'] = 300;
-$config['sess_regenerate_destroy'] = FALSE;
+$config['sess_regenerate_destroy'] = TRUE; // Détruit l'ancienne session lors de la régénération
 
 /*
 |--------------------------------------------------------------------------
@@ -400,11 +410,16 @@ $config['sess_regenerate_destroy'] = FALSE;
 |       'cookie_httponly') will also affect sessions.
 |
 */
+// SECURITY P1.3 - Cookies durcis
+// cookie_secure=TRUE => cookie envoyé uniquement sur HTTPS (à confirmer en prod uniquement HTTPS)
+// cookie_httponly=TRUE => cookie inaccessible via JS (anti-XSS vol de session)
+// cookie_samesite='Lax' => protège contre la majorité des CSRF cross-site
 $config['cookie_prefix']	= '';
 $config['cookie_domain']	= '';
 $config['cookie_path']		= '/';
-$config['cookie_secure']	= FALSE;
-$config['cookie_httponly'] 	= FALSE;
+$config['cookie_secure']	= TRUE;
+$config['cookie_httponly'] 	= TRUE;
+$config['cookie_samesite']	= 'Lax';
 
 /*
 |--------------------------------------------------------------------------
@@ -432,7 +447,8 @@ $config['standardize_newlines'] = FALSE;
 |          for backwards compatibility purposes!
 |
 */
-$config['global_xss_filtering'] = FALSE;
+// SECURITY P0.5 - Filtrage XSS global activé (rustine, l'échappement contextuel reste obligatoire en vue)
+$config['global_xss_filtering'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------
@@ -448,11 +464,15 @@ $config['global_xss_filtering'] = FALSE;
 | 'csrf_regenerate' = Regenerate token on every submission
 | 'csrf_exclude_uris' = Array of URIs which ignore CSRF checks
 */
-$config['csrf_protection'] = FALSE;
-$config['csrf_token_name'] = 'csrf_test_name';
-$config['csrf_cookie_name'] = 'csrf_cookie_name';
+// SECURITY P0.2 - Protection CSRF activée
+// IMPORTANT : tous les formulaires POST doivent utiliser form_open() ou inclure le token CSRF.
+// Pour les appels AJAX, voir application/views/header.php (meta csrf-token + intercepteur jQuery).
+// csrf_regenerate=FALSE pour éviter les conflits avec les requêtes AJAX simultanées (DataTables, QCM).
+$config['csrf_protection'] = TRUE;
+$config['csrf_token_name'] = 'kaliopi_csrf_token';
+$config['csrf_cookie_name'] = 'kaliopi_csrf_cookie';
 $config['csrf_expire'] = 7200;
-$config['csrf_regenerate'] = TRUE;
+$config['csrf_regenerate'] = FALSE;
 $config['csrf_exclude_uris'] = array();
 
 /*

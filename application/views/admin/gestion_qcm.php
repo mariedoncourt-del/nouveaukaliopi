@@ -28,17 +28,17 @@
 				<tbody>
 					<?php foreach($qcms as $qcm): ?>
 					<tr>
-						<td><?php echo $qcm['titre'] ?></td>
+						<td><?php echo e($qcm['titre']) ?></td>
 						<td>
 							<?php if($qcm['link']!=''): ?>
-							 		<a class="btn btn-info" href="<?php echo $qcm['link'] ?>">Voir</a>
+							 		<a class="btn btn-info" href="<?php echo e_url($qcm['link']) ?>">Voir</a>
 							 	<?php else: ?>
-							 		<a class="btn btn-info" href="<?php echo base_url('/assets/qcms/').$qcm['link'] ?>">Voir</a>
+							 		<a class="btn btn-info" href="<?php echo base_url('/assets/qcms/').rawurlencode($qcm['link']) ?>">Voir</a>
 							<?php endif; ?>
 						</td>
-						<td><?php echo $qcm['id_formation'] ?></td>
+						<td><?php echo e($qcm['id_formation']) ?></td>
 						<td><?php echo ($qcm['type']=="1")?"QCM":"Test" ?></td>
-						<td><button class="btn bnt-xs btn-info btnEditQcm" data-id="<?php echo $qcm['id'] ?>" data-titre="<?php echo $qcm['titre'] ?>" data-link="<?php echo $qcm['link'] ?>" data-id_formation="<?php echo $qcm['id_formation'] ?>" data-id_type="<?php echo $qcm['type'] ?>">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('/admin/delete_qcm/').$qcm['id'] ?>">Supprimer</button></td>
+						<td><button class="btn bnt-xs btn-info btnEditQcm" data-id="<?php echo e_attr($qcm['id']) ?>" data-titre="<?php echo e_attr($qcm['titre']) ?>" data-link="<?php echo e_attr($qcm['link']) ?>" data-id_formation="<?php echo e_attr($qcm['id_formation']) ?>" data-id_type="<?php echo e_attr($qcm['type']) ?>">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('/admin/delete_qcm/').rawurlencode($qcm['id']) ?>">Supprimer</button></td>
 					</tr>
 					<?php endforeach; ?>
 				</tbody>
@@ -69,7 +69,7 @@ aria-hidden="true">
 					<select class="form-control" name="id_formation">
 						<option value="">--ID FORMATION--</option>
 						<?php foreach($formations as $formation): ?>
-							<option value="<?php echo $formation['id'] ?>"><?php echo $formation['id'] ?></option>
+							<option value="<?php echo e_attr($formation['id']) ?>"><?php echo e($formation['id']) ?></option>
 						<?php endforeach; ?>
 					</select>
 					<select class="form-control" name="id_type">
@@ -109,7 +109,7 @@ aria-hidden="true">
 					<select name="id_formation" id="idFormation" class="form-control">
 						<option value="">--ID FORMATION--</option>
 						<?php foreach($formations as $formation): ?>
-							<option value="<?php echo $formation['id'] ?>"><?php echo $formation['id'] ?></option>
+							<option value="<?php echo e_attr($formation['id']) ?>"><?php echo e($formation['id']) ?></option>
 						<?php endforeach; ?>
 					</select>
 					<select class="form-control" name="id_type" id="id_type">

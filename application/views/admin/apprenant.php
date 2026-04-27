@@ -19,9 +19,9 @@
 				<tbody>
 					<?php foreach($apprenants as $apprenant): ?>
 						<tr>
-							<td><?php echo $apprenant['nom'] ?></td>
-							<td><?php echo $apprenant['prenom'] ?></td>
-							<td><button data-nom="<?php echo $apprenant['nom'] ?>" data-id="<?php echo $apprenant['id'] ?>" data-prenom="<?php echo $apprenant['prenom'] ?>" class="btn bnt-xs btn-info btnEditApprenant">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('admin/delete_apprenant/').$apprenant['id'] ?>">Supprimer</a></td>
+							<td><?php echo e($apprenant['nom']) ?></td>
+							<td><?php echo e($apprenant['prenom']) ?></td>
+							<td><button data-nom="<?php echo e_attr($apprenant['nom']) ?>" data-id="<?php echo e_attr($apprenant['id']) ?>" data-prenom="<?php echo e_attr($apprenant['prenom']) ?>" class="btn bnt-xs btn-info btnEditApprenant">Editer</button>|<a class="btn bnt-xs btn-danger" href="<?php echo base_url('admin/delete_apprenant/').rawurlencode($apprenant['id']) ?>">Supprimer</a></td>
 						</tr>
 					<?php endforeach; ?>
 				</tbody>

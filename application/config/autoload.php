@@ -89,7 +89,8 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array('url','file');
+// SECURITY P0.5 - security_helper auto-chargé pour disposer de e(), e_attr(), e_js(), e_url(), safe_html(), csrf_meta(), csrf_input() dans toutes les vues
+$autoload['helper'] = array('url','file','security');
 
 /*
 | -------------------------------------------------------------------
