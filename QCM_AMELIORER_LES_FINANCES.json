@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce que le bilan d'une entreprise?",
+      "options": [
+        "A. Un rapport sur les tendances du marché",
+        "B. Un document qui résume la situation financière de l'entreprise à un moment donné",
+        "C. Un plan de marketing",
+        "D. Un document fiscal"
+      ],
+      "correct_answer": "B. Un document qui résume la situation financière de l'entreprise à un moment donné"
+    },
+    {
+      "question": "Quelle est l'importance de la gestion de la trésorerie pour une entreprise?",
+      "options": [
+        "A. Aucune importance, seule la comptabilité compte",
+        "B. Permet de s'assurer que l'entreprise dispose toujours d'argent pour ses opérations",
+        "C. Aide à organiser les réunions du conseil d'administration",
+        "D. Ne concerne que les grandes entreprises"
+      ],
+      "correct_answer": "B. Permet de s'assurer que l'entreprise dispose toujours d'argent pour ses opérations"
+    },
+    {
+      "question": "Qu'est-ce qu'une marge bénéficiaire?",
+      "options": [
+        "A. La différence entre le prix de vente et le coût d'achat d'un produit",
+        "B. Un outil de gestion de projet",
+        "C. Le nombre total de ventes d'une entreprise",
+        "D. Le montant total des dettes d'une entreprise"
+      ],
+      "correct_answer": "A. La différence entre le prix de vente et le coût d'achat d'un produit"
+    }
+  ]
+}

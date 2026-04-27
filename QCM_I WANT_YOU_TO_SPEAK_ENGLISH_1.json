@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "What is the primary language spoken in the United States?",
+      "options": ["Spanish", "French", "English", "German"],
+      "correct_answer": "English"
+    },
+    {
+      "question": "Which phrase means 'Hello' in English?",
+      "options": ["Hola", "Bonjour", "Hello", "Guten Tag"],
+      "correct_answer": "Hello"
+    },
+    {
+      "question": "What do you call a person who speaks two languages fluently?",
+      "options": ["Bilingual", "Monolingual", "Multilingual", "Trilingual"],
+      "correct_answer": "Bilingual"
+    },
+    {
+      "question": "Which tense is used to describe an action that will happen in the future?",
+      "options": ["Present tense", "Past tense", "Future tense", "Conditional tense"],
+      "correct_answer": "Future tense"
+    },
+    {
+      "question": "What is the correct order of words in an English sentence?",
+      "options": ["Subject-Verb-Object", "Verb-Subject-Object", "Object-Subject-Verb", "Subject-Object-Verb"],
+      "correct_answer": "Subject-Verb-Object"
+    }
+  ]
+}

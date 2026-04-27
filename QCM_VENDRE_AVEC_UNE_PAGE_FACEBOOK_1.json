@@ -1,0 +1,49 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce qu'une Page Facebook en relation avec la vente en ligne ?",
+      "options": [
+        "Une page pour partager des photos personnelles",
+        "Un profil privé",
+        "Un espace public pour promouvoir des produits ou services"
+      ],
+      "correct_answer": "Un espace public pour promouvoir des produits ou services"
+    },
+    {
+      "question": "Quel est l'outil principal pour publier et partager du contenu sur une Page Facebook ?",
+      "options": [
+        "Messenger",
+        "Le fil d'actualité",
+        "Les Stories"
+      ],
+      "correct_answer": "Le fil d'actualité"
+    },
+    {
+      "question": "Quelle fonctionnalité de Facebook permet aux utilisateurs de créer des boutiques en ligne pour vendre des produits directement sur leur Page ?",
+      "options": [
+        "Facebook Marketplace",
+        "Facebook Shop",
+        "Facebook Events"
+      ],
+      "correct_answer": "Facebook Shop"
+    },
+    {
+      "question": "Quelle est une bonne pratique pour augmenter l'engagement sur une Page Facebook de vente en ligne ?",
+      "options": [
+        "Ne jamais répondre aux commentaires",
+        "Publier uniquement des liens vers des produits",
+        "Répondre aux commentaires et encourager la participation des utilisateurs"
+      ],
+      "correct_answer": "Répondre aux commentaires et encourager la participation des utilisateurs"
+    },
+    {
+      "question": "Quelle section d'une Page Facebook permet de voir les statistiques et les performances de la page ?",
+      "options": [
+        "Le fil d'actualité",
+        "Les Stories",
+        "Facebook Insights"
+      ],
+      "correct_answer": "Facebook Insights"
+    }
+  ]
+}

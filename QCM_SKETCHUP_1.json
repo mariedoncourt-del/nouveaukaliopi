@@ -1,0 +1,49 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce que SketchUp ?",
+      "options": [
+        "Un logiciel de modélisation 3D",
+        "Un logiciel de traitement de texte",
+        "Un logiciel de montage vidéo"
+      ],
+      "correct_answer": "Un logiciel de modélisation 3D"
+    },
+    {
+      "question": "Quel est l'objectif principal de SketchUp ?",
+      "options": [
+        "Créer des animations 2D",
+        "Dessiner des caricatures",
+        "Créer des modèles 3D pour la visualisation architecturale et le design"
+      ],
+      "correct_answer": "Créer des modèles 3D pour la visualisation architecturale et le design"
+    },
+    {
+      "question": "Quelle version de SketchUp est disponible gratuitement en ligne ?",
+      "options": [
+        "SketchUp Pro",
+        "SketchUp Make",
+        "SketchUp Free"
+      ],
+      "correct_answer": "SketchUp Free"
+    },
+    {
+      "question": "Quel est l'outil principal pour créer des formes en 3D dans SketchUp ?",
+      "options": [
+        "L'outil Crayon",
+        "L'outil Gomme",
+        "L'outil Pousser/Tirer"
+      ],
+      "correct_answer": "L'outil Pousser/Tirer"
+    },
+    {
+      "question": "Dans SketchUp, comment peut-on ajouter des textures ou des couleurs à un modèle 3D ?",
+      "options": [
+        "En utilisant une machine à peindre",
+        "En criant 'Couleur !'",
+        "En utilisant l'outil Pot de peinture"
+      ],
+      "correct_answer": "En utilisant l'outil Pot de peinture"
+    }
+  ]
+}

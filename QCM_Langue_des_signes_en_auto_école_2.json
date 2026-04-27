@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "question": "Quelle est la principale raison d'apprendre la langue des signes en auto-école ?",
+      "options": [
+        "a) Pour communiquer avec les passagers de manière plus efficace.",
+        "b) Pour interagir avec les autres conducteurs sur la route.",
+        "c) Pour être en mesure de communiquer avec les personnes sourdes ou malentendantes lors de contrôles de police routière.",
+        "d) Pour comprendre les signaux des panneaux de signalisation."
+      ],
+      "correct_answer": "c) Pour être en mesure de communiquer avec les personnes sourdes ou malentendantes lors de contrôles de police routière."
+    },
+    {
+      "question": "Quel est le signe en langue des signes pour indiquer un virage à gauche ?",
+      "options": [
+        "a) Lever la main droite.",
+        "b) Lever la main gauche.",
+        "c) Faire un mouvement circulaire avec la main droite.",
+        "d) Faire un mouvement circulaire avec la main gauche."
+      ],
+      "correct_answer": "b) Lever la main gauche."
+    },
+    {
+      "question": "Lorsque vous conduisez et que vous voyez un piéton sourd ou malentendant à un passage pour piétons, que devez-vous faire ?",
+      "options": [
+        "a) Klaxonner pour les avertir de votre présence.",
+        "b) Ralentir et leur faire signe de traverser en utilisant la langue des signes.",
+        "c) Continuer à conduire normalement.",
+        "d) S'arrêter complètement et attendre qu'ils aient traversé."
+      ],
+      "correct_answer": "d) S'arrêter complètement et attendre qu'ils aient traversé."
+    },
+    {
+      "question": "Pourquoi est-il important d'utiliser la langue des signes de manière claire et lente lorsque vous communiquez avec une personne sourde ou malentendante pendant un contrôle de police routière ?",
+      "options": [
+        "a) Pour paraître plus professionnel en tant que conducteur.",
+        "b) Pour permettre à la personne de lire sur vos lèvres plus facilement.",
+        "c) Pour éviter toute confusion ou malentendu dans les instructions.",
+        "d) Pour gagner du temps pendant le contrôle."
+      ],
+      "correct_answer": "c) Pour éviter toute confusion ou malentendu dans les instructions."
+    },
+    {
+      "question": "Quelle est la signification du signe en langue des signes lorsque vous touchez votre index à votre menton, puis à votre front, puis à votre poitrine ?",
+      "options": [
+        "a) \"Je ne sais pas.\"",
+        "b) \"Je suis fatigué.\"",
+        "c) \"Je ne comprends pas.\"",
+        "d) \"J'ai faim.\""
+      ],
+      "correct_answer": "c) \"Je ne comprends pas.\""
+    }
+  ]
+}

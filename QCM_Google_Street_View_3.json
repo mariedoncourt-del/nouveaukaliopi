@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce que Google Street View ?",
+      "options": ["Un réseau social", "Un service de cartographie", "Un moteur de recherche", "Un service de streaming vidéo"],
+      "correct_answer": "Un service de cartographie"
+    },
+    {
+      "question": "Comment Google Street View capture-t-il des images de rues et de lieux dans le monde entier ?",
+      "options": ["Par des satellites", "En utilisant des drones", "En marchant à pied", "En utilisant des voitures équipées de caméras"],
+      "correct_answer": "En utilisant des voitures équipées de caméras"
+    },
+    {
+      "question": "Quel est l'objectif principal de Google Street View en plus de la navigation ?",
+      "options": ["La livraison de nourriture", "La surveillance de la météo", "La documentation visuelle du monde réel", "La gestion des e-mails"],
+      "correct_answer": "La documentation visuelle du monde réel"
+    },
+    {
+      "question": "Quel outil de Google permet aux utilisateurs de contribuer à l'expansion de Google Street View en soumettant leurs propres images panoramiques ?",
+      "options": ["Google Maps", "Google Earth", "Google Arts & Culture", "Google Photos"],
+      "correct_answer": "Google Maps"
+    },
+    {
+      "question": "Dans quel but Google floute-t-il parfois les visages et les plaques d'immatriculation dans les images de Google Street View ?",
+      "options": ["Pour rendre les images artistiques", "Pour protéger la vie privée des individus", "Pour améliorer la qualité des images", "Pour éviter les accidents de la route"],
+      "correct_answer": "Pour protéger la vie privée des individus"
+    }
+  ]
+}

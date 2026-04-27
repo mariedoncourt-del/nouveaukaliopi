@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce que Google Street View?",
+      "options": [
+        "A. Un service de livraison de repas à domicile",
+        "B. Un service de cartographie en ligne de Google",
+        "C. Un service de streaming vidéo en direct",
+        "D. Un service de gestion des e-mails"
+      ],
+      "correct_answer": "B. Un service de cartographie en ligne de Google"
+    },
+    {
+      "question": "Comment Google collecte-t-il des images pour Street View?",
+      "options": [
+        "A. En utilisant des drones",
+        "B. En prenant des photos avec des satellites",
+        "C. En utilisant des voitures équipées de caméras spéciales",
+        "D. En demandant aux utilisateurs de soumettre leurs photos"
+      ],
+      "correct_answer": "C. En utilisant des voitures équipées de caméras spéciales"
+    },
+    {
+      "question": "À quoi sert principalement Google Street View?",
+      "options": [
+        "A. À rechercher des recettes de cuisine",
+        "B. À explorer des destinations et des rues virtuellement",
+        "C. À jouer à des jeux en ligne",
+        "D. À regarder des films en streaming"
+      ],
+      "correct_answer": "B. À explorer des destinations et des rues virtuellement"
+    }
+  ]
+}

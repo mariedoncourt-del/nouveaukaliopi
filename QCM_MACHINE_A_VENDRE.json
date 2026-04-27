@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce qu'une 'machine à vendre' dans le contexte du marketing en ligne?",
+      "options": [
+        "A. Une machine à café qui fait de la publicité",
+        "B. Un système automatisé de génération de prospects et de ventes en ligne",
+        "C. Un distributeur automatique de billets",
+        "D. Une machine pour vendre des voitures"
+      ],
+      "correct_answer": "B. Un système automatisé de génération de prospects et de ventes en ligne"
+    },
+    {
+      "question": "Quel est l'objectif principal d'une machine à vendre en ligne?",
+      "options": [
+        "A. Faire de la publicité pour d'autres entreprises",
+        "B. Générer du trafic sur les sites web de divertissement",
+        "C. Automatiser le processus de vente et maximiser les conversions",
+        "D. Vendre des machines"
+      ],
+      "correct_answer":"C. Automatiser le processus de vente et maximiser les conversions"
+    },
+    {
+      "question": "Quelle est l'une des principales composantes d'une machine à vendre en ligne?",
+      "options": [
+        "A. Un réfrigérateur",
+        "B. Un compte Instagram",
+        "C. Une page de capture de leads",
+        "D. Un manuel d'instructions"
+      ],
+      "correct_answer": "C. Une page de capture de leads"
+    }
+  ]
+}

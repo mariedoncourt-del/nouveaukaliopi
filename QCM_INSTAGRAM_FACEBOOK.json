@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "question": "Quelle plateforme est principalement axée sur le partage de photos et de vidéos instantanées ?",
+      "options": [
+        "A. Instagram",
+        "B. Facebook",
+        "C. Twitter",
+        "D. LinkedIn"
+      ],
+      "correct_answer": "A. Instagram"
+    },
+    {
+      "question": "Quel réseau social est souvent utilisé pour se connecter avec des amis et des proches, ainsi que pour suivre des pages de célébrités et d'entreprises ?",
+      "options": [
+        "A. Instagram",
+        "B. Facebook",
+        "C. Snapchat",
+        "D. TikTok"
+      ],
+      "correct_answer": "B. Facebook"
+    },
+    {
+      "question": "Quel terme est couramment utilisé pour désigner une publication sur Instagram qui disparaît après 24 heures ?",
+      "options": [
+        "A. Tweet",
+        "B. Story",
+        "C. Post",
+        "D. Snap"
+      ],
+      "correct_answer": "B. Story"
+    }
+  ]
+}

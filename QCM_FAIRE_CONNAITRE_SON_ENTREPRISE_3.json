@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce que le branding d'entreprise ?",
+      "options": ["Le processus d'achat de nouveaux locaux pour l'entreprise", "La création et la gestion de la réputation et de l'identité de l'entreprise", "La promotion d'une nouvelle marque de vêtements", "La gestion des ressources humaines de l'entreprise"],
+      "correct_answer": "La création et la gestion de la réputation et de l'identité de l'entreprise"
+    },
+    {
+      "question": "Quel est l'objectif principal des médias sociaux dans la promotion d'une entreprise ?",
+      "options": ["Obtenir le plus grand nombre possible d'abonnés sans se soucier de la qualité", "Créer des publicités payantes pour atteindre une large audience", "Engager et interagir avec la clientèle, construire une communauté et promouvoir la marque", "Créer des sites web pour l'entreprise"],
+      "correct_answer": "Engager et interagir avec la clientèle, construire une communauté et promouvoir la marque"
+    },
+    {
+      "question": "Quel est l'avantage de l'optimisation pour les moteurs de recherche (SEO) pour faire connaître son entreprise en ligne ?",
+      "options": ["Il n'y a aucun avantage à utiliser le SEO", "Le SEO permet de classer le site web de l'entreprise en haut des résultats de recherche, ce qui attire plus de visiteurs organiques", "Le SEO est principalement destiné aux entreprises locales", "Le SEO ne s'applique qu'aux blogs personnels."],
+      "correct_answer": "Le SEO permet de classer le site web de l'entreprise en haut des résultats de recherche, ce qui attire plus de visiteurs organiques"
+    },
+    {
+      "question": "Pourquoi est-il important de recueillir des commentaires et des avis des clients pour faire connaître son entreprise ?",
+      "options": ["Pour ignorer les commentaires négatifs et se concentrer uniquement sur les commentaires positifs", "Pour créer des publicités payantes basées sur les commentaires des clients", "Pour améliorer la qualité des produits et services, renforcer la confiance des clients et améliorer la réputation de l'entreprise", "Pour vendre les informations des clients à d'autres entreprises."],
+      "correct_answer": "Pour améliorer la qualité des produits et services, renforcer la confiance des clients et améliorer la réputation de l'entreprise"
+    },
+    {
+      "question": "Quelle est l'importance de la publicité en ligne pour faire connaître son entreprise ?",
+      "options": ["La publicité en ligne est inutile pour les entreprises", "La publicité en ligne peut aider à cibler efficacement un public spécifique, augmenter la visibilité de l'entreprise et générer des prospects", "La publicité en ligne ne peut être utilisée que par les grandes entreprises", "La publicité en ligne ne fonctionne que pour les entreprises de produits alimentaires."],
+      "correct_answer": "La publicité en ligne peut aider à cibler efficacement un public spécifique, augmenter la visibilité de l'entreprise et générer des prospects"
+    }
+  ]
+}

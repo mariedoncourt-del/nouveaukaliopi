@@ -1,0 +1,49 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce que l'importation dans le contexte du commerce international ?",
+      "options": [
+        "Vendre des produits à l'étranger",
+        "Acheter des produits à l'étranger pour les vendre dans son propre pays",
+        "Produire des biens localement pour les vendre à l'étranger"
+      ],
+      "correct_answer": "Acheter des produits à l'étranger pour les vendre dans son propre pays"
+    },
+    {
+      "question": "Quel document est généralement requis pour déclarer les marchandises importées auprès des autorités douanières ?",
+      "options": [
+        "Un contrat de vente",
+        "Une facture d'achat",
+        "Une déclaration en douane"
+      ],
+      "correct_answer": "Une déclaration en douane"
+    },
+    {
+      "question": "Quelle est la principale fonction de l'Organisation mondiale du commerce (OMC) ?",
+      "options": [
+        "Fixer les prix des produits importés",
+        "Promouvoir le commerce international libre et équitable",
+        "Contrôler les frontières pour empêcher les importations"
+      ],
+      "correct_answer": "Promouvoir le commerce international libre et équitable"
+    },
+    {
+      "question": "Qu'est-ce qu'un exportateur ?",
+      "options": [
+        "Une personne qui achète des produits à l'étranger",
+        "Une personne qui vend des produits à l'étranger",
+        "Une personne qui produit des biens localement"
+      ],
+      "correct_answer": "Une personne qui vend des produits à l'étranger"
+    },
+    {
+      "question": "Quel terme désigne la vente de biens ou de services à l'étranger à un prix inférieur à leur coût de production pour gagner des parts de marché ?",
+      "options": [
+        "Importation",
+        "Exportation",
+        "Dumping"
+      ],
+      "correct_answer": "Dumping"
+    }
+  ]
+}

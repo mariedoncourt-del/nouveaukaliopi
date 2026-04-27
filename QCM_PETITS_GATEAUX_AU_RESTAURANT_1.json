@@ -1,0 +1,49 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce qu'un 'petit gâteau' au restaurant généralement appelé ?",
+      "options": [
+        "Dessert",
+        "Plat principal",
+        "Entrée"
+      ],
+      "correct_answer": "Dessert"
+    },
+    {
+      "question": "Quel dessert est fait principalement de couches de pâte feuilletée et de crème pâtissière ?",
+      "options": [
+        "Éclair",
+        "Tiramisu",
+        "Macaron"
+      ],
+      "correct_answer": "Éclair"
+    },
+    {
+      "question": "Quel dessert français est composé de deux coques de meringue avec une garniture de crème au beurre ?",
+      "options": [
+        "Tarte au citron",
+        "Madeleine",
+        "Macaron"
+      ],
+      "correct_answer": "Macaron"
+    },
+    {
+      "question": "Quel dessert est souvent associé à l'Italie et est composé de couches de biscuit trempées dans du café et de mascarpone ?",
+      "options": [
+        "Mousse au chocolat",
+        "Tiramisu",
+        "Profiterole"
+      ],
+      "correct_answer": "Tiramisu"
+    },
+    {
+      "question": "Quel est le nom du dessert français composé de pâte à choux, de crème glacée et de chocolat chaud versé dessus ?",
+      "options": [
+        "Crème brûlée",
+        "Profiterole",
+        "Tarte Tatin"
+      ],
+      "correct_answer": "Profiterole"
+    }
+  ]
+}

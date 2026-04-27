@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "question": "Quelle est la principale différence entre la pâtisserie et la cuisine traditionnelle ?",
+      "options": [
+        "A. La pâtisserie se fait toujours avec des légumes",
+        "B. La pâtisserie se concentre sur les desserts et les produits sucrés",
+        "C. La pâtisserie utilise uniquement des ingrédients salés",
+        "D. La pâtisserie est toujours cuite sur un grill"
+      ],
+      "correct_answer": "B. La pâtisserie se concentre sur les desserts et les produits sucrés"
+    },
+    {
+      "question": "Quelle est l'importance de la précision en pâtisserie ?",
+      "options": [
+        "A. Aucune importance, la pâtisserie est une science inexacte",
+        "B. La précision est essentielle car les mesures exactes influencent le résultat final",
+        "C. La précision n'a d'importance que dans la cuisine traditionnelle",
+        "D. La précision est importante uniquement pour les chefs professionnels"
+      ],
+      "correct_answer": "B. La précision est essentielle car les mesures exactes influencent le résultat final"
+    },
+    {
+      "question": "Qu'est-ce que la crème pâtissière ?",
+      "options": [
+        "A. Un ingrédient pour épaissir les soupes",
+        "B. Un type de pâte à pizza",
+        "C. Une garniture crémeuse utilisée dans les desserts comme les éclairs",
+        "D. Un mélange d'herbes et d'épices pour la viande"
+      ],
+      "correct_answer": "C. Une garniture crémeuse utilisée dans les desserts comme les éclairs"
+    }
+  ]
+}

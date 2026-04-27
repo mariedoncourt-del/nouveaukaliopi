@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Quelle est la signification de l'expression 'How's it going?' en anglais ?",
+      "options": ["Comment ça va ?", "Où vas-tu ?", "Que fais-tu ?", "Combien ça coûte ?"],
+      "correct_answer": "Comment ça va ?"
+    },
+    {
+      "question": "Quel est le mot anglais pour 'maison' ?",
+      "options": ["House", "Car", "Dog", "Book"],
+      "correct_answer": "House"
+    },
+    {
+      "question": "Comment dit-on 'merci' en anglais ?",
+      "options": ["Thank you", "Hello", "Goodbye", "Please"],
+      "correct_answer": "Thank you"
+    },
+    {
+      "question": "Quelle est la forme négative de 'I am' en anglais ?",
+      "options": ["I isn't", "I not", "I aren't", "I am not"],
+      "correct_answer": "I am not"
+    },
+    {
+      "question": "Quelle est la prononciation correcte du mot 'schedule' en anglais américain ?",
+      "options": ["Sked-yool", "Shed-jool", "Sked-jool", "She-dule"],
+      "correct_answer": "Sked-yool"
+    }
+  ]
+}

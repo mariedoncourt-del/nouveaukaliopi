@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce que le merchandising dans le contexte du commerce de détail ?",
+      "options": [
+        "a) La vente de marchandises en gros.",
+        "b) La promotion de produits en ligne.",
+        "c) Les techniques visant à optimiser la présentation des produits en magasin pour stimuler les ventes.",
+        "d) La gestion des stocks dans un entrepôt."
+      ],
+      "correct_answer": "c) Les techniques visant à optimiser la présentation des produits en magasin pour stimuler les ventes."
+    },
+    {
+      "question": "Quelle est l'une des principales raisons pour lesquelles les détaillants utilisent le merchandising visuel ?",
+      "options": [
+        "a) Réduire les coûts de production.",
+        "b) Augmenter la durée de vie des produits.",
+        "c) Améliorer l'expérience d'achat du client et augmenter les ventes.",
+        "d) Gérer les relations avec les fournisseurs."
+      ],
+      "correct_answer": "c) Améliorer l'expérience d'achat du client et augmenter les ventes."
+    },
+    {
+      "question": "Quel élément du merchandising visuel se réfère à la disposition physique des produits en magasin pour guider les clients à travers le magasin de manière efficace ?",
+      "options": [
+        "a) L'étiquetage des prix",
+        "b) L'aménagement de la vitrine",
+        "c) La signalétique",
+        "d) Le planogramme"
+      ],
+      "correct_answer": "d) Le planogramme"
+    },
+    {
+      "question": "Quelle est la fonction principale des étalages dans le merchandising en magasin ?",
+      "options": [
+        "a) Stocker les produits excédentaires.",
+        "b) Séparer les zones de vente.",
+        "c) Présenter les produits de manière attrayante pour inciter à l'achat.",
+        "d) Servir de support publicitaire pour les promotions."
+      ],
+      "correct_answer": "c) Présenter les produits de manière attrayante pour inciter à l'achat."
+    },
+    {
+      "question": "Quel est l'objectif du merchandising saisonnier ?",
+      "options": [
+        "a) Éliminer les produits obsolètes.",
+        "b) Adapter la présentation des produits aux différentes saisons de l'année.",
+        "c) Réduire les coûts d'expédition.",
+        "d) Mettre en place des soldes permanentes."
+      ],
+      "correct_answer": "b) Adapter la présentation des produits aux différentes saisons de l'année."
+    }
+  ]
+}

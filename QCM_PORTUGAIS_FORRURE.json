@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "question": "Pourquoi est-il important pour les professionnels de l'industrie de la mode en fourrure d'apprendre le portugais commercial?",
+      "options": [
+        "A. Parce que le portugais est la langue la plus parlée au monde",
+        "B. Parce que le Portugal est le plus grand producteur de fourrure au monde",
+        "C. Parce que le portugais est une langue largement utilisée dans l'industrie de la mode en fourrure au Brésil",
+        "D. Parce que le portugais est une langue facile à apprendre"
+      ],
+      "correct_answer": "C. Parce que le portugais est une langue largement utilisée dans l'industrie de la mode en fourrure au Brésil"
+    },
+    {
+      "question": "Quel est l'avantage de maîtriser le portugais commercial dans le secteur de la mode en fourrure?",
+      "options": [
+        "A. Permet de commander des pizzas au Brésil",
+        "B. Facilite la communication avec les partenaires commerciaux au Brésil et dans d'autres pays lusophones",
+        "C. N'a aucun avantage professionnel",
+        "D. Vous permet de devenir un mannequin de mode en fourrure au Portugal"
+      ],
+      "correct_answer":"B. Facilite la communication avec les partenaires commerciaux au Brésil et dans d'autres pays lusophones"
+    },
+    {
+      "question": "Quel type de vocabulaire spécifique à l'industrie de la mode en fourrure pourrait être utile pour les professionnels?",
+      "options": [
+        "A. Vocabulaire médical",
+        "B. Vocabulaire juridique",
+        "C. Vocabulaire financier",
+        "D. Vocabulaire lié aux matériaux, aux styles et aux tendances de la mode en fourrure"
+      ],
+      "correct_answer": "D. Vocabulaire lié aux matériaux, aux styles et aux tendances de la mode en fourrure"
+    }
+  ]
+}

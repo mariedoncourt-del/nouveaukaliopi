@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "question": "Quelle est la capitale du Portugal ?",
+      "options": [
+        "A. Lisbonne",
+        "B. Madrid",
+        "C. Porto",
+        "D. Barcelone"
+      ],
+      "correct_answer": "A. Lisbonne"
+    },
+    {
+      "question": "Quel est le nom de la plus grande rivière du Portugal ?",
+      "options": [
+        "A. Rio Grande",
+        "B. Douro",
+        "C. Tajo",
+        "D. Guadalquivir"
+      ],
+      "correct_answer": "C. Tajo"
+    },
+    {
+      "question": "Quelle est la langue officielle du Brésil ?",
+      "options": [
+        "A. Espagnol",
+        "B. Anglais",
+        "C. Portugais",
+        "D. Italien"
+      ],
+      "correct_answer": "C. Portugais"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "question": "Quelle est la différence principale entre le portugais brésilien et le portugais européen ?",
+      "options": [
+        "a) L'alphabet utilisé.",
+        "b) La grammaire et le vocabulaire.",
+        "c) La prononciation des voyelles.",
+        "d) Les deux sont identiques."
+      ],
+      "correct_answer": "b) La grammaire et le vocabulaire."
+    },
+    {
+      "question": "Quelle est la signification du mot 'saudade' en portugais ?",
+      "options": [
+        "a) Joie et bonheur.",
+        "b) Tristesse et nostalgie.",
+        "c) Courage et détermination.",
+        "d) Paix et harmonie."
+      ],
+      "correct_answer": "b) Tristesse et nostalgie."
+    },
+    {
+      "question": "Quelle est la conjugaison correcte de la première personne du singulier ('je') au futur simple en portugais ?",
+      "options": [
+        "a) Eu amará.",
+        "b) Eu amarei.",
+        "c) Eu amara.",
+        "d) Eu amaria."
+      ],
+      "correct_answer": "b) Eu amarei."
+    },
+    {
+      "question": "Quel est le mode verbal utilisé pour exprimer une action incertaine ou souhaitée en portugais ?",
+      "options": [
+        "a) Le conditionnel.",
+        "b) L'impératif.",
+        "c) Le subjonctif.",
+        "d) Le futur simple."
+      ],
+      "correct_answer": "c) Le subjonctif."
+    },
+    {
+      "question": "Quel écrivain portugais est l'auteur de l'œuvre 'Os Lusíadas' ?",
+      "options": [
+        "a) José Saramago.",
+        "b) Fernando Pessoa.",
+        "c) Luís de Camões.",
+        "d) Jorge Amado."
+      ],
+      "correct_answer": "c) Luís de Camões."
+    }
+  ]
+}

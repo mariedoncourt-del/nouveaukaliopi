@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Qui est le bailleur dans une relation locative ?",
+      "options": ["La personne qui loue un bien immobilier", "La personne qui habite dans un logement", "L'agent immobilier chargé de la location", "La banque qui finance l'achat du bien immobilier"],
+      "correct_answer": "La personne qui loue un bien immobilier"
+    },
+    {
+      "question": "Quelles sont les obligations principales du bailleur envers le locataire ?",
+      "options": ["Payer le loyer en temps voulu et entretenir le bien", "S'assurer que le locataire respecte toutes les règles de la copropriété", "Fournir un service de blanchisserie gratuit", "Aider le locataire à trouver un nouvel emploi"],
+      "correct_answer": "Payer le loyer en temps voulu et entretenir le bien"
+    },
+    {
+      "question": "Qu'est-ce qu'une clause de résiliation dans un bail de location ?",
+      "options": ["Une clause interdisant au locataire de quitter le bien avant la fin du bail", "Une clause permettant au locataire de résilier le bail à tout moment", "Une clause permettant au bailleur de mettre fin au bail dans certaines conditions", "Une clause indiquant le montant du loyer mensuel"],
+      "correct_answer": "Une clause permettant au bailleur de mettre fin au bail dans certaines conditions"
+    },
+    {
+      "question": "Quelle est la durée typique d'un bail de location résidentielle ?",
+      "options": ["1 an", "5 ans", "10 ans", "A durée indéterminée"],
+      "correct_answer": "1 an"
+    },
+    {
+      "question": "Quels documents le bailleur peut-il demander au locataire lors de la location d'un bien immobilier ?",
+      "options": ["Carte d'identité uniquement", "Relevé bancaire uniquement", "Carte d'identité et relevé bancaire", "Aucun document, la vie privée doit être respectée"],
+      "correct_answer": "Carte d'identité et relevé bancaire"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Why is it important to speak English in today's globalized world?",
+      "options": ["It's not important at all", "English is the only language that matters", "English is a universal language for communication and business", "Other languages are more important"],
+      "correct_answer": "English is a universal language for communication and business"
+    },
+    {
+      "question": "What is the best way to improve your English speaking skills?",
+      "options": ["Only read English books", "Practice speaking with native speakers", "Watch movies in your native language", "Avoid speaking English as much as possible"],
+      "correct_answer": "Practice speaking with native speakers"
+    },
+    {
+      "question": "What is a common challenge for non-native English speakers when trying to speak fluently?",
+      "options": ["Having a strong accent is an advantage", "Misunderstanding the importance of grammar", "Using too many idioms and slang", "Not having enough vocabulary"],
+      "correct_answer": "Misunderstanding the importance of grammar"
+    },
+    {
+      "question": "What is the benefit of immersing yourself in an English-speaking environment?",
+      "options": ["It has no impact on language skills", "It leads to slower language acquisition", "It enhances language learning by constant exposure", "It only benefits native speakers"],
+      "correct_answer": "It enhances language learning by constant exposure"
+    },
+    {
+      "question": "Which of the following is a common motivation for people to learn English?",
+      "options": ["To isolate themselves from the global community", "To gain access to a wider range of opportunities and experiences", "To stick to their native language", "To avoid using technology"],
+      "correct_answer": "To gain access to a wider range of opportunities and experiences"
+    }
+  ]
+}

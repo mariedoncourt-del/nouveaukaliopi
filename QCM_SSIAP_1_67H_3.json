@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Quel est l'objectif principal du SSIAP 1 ?",
+      "options": ["Intervenir en cas d'accident de la route", "Prévenir les incendies", "Assurer la sécurité des aéroports", "Effectuer des missions de sauvetage en mer"],
+      "correct_answer": "Prévenir les incendies"
+    },
+    {
+      "question": "Quelle est la principale fonction d'un Agent de Sécurité Incendie SSIAP 1 ?",
+      "options": ["Assurer le service de la restauration", "Effectuer des patrouilles de police", "Mettre en œuvre les moyens de secours en cas d'incendie", "Fournir des soins médicaux d'urgence"],
+      "correct_answer": "Mettre en œuvre les moyens de secours en cas d'incendie"
+    },
+    {
+      "question": "Quelle est la première action à entreprendre lors de la découverte d'un incendie en tant qu'Agent SSIAP 1 ?",
+      "options": ["Appeler la police", "Prévenir le chef de service de sécurité incendie", "Évacuer immédiatement les occupants", "Combattre le feu avec un extincteur"],
+      "correct_answer": "Évacuer immédiatement les occupants"
+    },
+    {
+      "question": "Que signifie l'acronyme ERP en relation avec le SSIAP 1 ?",
+      "options": ["Établissement de Répression Préventive", "Établissement Recevant du Public", "Équipe de Réponse aux Périls", "École de Résistance au Parcours"],
+      "correct_answer": "Établissement Recevant du Public"
+    },
+    {
+      "question": "Quel est l'équipement de base d'un Agent SSIAP 1 pour lutter contre un incendie naissant ?",
+      "options": ["Un téléphone portable", "Un gilet réfléchissant", "Un casque de sécurité", "Un extincteur approprié"],
+      "correct_answer": "Un extincteur approprié"
+    }
+  ]
+}

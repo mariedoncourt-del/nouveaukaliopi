@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Quelle est la principale caractéristique d'un entremet en pâtisserie ?",
+      "options": ["Il est toujours sans sucre", "Il est un type de pain", "Il est un dessert servi après un plat principal", "Il est un gâteau composé de plusieurs couches"],
+      "correct_answer": "Il est un gâteau composé de plusieurs couches"
+    },
+    {
+      "question": "Quel est l'élément essentiel pour la préparation d'une ganache en pâtisserie ?",
+      "options": ["Crème et chocolat", "Levure chimique", "Poudre d'amandes", "Beurre"],
+      "correct_answer": "Crème et chocolat"
+    },
+    {
+      "question": "Quelle technique est utilisée pour donner un aspect brillant à la surface d'un petit gâteau ?",
+      "options": ["Saupoudrage de sucre glace", "Glaçage à chaud", "Coulis de fruits", "Pâte à sucre"],
+      "correct_answer": "Glaçage à chaud"
+    },
+    {
+      "question": "Quel est l'ingrédient clé pour la réalisation d'un biscuit Joconde, souvent utilisé dans les entremets ?",
+      "options": ["Beurre", "Farine", "Poudre d'amandes", "Blancs d'œufs"],
+      "correct_answer": "Poudre d'amandes"
+    },
+    {
+      "question": "Quelle est la technique de décoration consistant à créer de fines feuilles d'or ou d'argent pour orner les entremets et petits gâteaux ?",
+      "options": ["Découpage", "Nappage", "Emporte-pièce", "Dorure à la feuille"],
+      "correct_answer": "Dorure à la feuille"
+    }
+  ]
+}

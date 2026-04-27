@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "question": "Pourquoi est-il important d'apprendre la langue des signes en auto-école ?",
+      "options": [
+        "A. Pour discuter de la météo",
+        "B. Pour mieux communiquer avec les conducteurs sourds ou malentendants",
+        "C. Pour organiser des fêtes",
+        "D. Pour réparer les voitures"
+      ],
+      "correct_answer": "B. Pour mieux communiquer avec les conducteurs sourds ou malentendants"
+    },
+    {
+      "question": "Que signifie un conducteur sourd lorsqu'il fait un signe de la main vers le bas, à l'extérieur de la fenêtre de sa voiture ?",
+      "options": [
+        "A. Il salue les autres conducteurs",
+        "B. Il indique qu'il va tourner à droite",
+        "C. Il signale qu'il va s'arrêter ou ralentir",
+        "D. Il demande de l'aide"
+      ],
+      "correct_answer": "C. Il signale qu'il va s'arrêter ou ralentir"
+    },
+    {
+      "question": "Quelle est la première lettre de l'alphabet des signes en langue des signes ?",
+      "options": [
+        "A. A",
+        "B. B",
+        "C. C",
+        "D. D"
+      ],
+      "correct_answer": "A. A"
+    }
+  ]
+}

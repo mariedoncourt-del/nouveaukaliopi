@@ -1,0 +1,30 @@
+{
+  
+  "questions": [
+    {
+      "question": "Qu'est-ce que WhatsApp Marketing ?",
+      "options": ["La publicité dans les journaux", "La promotion de produits alimentaires", "Le marketing digital via la messagerie WhatsApp", "Le marketing traditionnel en personne"],
+      "correct_answer": "Le marketing digital via la messagerie WhatsApp"
+    },
+    {
+      "question": "Quel type de contenu peut être partagé via WhatsApp dans le cadre du marketing ?",
+      "options": ["Uniquement des images", "Texte uniquement", "Images, vidéos, liens et messages texte", "Uniquement des vidéos"],
+      "correct_answer": "Images, vidéos, liens et messages texte"
+    },
+    {
+      "question": "Quelle est une bonne pratique pour le marketing sur WhatsApp ?",
+      "options": ["Envoyer des messages non sollicités en masse", "Demander l'autorisation avant d'envoyer des messages promotionnels", "Ignorer les préoccupations de confidentialité des utilisateurs", "Envoyer des messages promotionnels en dehors des heures de bureau"],
+      "correct_answer": "Demander l'autorisation avant d'envoyer des messages promotionnels"
+    },
+    {
+      "question": "Pourquoi est-il important de personnaliser les messages dans le marketing sur WhatsApp ?",
+      "options": ["La personnalisation n'a aucune importance en marketing", "Pour montrer que l'entreprise peut utiliser des émojis", "Pour créer une expérience client plus engageante et pertinente", "Pour masquer l'identité de l'entreprise"],
+      "correct_answer": "Pour créer une expérience client plus engageante et pertinente"
+    },
+    {
+      "question": "Qu'est-ce que le « WhatsApp Business API » ?",
+      "options": ["Une application de messagerie personnelle", "Un outil pour supprimer les messages indésirables", "Une version premium de WhatsApp pour les utilisateurs professionnels", "Une interface pour les entreprises pour gérer les messages WhatsApp à grande échelle"],
+      "correct_answer": "Une interface pour les entreprises pour gérer les messages WhatsApp à grande échelle"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Pourquoi beaucoup de personnes apprennent-elles le français comme langue étrangère ?",
+      "options": ["Pour les croissants", "Pour voyager en France", "Pour des raisons professionnelles, culturelles ou académiques", "Parce qu'elles adorent les escargots"],
+      "correct_answer": "Pour des raisons professionnelles, culturelles ou académiques"
+    },
+    {
+      "question": "Quelle est la première langue étrangère apprise en France ?",
+      "options": ["Anglais", "Espagnol", "Allemand", "Italien"],
+      "correct_answer": "Anglais"
+    },
+    {
+      "question": "Quel organisme est chargé de la certification des compétences en français langue étrangère (FLE) ?",
+      "options": ["L'Académie française", "L'Alliance française", "Le gouvernement français", "L'UNESCO"],
+      "correct_answer": "L'Alliance française"
+    },
+    {
+      "question": "Quelle est l'une des caractéristiques du subjonctif en français, qui peut poser des défis aux apprenants de la langue ?",
+      "options": ["Il est toujours utilisé dans les phrases conditionnelles", "Il n'est jamais utilisé dans le discours indirect", "Il est principalement utilisé dans les phrases qui expriment l'incertitude, le désir ou l'émotion", "Il est utilisé uniquement dans le langage formel"],
+      "correct_answer": "Il est principalement utilisé dans les phrases qui expriment l'incertitude, le désir ou l'émotion"
+    },
+    {
+      "question": "Quel est le rôle de l'Accord de Participe Passé en français ?",
+      "options": ["Il n'a aucun rôle particulier", "Il permet de créer une voix passive", "Il assure l'accord en genre et en nombre du participe passé avec le sujet", "Il contrôle la prononciation des voyelles"],
+      "correct_answer": "Il assure l'accord en genre et en nombre du participe passé avec le sujet"
+    }
+  ]
+}

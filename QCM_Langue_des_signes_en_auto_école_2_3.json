@@ -1,0 +1,30 @@
+{
+  
+  "questions": [
+    {
+      "question": "Quel signe en langue des signes signifie 'céder le passage' ?",
+      "options": ["Un mouvement circulaire de la main gauche", "Un doigt pointant vers le bas", "Un V avec les doigts", "Un poing fermé en l'air"],
+      "correct_answer": "Un mouvement circulaire de la main gauche"
+    },
+    {
+      "question": "Comment signe-t-on 'stationnement interdit' en langue des signes ?",
+      "options": ["Un pouce levé", "Un doigt pointant vers le bas", "Un poing fermé en l'air", "Un V avec les doigts"],
+      "correct_answer": "Un doigt pointant vers le bas"
+    },
+    {
+      "question": "Quel signe représente 'changement de direction à droite' en langue des signes ?",
+      "options": ["Un doigt pointant vers la droite", "Un V avec les doigts à droite", "Un mouvement circulaire de la main droite", "Un poing levé à droite"],
+      "correct_answer": "Un V avec les doigts à droite"
+    },
+    {
+      "question": "Quelle est la signification du signe en langue des signes 'feu tricolore' ?",
+      "options": ["Un mouvement de haut en bas avec la main droite", "Deux doigts en V", "Un doigt pointant vers le haut", "Un poing fermé en l'air"],
+      "correct_answer": "Un doigt pointant vers le haut"
+    },
+    {
+      "question": "Comment signe-t-on 'attention école' en langue des signes ?",
+      "options": ["Un mouvement circulaire de la main droite", "Un mouvement circulaire de la main gauche", "Un V avec les doigts", "Un pouce levé"],
+      "correct_answer": "Un pouce levé"
+    }
+  ]
+}

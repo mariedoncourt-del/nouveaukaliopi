@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Quel plat est généralement considéré comme une entrée dans la cuisine française ?",
+      "options": ["Steak-frites", "Bouillabaisse", "Salade Niçoise", "Foie gras"],
+      "correct_answer": "Foie gras"
+    },
+    {
+      "question": "Quelle est la principale caractéristique d'une soupe froide espagnole populaire, souvent servie en entrée ?",
+      "options": ["Crème épaisse", "Viande hachée", "Tomates et légumes mixés", "Pain grillé"],
+      "correct_answer": "Tomates et légumes mixés"
+    },
+    {
+      "question": "Quel plat asiatique est une entrée traditionnelle composée de feuilles de vigne farcies de viande et de riz ?",
+      "options": ["Sushi", "Dim sum", "Dolma", "Tofu"],
+      "correct_answer": "Dolma"
+    },
+    {
+      "question": "Quelle entrée italienne est faite de tranches de pain grillé frottées à l'ail, arrosées d'huile d'olive et garnies de tomates et de basilic frais ?",
+      "options": ["Tarte Tatin", "Bruschetta", "Gazpacho", "Escargots"],
+      "correct_answer": "Bruschetta"
+    },
+    {
+      "question": "Quel est le nom d'une entrée classique française composée de pâte feuilletée garnie de fromage et d'autres ingrédients, cuite au four jusqu'à ce qu'elle soit dorée et croustillante ?",
+      "options": ["Quiche Lorraine", "Carpaccio", "Pot-au-feu", "Tarte Tatin"],
+      "correct_answer": "Quiche Lorraine"
+    }
+  ]
+}

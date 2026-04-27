@@ -1,0 +1,58 @@
+{
+   "questions":[
+      {
+         "question":"Question 1 : Quelle est la principale fonction du management?",
+         "options":[
+            "Maximiser les bénéfices de l'entreprise",
+            "Motiver les employés",
+            "Prendre toutes les décisions importantes"
+         ],
+         "correct_answer":[0,1,0]
+      },
+      {
+         "question":"Question 2 : Qu'est-ce que le leadership?",
+         "options":[
+            "La gestion des ressources financières",
+            "La capacité à inspirer et guider les autres",
+            "L'élaboration de politiques et de procédures"
+         ],
+         "correct_answer":[0,1,0]
+      },
+      {
+         "question":"Question 3 : Quelle est la différence entre un gestionnaire et un leader?",
+         "options":[
+            "Aucune différence, ce sont des synonymes",
+            "Un gestionnaire se concentre sur les tâches, tandis qu'un leader se concentre sur les personnes",
+            "Un gestionnaire est toujours plus compétent qu'un leader"
+         ],
+         "correct_answer":[0,1,0]
+      },
+      {
+         "question":"Question 4 : Qu'est-ce que la planification stratégique?",
+         "options":[
+            "La planification des tâches quotidiennes",
+            "La planification à court terme",
+            "La planification à long terme pour atteindre les objectifs de l'entreprise"
+         ],
+         "correct_answer":[0,0,1]
+      },
+      {
+         "question":"Question 5 : Qu'est-ce que la communication efficace dans le management?",
+         "options":[
+            "Donner des ordres sans poser de questions",
+            "Transmettre clairement les informations et écouter les autres",
+            "Utiliser des termes techniques complexes pour paraître intelligent"
+         ],
+         "correct_answer":[0,1,0]
+      },
+      {
+         "question":"Question 6 : Quel est le rôle du management dans la résolution de conflits au travail?",
+         "options":[
+            "Ignorer les conflits pour maintenir la paix",
+            "Identifier les causes des conflits et aider à les résoudre de manière constructive",
+            "Réprimander les personnes impliquées dans les conflits"
+         ],
+         "correct_answer":[0,1,0]
+      }
+   ]
+}

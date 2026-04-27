@@ -1,0 +1,49 @@
+{
+  "questions": [
+    {
+      "question": "Quelle est l'une des premières étapes pour faire connaître une entreprise ?",
+      "options": [
+        "Créer un site web complexe",
+        "Développer un produit haut de gamme",
+        "Définir une stratégie de communication et de marketing"
+      ],
+      "correct_answer": "Définir une stratégie de communication et de marketing"
+    },
+    {
+      "question": "Quel moyen de communication permet de diffuser des informations sur son entreprise en 140 caractères ou moins ?",
+      "options": [
+        "Un article de blog",
+        "Une publicité à la télévision",
+        "Twitter"
+      ],
+      "correct_answer": "Twitter"
+    },
+    {
+      "question": "Qu'est-ce qu'un pitch d'ascenseur dans le contexte de la promotion d'entreprise ?",
+      "options": [
+        "Une réunion à bord d'un ascenseur",
+        "Un discours court et convaincant pour présenter son entreprise en quelques minutes",
+        "Une réduction spéciale pour les employés"
+      ],
+      "correct_answer": "Un discours court et convaincant pour présenter son entreprise en quelques minutes"
+    },
+    {
+      "question": "Quel réseau social est particulièrement adapté pour la promotion visuelle d'une entreprise grâce à des images et des vidéos ?",
+      "options": [
+        "LinkedIn",
+        "Pinterest",
+        "WhatsApp"
+      ],
+      "correct_answer": "Pinterest"
+    },
+    {
+      "question": "Que signifie SEO dans le domaine de la visibilité en ligne d'une entreprise ?",
+      "options": [
+        "Service d'expédition en ligne",
+        "Optimisation des moteurs de recherche",
+        "Système d'évaluation des opérations"
+      ],
+      "correct_answer": "Optimisation des moteurs de recherche"
+    }
+  ]
+}

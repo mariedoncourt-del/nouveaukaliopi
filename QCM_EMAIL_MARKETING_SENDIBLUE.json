@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce que SendinBlue?",
+      "options": [
+        "A. Une entreprise de livraison de fleurs",
+        "B. Une plateforme d'envoi d'emails et de marketing automation",
+        "C. Une chaîne de restaurants",
+        "D. Un service de location de voitures"
+      ],
+      "correct_answer": "B. Une plateforme d'envoi d'emails et de marketing automation"
+    },
+    {
+      "question": "Quel est l'objectif principal de l'email marketing avec SendinBlue?",
+      "options": [
+        "A. Organiser des fêtes d'anniversaire",
+        "B. Envoyer des courriers postaux",
+        "C. Créer des campagnes d'email pour promouvoir des produits ou services",
+        "D. Gérer les réservations de voyage"
+      ],
+      "correct_answer": "C. Créer des campagnes d'email pour promouvoir des produits ou services"
+    },
+    {
+      "question": "Quel type d'outils propose SendinBlue pour améliorer la performance de l'email marketing?",
+      "options": [
+        "A. Des robots de cuisine",
+        "B. Des systèmes de sécurité informatique",
+        "C. Des outils de segmentation, de personnalisation et d'automatisation",
+        "D. Des guides de voyage"
+      ],
+      "correct_answer": "C. Des outils de segmentation, de personnalisation et d'automatisation"
+    }
+  ]
+}

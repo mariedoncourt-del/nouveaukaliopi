@@ -1,0 +1,34 @@
+# Dossiers système
+application/cache/*
+!application/cache/index.html
+application/logs/*
+!application/logs/index.html
+
+# Librairies lourdes (seront réinstallées via Composer si besoin)
+application/libraries/dompdf/lib/fonts/*.ttf
+application/libraries/dompdf/lib/fonts/*.afm
+application/libraries/dompdf/lib/fonts/*.ufm
+application/third_party/PHPExcel-1.8/
+
+# Assets lourds
+assets/img/*
+assets/certificat/*
+assets/cv/*
+assets/pj/*
+assets/support/*
+assets/pdf/*
+
+# Uploads
+uploads/*
+
+# Config locale
+application/config/database.php.local
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

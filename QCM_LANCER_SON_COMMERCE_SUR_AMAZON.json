@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "question": "Quelle est la première étape pour lancer un commerce sur Amazon ?",
+      "options": [
+        "A. Choisir un nom de domaine",
+        "B. Créer un site web",
+        "C. S'inscrire en tant que vendeur sur Amazon",
+        "D. Réserver un local commercial"
+      ],
+      "correct_answer": "C. S'inscrire en tant que vendeur sur Amazon"
+    },
+    {
+      "question": "Quel type de compte Amazon est recommandé pour les nouveaux vendeurs ?",
+      "options": [
+        "A. Compte acheteur",
+        "B. Compte vendeur individuel",
+        "C. Compte vendeur professionnel",
+        "D. Compte premium"
+      ],
+      "correct_answer": "C. Compte vendeur professionnel"
+    },
+    {
+      "question": "Qu'est-ce qu'Amazon FBA (Fulfillment by Amazon) ?",
+      "options": [
+        "A. Un service de streaming vidéo",
+        "B. Un programme d'expédition par Amazon",
+        "C. Un réseau social",
+        "D. Un service de location de voitures"
+      ],
+      "correct_answer": "B. Un programme d'expédition par Amazon"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce que l'e-commerce?",
+      "options": [
+        "A. Un sport extrême",
+        "B. Un système de commerce électronique permettant de vendre des produits en ligne",
+        "C. Un programme de télévision populaire",
+        "D. Un moyen de cultiver des légumes"
+      ],
+      "correct_answer": "B. Un système de commerce électronique permettant de vendre des produits en ligne"
+    },
+    {
+      "question": "Quelle est la première étape pour créer une boutique en ligne?",
+      "options": [
+        "A. Choisir un nom de domaine pour votre site web",
+        "B. Ouvrir un compte bancaire",
+        "C. Réserver un billet d'avion",
+        "D. Apprendre à jongler"
+      ],
+      "correct_answer": "A. Choisir un nom de domaine pour votre site web"
+    },
+    {
+      "question": "Quelle plateforme est populaire pour la création de boutiques en ligne?",
+      "options": [
+        "A. Facebook",
+        "B. Instagram",
+        "C. Amazon",
+        "D. Shopify"
+      ],
+      "correct_answer": "D. Shopify"
+    }
+  ]
+}

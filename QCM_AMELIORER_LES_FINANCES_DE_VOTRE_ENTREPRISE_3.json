@@ -1,0 +1,30 @@
+{
+ 
+  "questions": [
+    {
+      "question": "Quelle stratégie peut aider à réduire les coûts opérationnels d'une entreprise ?",
+      "options": ["Augmenter les salaires des employés", "Externaliser certaines tâches", "Élargir la gamme de produits", "Ignorer les finances"],
+      "correct_answer": "Externaliser certaines tâches"
+    },
+    {
+      "question": "Qu'est-ce que le fonds de roulement d'une entreprise ?",
+      "options": ["Les bénéfices annuels", "Les dettes à long terme", "La trésorerie disponible", "Les actifs totaux"],
+      "correct_answer": "La trésorerie disponible"
+    },
+    {
+      "question": "Quelle mesure peut aider à améliorer la gestion de la trésorerie d'une entreprise ?",
+      "options": ["Prolonger les délais de paiement aux fournisseurs", "Embaucher plus de personnel", "Accorder des réductions aux clients", "Réduire les stocks non vendus"],
+      "correct_answer": "Réduire les stocks non vendus"
+    },
+    {
+      "question": "Qu'est-ce que le bénéfice brut ?",
+      "options": ["Les bénéfices avant impôts", "Les bénéfices après impôts", "Les revenus totaux", "Les revenus moins le coût des marchandises vendues"],
+      "correct_answer": "Les revenus moins le coût des marchandises vendues"
+    },
+    {
+      "question": "Quelle stratégie peut aider à augmenter les revenus d'une entreprise ?",
+      "options": ["Réduire les prix des produits", "Lancer une campagne publicitaire", "Ignorer la concurrence", "Réduire les effectifs"],
+      "correct_answer": "Lancer une campagne publicitaire"
+    }
+  ]
+}

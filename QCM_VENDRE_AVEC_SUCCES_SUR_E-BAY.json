@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "question": "Quel est l'un des principaux avantages de la vente sur eBay par rapport à d'autres plateformes en ligne ?",
+      "options": [
+        "A. Les frais de vente élevés",
+        "B. La faible visibilité des produits",
+        "C. La grande base d'acheteurs potentiels",
+        "D. Les restrictions strictes sur les produits"
+      ],
+      "correct_answer": "C. La grande base d'acheteurs potentiels"
+    },
+    {
+      "question": "Que signifie 'enchère' sur eBay ?",
+      "options": [
+        "A. Le prix fixe d'un produit",
+        "B. Le montant minimum que vous êtes prêt à accepter pour un produit",
+        "C. L'offre la plus élevée qu'un acheteur est prêt à payer pour un produit",
+        "D. Une méthode de paiement spécifique sur eBay"
+      ],
+      "correct_answer": "C. L'offre la plus élevée qu'un acheteur est prêt à payer pour un produit"
+    },
+    {
+      "question": "Quel élément est essentiel pour créer une annonce efficace sur eBay ?",
+      "options": [
+        "A. Utiliser des images floues du produit",
+        "B. Ne pas inclure de description détaillée",
+        "C. Offrir un prix fixe très élevé",
+        "D. Utiliser des mots-clés pertinents dans la description du produit"
+      ],
+      "correct_answer": "D. Utiliser des mots-clés pertinents dans la description du produit"
+    }
+  ]
+}

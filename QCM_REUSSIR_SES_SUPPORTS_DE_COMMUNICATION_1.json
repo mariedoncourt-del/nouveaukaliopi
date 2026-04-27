@@ -1,0 +1,49 @@
+{
+  "questions": [
+    {
+      "question": "Quelle est l'importance d'une bonne conception graphique dans les supports de communication ?",
+      "options": [
+        "Aucune importance",
+        "Elle attire l'attention et communique efficacement le message",
+        "Elle augmente le coût de production inutilement"
+      ],
+      "correct_answer": "Elle attire l'attention et communique efficacement le message"
+    },
+    {
+      "question": "Quel est l'objectif principal d'une carte de visite professionnelle ?",
+      "options": [
+        "Fournir une liste de vos compétences",
+        "Créer une œuvre d'art",
+        "Faciliter la prise de contact et le partage d'informations de contact"
+      ],
+      "correct_answer": "Faciliter la prise de contact et le partage d'informations de contact"
+    },
+    {
+      "question": "Qu'est-ce que la règle des 'trois secondes' dans la conception de supports de communication ?",
+      "options": [
+        "Le temps maximum pour lire un document complet",
+        "Le temps que prend un ordinateur pour imprimer une page",
+        "Le temps nécessaire pour capter l'attention du lecteur"
+      ],
+      "correct_answer": "Le temps nécessaire pour capter l'attention du lecteur"
+    },
+    {
+      "question": "Qu'est-ce qu'un appel à l'action (CTA) dans une présentation ou une publicité ?",
+      "options": [
+        "Un numéro de téléphone à appeler",
+        "Un message de remerciement",
+        "Une invitation à effectuer une action spécifique, comme s'inscrire ou acheter"
+      ],
+      "correct_answer": "Une invitation à effectuer une action spécifique, comme s'inscrire ou acheter"
+    },
+    {
+      "question": "Pourquoi est-il important de connaître votre public cible lors de la création de supports de communication ?",
+      "options": [
+        "Pour leur envoyer des publicités non sollicitées",
+        "Pour adapter le message et le style aux besoins et aux préférences de votre public",
+        "Pour éviter toute communication avec le public"
+      ],
+      "correct_answer": "Pour adapter le message et le style aux besoins et aux préférences de votre public"
+    }
+  ]
+}

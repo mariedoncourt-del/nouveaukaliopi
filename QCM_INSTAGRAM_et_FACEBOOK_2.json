@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "question": "Qui est le fondateur d'Instagram ?",
+      "options": [
+        "a) Mark Zuckerberg",
+        "b) Kevin Systrom",
+        "c) Jack Dorsey",
+        "d) Evan Spiegel"
+      ],
+      "correct_answer": "b) Kevin Systrom"
+    },
+    {
+      "question": "Quelle plateforme de médias sociaux possède Instagram depuis 2012 ?",
+      "options": [
+        "a) Snapchat",
+        "b) Twitter",
+        "c) Facebook",
+        "d) TikTok"
+      ],
+      "correct_answer": "c) Facebook"
+    },
+    {
+      "question": "Quelle fonctionnalité d'Instagram permet aux utilisateurs de partager des vidéos courtes et créatives ?",
+      "options": [
+        "a) IGTV",
+        "b) Instagram Reels",
+        "c) Instagram Live",
+        "d) Instagram Stories"
+      ],
+      "correct_answer": "b) Instagram Reels"
+    },
+    {
+      "question": "Quel est le format principal de publication sur Facebook, où les utilisateurs partagent des mises à jour, des photos et des liens ?",
+      "options": [
+        "a) Snap",
+        "b) Tweet",
+        "c) Post",
+        "d) Pin"
+      ],
+      "correct_answer": "c) Post"
+    },
+    {
+      "question": "Quelle fonctionnalité de Facebook permet aux utilisateurs de réagir à des publications avec des émoticônes comme 'J'aime', 'Haha', 'Triste', etc. ?",
+      "options": [
+        "a) Amis",
+        "b) Commentaires",
+        "c) Réactions",
+        "d) Partages"
+      ],
+      "correct_answer": "c) Réactions"
+    }
+  ]
+}

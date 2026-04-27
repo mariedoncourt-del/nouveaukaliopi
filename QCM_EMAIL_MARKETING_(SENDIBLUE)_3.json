@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Quelle est la principale utilisation de SendinBlue ?",
+      "options": ["Gestion de projets en ligne", "Création de sites web", "Marketing par e-mail", "Réseaux sociaux"],
+      "correct_answer": "Marketing par e-mail"
+    },
+    {
+      "question": "Quelle est la fonction de l'automatisation dans SendinBlue ?",
+      "options": ["L'envoi de courriers postaux", "La création de graphiques", "L'envoi d'e-mails ciblés à des moments spécifiques", "La rédaction d'articles de blog"],
+      "correct_answer": "L'envoi d'e-mails ciblés à des moments spécifiques"
+    },
+    {
+      "question": "Qu'est-ce que la segmentation des listes de contacts dans SendinBlue ?",
+      "options": ["Un processus de tri aléatoire des contacts", "La création de groupes de contacts basés sur des critères spécifiques", "La suppression de tous les contacts inactifs", "L'envoi d'e-mails sans distinction à tous les contacts"],
+      "correct_answer": "La création de groupes de contacts basés sur des critères spécifiques"
+    },
+    {
+      "question": "Pourquoi est-il important de mesurer les taux d'ouverture et de clic dans une campagne d'email marketing ?",
+      "options": ["Pour facturer les destinataires", "Pour surveiller la conformité aux lois sur la vie privée", "Pour évaluer l'efficacité de la campagne", "Pour collecter des adresses e-mail"],
+      "correct_answer": "Pour évaluer l'efficacité de la campagne"
+    },
+    {
+      "question": "Quelle est la fonction du test A/B dans SendinBlue ?",
+      "options": ["Tester les compétences linguistiques des utilisateurs", "Comparer différentes versions d'un email pour déterminer la plus performante", "Trouver des contacts inactifs", "Créer des modèles de site web"],
+      "correct_answer": "Comparer différentes versions d'un email pour déterminer la plus performante"
+    }
+  ]
+}

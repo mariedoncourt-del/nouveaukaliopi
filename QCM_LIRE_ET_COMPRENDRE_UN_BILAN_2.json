@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce que le bilan d'une entreprise?",
+      "options": [
+        "a) Un rapport sur les activités de marketing.",
+        "b) Un état financier qui présente la situation financière de l'entreprise à un moment donné.",
+        "c) Un plan stratégique à long terme.",
+        "d) Un document fiscal pour l'impôt sur les sociétés."
+      ],
+      "correct_answer": "b) Un état financier qui présente la situation financière de l'entreprise à un moment donné."
+    },
+    {
+      "question": "Quelle partie du bilan représente les actifs de l'entreprise?",
+      "options": [
+        "a) Le côté droit",
+        "b) Le côté gauche",
+        "c) Le haut",
+        "d) Le bas"
+      ],
+      "correct_answer": "b) Le côté gauche"
+    },
+    {
+      "question": "Quelle partie du bilan représente les passifs de l'entreprise?",
+      "options": [
+        "a) Le côté droit",
+        "b) Le côté gauche",
+        "c) Le haut",
+        "d) Le bas"
+      ],
+      "correct_answer": "a) Le côté droit"
+    },
+    {
+      "question": "Comment calculez-vous la valeur nette d'une entreprise à partir de son bilan?",
+      "options": [
+        "a) En soustrayant les passifs des actifs.",
+        "b) En multipliant les actifs par les passifs.",
+        "c) En additionnant les actifs et les passifs.",
+        "d) En soustrayant les actifs des passifs."
+      ],
+      "correct_answer": "d) En soustrayant les actifs des passifs."
+    },
+    {
+      "question": "Quel indicateur clé du bilan indique la capacité de l'entreprise à payer ses dettes à court terme?",
+      "options": [
+        "a) L'actif circulant",
+        "b) Le passif à long terme",
+        "c) Les immobilisations",
+        "d) Les capitaux propres"
+      ],
+      "correct_answer": "a) L'actif circulant"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce que le Marketing 3.0 ?",
+      "options": [
+        "Une méthode pour écrire des codes informatiques.",
+        "Une approche du marketing centrée sur les produits.",
+        "Une approche du marketing centrée sur les valeurs et l'engagement.",
+        "Une stratégie de marketing axée sur les médias sociaux."
+      ],
+      "correct_answer": "Une approche du marketing centrée sur les produits."
+    },
+    {
+      "question": "Quelle est la principale caractéristique du Marketing 3.0 ?",
+      "options": [
+        "La focalisation sur les bénéfices financiers à court terme.",
+        "L'accent sur la publicité traditionnelle.",
+        "L'importance accordée à la durabilité et à la responsabilité sociale.",
+        "La promotion des produits de luxe."
+      ],
+      "correct_answer": "L'accent sur la publicité traditionnelle."
+    },
+    {
+      "question": "Quel terme est souvent associé au Marketing 3.0 en ce qui concerne la relation avec les clients ?",
+      "options": [
+        "CRM (Gestion de la Relation Client).",
+        "ROI (Retour sur Investissement).",
+        "KPI (Indicateurs de Performance Clés).",
+        "CTR (Taux de Clics)."
+      ],
+      "correct_answer": 0
+    },
+    {
+      "question": "Quelle est l'importance de la narration dans le Marketing 3.0 ?",
+      "options": [
+        "Aucune importance, la narration n'est pas pertinente dans ce contexte.",
+        "La narration est importante pour créer un lien émotionnel avec les clients.",
+        "La narration est essentielle pour établir des tableaux de bord de performance.",
+        "La narration est utile uniquement pour les publicités télévisées."
+      ],
+      "correct_answer":  "Aucune importance, la narration n'est pas pertinente dans ce contexte."
+    },
+    {
+      "question": "Quel est l'objectif principal du Marketing 3.0 en ce qui concerne les clients ?",
+      "options": [
+        "Maximiser les profits à court terme.",
+        "Créer une communauté de clients fidèles et engagés.",
+        "Atteindre un large public grâce à des publicités coûteuses.",
+        "Éviter les réseaux sociaux et le marketing en ligne."
+      ],
+      "correct_answer": "Maximiser les profits à court terme."
+    }
+  ]
+}

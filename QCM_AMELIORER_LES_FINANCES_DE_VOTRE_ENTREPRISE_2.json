@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce que le bilan d'une entreprise?",
+      "options": [
+        "a) Un rapport sur les activités de marketing.",
+        "b) Un état financier qui présente la situation financière de l'entreprise à un moment donné.",
+        "c) Un plan stratégique à long terme.",
+        "d) Un document fiscal pour l'impôt sur les sociétés."
+      ],
+      "correct_answer": "b) Un état financier qui présente la situation financière de l'entreprise à un moment donné."
+    },
+    {
+      "question": "Quelle stratégie vise à augmenter les ventes en encourageant les clients existants à acheter davantage?",
+      "options": [
+        "a) Stratégie de diversification",
+        "b) Stratégie de réduction des coûts",
+        "c) Stratégie de fidélisation de la clientèle",
+        "d) Stratégie de fusion et acquisition"
+      ],
+      "correct_answer": "c) Stratégie de fidélisation de la clientèle"
+    },
+    {
+      "question": "Quelle est la principale mesure financière pour évaluer la rentabilité d'une entreprise sur une période donnée?",
+      "options": [
+        "a) Le chiffre d'affaires",
+        "b) Le bilan",
+        "c) Le taux de croissance",
+        "d) Le bénéfice net"
+      ],
+      "correct_answer": "d) Le bénéfice net"
+    },
+    {
+      "question": "Quelle méthode de gestion des liquidités consiste à étaler les paiements des factures sur une période plus longue pour améliorer la trésorerie?",
+      "options": [
+        "a) L'externalisation",
+        "b) L'affacturage",
+        "c) L'escompte",
+        "d) L'étalement des paiements"
+      ],
+      "correct_answer": "d) L'étalement des paiements"
+    },
+    {
+      "question": "Quelle est la meilleure approche pour réduire les coûts de main-d'œuvre sans licencier des employés?",
+      "options": [
+        "a) Augmenter les salaires",
+        "b) Mettre en place un plan de retraite généreux",
+        "c) Automatiser les processus",
+        "d) Embaucher plus de personnel"
+      ],
+      "correct_answer": "c) Automatiser les processus"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Quelle est la première étape essentielle pour réussir ses supports de communication ?",
+      "options": ["Définir un budget de communication", "Identifier le public cible", "Créer des supports visuellement attrayants", "Choisir les couleurs de l'entreprise"],
+      "correct_answer": "Identifier le public cible"
+    },
+    {
+      "question": "Quelle est l'objectif principal des supports de communication ?",
+      "options": ["Fournir des informations internes à l'entreprise", "Augmenter la notoriété de la marque", "Susciter la concurrence avec d'autres entreprises", "Créer des supports uniquement en ligne"],
+      "correct_answer": "Augmenter la notoriété de la marque"
+    },
+    {
+      "question": "Pourquoi est-il important de maintenir la cohérence visuelle dans vos supports de communication ?",
+      "options": ["Pour éviter de changer de public cible", "Pour économiser de l'argent", "Pour renforcer la reconnaissance de la marque", "Pour réduire la quantité d'informations"],
+      "correct_answer": "Pour renforcer la reconnaissance de la marque"
+    },
+    {
+      "question": "Qu'est-ce que le storytelling dans la communication ?",
+      "options": ["La création de listes de diffusion pour les e-mails", "La pratique consistant à raconter des histoires captivantes pour engager le public", "L'utilisation excessive de jargon technique", "La diffusion d'informations confidentielles sur la concurrence"],
+      "correct_answer": "La pratique consistant à raconter des histoires captivantes pour engager le public"
+    },
+    {
+      "question": "Quelle est la clé pour mesurer l'efficacité de vos supports de communication ?",
+      "options": ["Le coût total de la campagne", "Le nombre d'heures consacrées à la création des supports", "Les retours et les commentaires du public", "La quantité de supports imprimés"],
+      "correct_answer": "Les retours et les commentaires du public"
+    }
+  ]
+}

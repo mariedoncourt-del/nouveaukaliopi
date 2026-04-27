@@ -1,0 +1,49 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce qu'Instagram principalement utilisé pour ?",
+      "options": [
+        "L'envoi de courriels",
+        "Le partage de photos et de vidéos",
+        "La création de documents texte"
+      ],
+      "correct_answer": "Le partage de photos et de vidéos"
+    },
+    {
+      "question": "Quel type de plateforme est WordPress ?",
+      "options": [
+        "Un réseau social",
+        "Un système de gestion de contenu (CMS)",
+        "Un service de streaming vidéo"
+      ],
+      "correct_answer": "Un système de gestion de contenu (CMS)"
+    },
+    {
+      "question": "Quelle est la durée maximale d'une vidéo sur Instagram, sauf pour IGTV ?",
+      "options": [
+        "15 secondes",
+        "1 minute",
+        "10 minutes"
+      ],
+      "correct_answer": "1 minute"
+    },
+    {
+      "question": "Quelle est la principale utilisation de WordPress ?",
+      "options": [
+        "La navigation web",
+        "La gestion de contenu de site web",
+        "La communication par vidéo en direct"
+      ],
+      "correct_answer": "La gestion de contenu de site web"
+    },
+    {
+      "question": "Quelle section d'Instagram permet aux utilisateurs de publier des photos et des vidéos qui disparaissent après 24 heures ?",
+      "options": [
+        "La page d'accueil",
+        "Le fil d'actualité",
+        "Les Stories"
+      ],
+      "correct_answer": "Les Stories"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Quelle est la principale méthode de vente sur eBay, où les acheteurs font des offres sur les articles jusqu'à la fin de la vente aux enchères ?",
+      "options": ["Achat immédiat", "Vente aux enchères", "Meilleure offre", "Prix fixe"],
+      "correct_answer": "Vente aux enchères"
+    },
+    {
+      "question": "Quel pourcentage eBay prélève-t-il sur la vente d'un article (hors frais d'expédition) pour les vendeurs occasionnels ?",
+      "options": ["5%", "10%", "15%", "20%"],
+      "correct_answer": "10%"
+    },
+    {
+      "question": "Quelle section d'une annonce eBay est destinée à fournir des détails sur l'article, ses caractéristiques, et les conditions de vente ?",
+      "options": ["La galerie de photos", "La description de l'objet", "Le prix de réserve", "La note du vendeur"],
+      "correct_answer": "La description de l'objet"
+    },
+    {
+      "question": "Quel est le programme d'eBay qui permet aux vendeurs de créer leur propre boutique en ligne personnalisée sur la plateforme ?",
+      "options": ["eBay Plus", "eBay Motors", "eBay Consignment", "eBay Stores"],
+      "correct_answer": "eBay Stores"
+    },
+    {
+      "question": "Quel facteur est essentiel pour obtenir de bonnes évaluations en tant que vendeur sur eBay ?",
+      "options": ["La communication rapide et claire", "L'augmentation des prix", "L'annulation fréquente de ventes", "La vente d'articles endommagés"],
+      "correct_answer": "La communication rapide et claire"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce que le marketing stratégique ?",
+      "options": [
+        "La publicité en ligne",
+        "La planification à long terme des objectifs marketing d'une entreprise",
+        "La vente de produits sur les médias sociaux"
+      ],
+      "correct_answer": "La planification à long terme des objectifs marketing d'une entreprise"
+    },
+    {
+      "question": "Quelle est l'étape initiale dans le processus de développement d'une stratégie marketing ?",
+      "options": [
+        "La mise en œuvre",
+        "L'analyse de la concurrence",
+        "L'identification des objectifs et des publics cibles"
+      ],
+      "correct_answer": "L'identification des objectifs et des publics cibles"
+    },
+    {
+      "question": "Qu'est-ce qu'une analyse SWOT en marketing stratégique ?",
+      "options": [
+        "Une analyse des réseaux sociaux",
+        "Une analyse de la concurrence",
+        "Une analyse des forces, faiblesses, opportunités et menaces d'une entreprise"
+      ],
+      "correct_answer": "Une analyse des forces, faiblesses, opportunités et menaces d'une entreprise"
+    },
+    {
+      "question": "Quel est l'objectif principal d'une stratégie de marketing de contenu ?",
+      "options": [
+        "Augmenter le nombre de likes sur les réseaux sociaux",
+        "Créer du contenu amusant",
+        "Fournir un contenu de valeur pour attirer et retenir les clients"
+      ],
+      "correct_answer": "Fournir un contenu de valeur pour attirer et retenir les clients"
+    },
+    {
+      "question": "Que signifie le terme 'positionnement' en marketing stratégique ?",
+      "options": [
+        "La localisation physique d'une entreprise",
+        "La façon dont une entreprise se distingue de ses concurrents dans l'esprit des consommateurs",
+        "La gestion des ventes en ligne"
+      ],
+      "correct_answer": "La façon dont une entreprise se distingue de ses concurrents dans l'esprit des consommateurs"
+    }
+  ]
+}

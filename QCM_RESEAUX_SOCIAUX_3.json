@@ -1,0 +1,30 @@
+{
+ 
+  "questions": [
+    {
+      "question": "Quel réseau social est principalement axé sur la publication de photos et de vidéos courtes ?",
+      "options": ["Facebook", "Twitter", "Instagram", "LinkedIn"],
+      "correct_answer": "Instagram"
+    },
+    {
+      "question": "Quelle plateforme de médias sociaux est souvent utilisée pour réseauter professionnellement ?",
+      "options": ["Snapchat", "Pinterest", "Instagram", "LinkedIn"],
+      "correct_answer": "LinkedIn"
+    },
+    {
+      "question": "Quelle fonction permet aux utilisateurs de partager du contenu en 280 caractères ou moins ?",
+      "options": ["Tweet", "Statut", "Post", "Story"],
+      "correct_answer": "Tweet"
+    },
+    {
+      "question": "Quelle application est connue pour ses stories éphémères et la messagerie instantanée ?",
+      "options": ["Facebook", "WhatsApp", "Snapchat", "TikTok"],
+      "correct_answer": "Snapchat"
+    },
+    {
+      "question": "Quelle plateforme de médias sociaux est basée sur le partage d'épingles visuelles ?",
+      "options": ["Twitter", "Facebook", "Instagram", "Pinterest"],
+      "correct_answer": "Pinterest"
+    }
+  ]
+}

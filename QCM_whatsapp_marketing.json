@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce que WhatsApp Marketing?",
+      "options": [
+        "A. Une méthode pour acheter des produits sur WhatsApp",
+        "B. Une technique pour promouvoir des produits et services via WhatsApp",
+        "C. Une application de jeu sur WhatsApp",
+        "D. Un service de livraison de nourriture via WhatsApp"
+      ],
+      "correct_answer": "B. Une technique pour promouvoir des produits et services via WhatsApp"
+    },
+    {
+      "question": "Quelle est l'une des principales utilisations du WhatsApp Business API dans le cadre du marketing?",
+      "options": [
+        "A. Écrire des romans en utilisant WhatsApp",
+        "B. Automatiser les réponses aux clients et envoyer des messages promotionnels",
+        "C. Organiser des concours de cuisine sur WhatsApp",
+        "D. Partager des photos de vacances sur WhatsApp"
+      ],
+      "correct_answer": "B. Automatiser les réponses aux clients et envoyer des messages promotionnels"
+    },
+    {
+      "question": "Pourquoi est-il important d'obtenir le consentement des utilisateurs avant d'envoyer des messages promotionnels sur WhatsApp?",
+      "options": [
+        "A. Parce que c'est amusant",
+        "B. Pour éviter d'utiliser WhatsApp",
+        "C. Pour respecter la vie privée des utilisateurs et se conformer aux réglementations",
+        "D. Pour augmenter la facture de téléphone des utilisateurs"
+      ],
+      "correct_answer": "C. Pour respecter la vie privée des utilisateurs et se conformer aux réglementations"
+    }
+  ]
+}

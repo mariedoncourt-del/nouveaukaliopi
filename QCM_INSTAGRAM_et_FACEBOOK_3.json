@@ -1,0 +1,30 @@
+{
+  
+  "questions": [
+    {
+      "question": "Qui a fondé Facebook ?",
+      "options": ["Mark Zuckerberg", "Jeff Bezos", "Elon Musk", "Tim Cook"],
+      "correct_answer": "Mark Zuckerberg"
+    },
+    {
+      "question": "Quelle application est principalement axée sur le partage de photos et de vidéos ?",
+      "options": ["Instagram", "Facebook", "Twitter", "LinkedIn"],
+      "correct_answer": "Instagram"
+    },
+    {
+      "question": "Quelle plateforme de médias sociaux a introduit les stories, des publications éphémères ?",
+      "options": ["Instagram", "Facebook", "Twitter", "Snapchat"],
+      "correct_answer": "Instagram"
+    },
+    {
+      "question": "Quelle fonctionnalité de Facebook permet aux utilisateurs de réagir aux publications en utilisant des émoticônes ?",
+      "options": ["Réactions", "Likes", "Partages", "Commentaires"],
+      "correct_answer": "Réactions"
+    },
+    {
+      "question": "Quelle entreprise détient Instagram ?",
+      "options": ["Facebook, Inc.", "Alphabet Inc.", "Twitter, Inc.", "Snap Inc."],
+      "correct_answer": "Facebook, Inc."
+    }
+  ]
+}

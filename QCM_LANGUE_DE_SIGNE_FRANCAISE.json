@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce que la Langue des Signes Française (LSF) ?",
+      "options": [
+        "A. Un langage international utilisé dans le monde entier",
+        "B. Un moyen de communication visuel utilisé par les personnes malentendantes ou sourdes en France",
+        "C. Un code secret utilisé par les services de renseignement",
+        "D. Un système de communication par télépathie"
+      ],
+      "correct_answer": "B. Un moyen de communication visuel utilisé par les personnes malentendantes ou sourdes en France"
+    },
+    {
+      "question": "Combien de mains sont généralement utilisées pour former les signes en LSF ?",
+      "options": [
+        "A. Une main",
+        "B. Deux mains",
+        "C. Trois mains",
+        "D. Quatre mains"
+      ],
+      "correct_answer": "B. Deux mains"
+    },
+    {
+      "question": "Quel est l'alphabet utilisé pour épeler les mots en LSF ?",
+      "options": [
+        "A. L'alphabet français",
+        "B. L'alphabet grec",
+        "C. L'alphabet latin",
+        "D. L'alphabet dactylologique"
+      ],
+      "correct_answer": "D. L'alphabet dactylologique"
+    }
+  ]
+}

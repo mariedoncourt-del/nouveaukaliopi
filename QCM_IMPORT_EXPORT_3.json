@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Quelle est la principale différence entre l'importation et l'exportation dans le commerce international ?",
+      "options": ["L'importation concerne les biens fabriqués localement, tandis que l'exportation concerne les biens étrangers.", "L'importation concerne les ventes à l'étranger, tandis que l'exportation concerne les achats à l'étranger.", "L'importation concerne les achats à l'étranger, tandis que l'exportation concerne les ventes à l'étranger.", "Il n'y a pas de différence entre les deux."],
+      "correct_answer": "L'importation concerne les achats à l'étranger, tandis que l'exportation concerne les ventes à l'étranger."
+    },
+    {
+      "question": "Qu'est-ce qu'un document de facturation couramment utilisé dans le commerce international ?",
+      "options": ["Un journal intime", "Une carte postale", "Une lettre d'amour", "Une facture commerciale"],
+      "correct_answer": "Une facture commerciale"
+    },
+    {
+      "question": "Qu'est-ce que l'Incoterm dans le commerce international ?",
+      "options": ["Une monnaie étrangère", "Une organisation internationale de contrôle du commerce", "Un ensemble de termes commerciaux normalisés qui définissent les responsabilités des acheteurs et des vendeurs dans une transaction internationale", "Un document d'identification"],
+      "correct_answer": "Un ensemble de termes commerciaux normalisés qui définissent les responsabilités des acheteurs et des vendeurs dans une transaction internationale"
+    },
+    {
+      "question": "Quel organisme joue un rôle clé dans la régulation du commerce international et l'arbitrage des litiges commerciaux ?",
+      "options": ["Les Nations Unies", "La Croix-Rouge", "L'Organisation mondiale du commerce (OMC)", "La FIFA (Fédération internationale de football association)"],
+      "correct_answer": "L'Organisation mondiale du commerce (OMC)"
+    },
+    {
+      "question": "Qu'est-ce que le taux de change dans le commerce international ?",
+      "options": ["Le taux de croissance économique d'un pays", "Le coût de transport des marchandises", "Le taux d'inflation d'un pays", "Le rapport entre la valeur d'une monnaie nationale et celle d'une monnaie étrangère"],
+      "correct_answer": "Le rapport entre la valeur d'une monnaie nationale et celle d'une monnaie étrangère"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Quel type de plateforme est Instagram principalement ?",
+      "options": ["Un système de gestion de contenu (CMS)", "Un réseau social de partage de photos et de vidéos", "Une plateforme de blogging", "Un service de réservation en ligne"],
+      "correct_answer": "Un réseau social de partage de photos et de vidéos"
+    },
+    {
+      "question": "Quelle est la principale caractéristique d'Instagram qui le distingue d'autres réseaux sociaux ?",
+      "options": ["La possibilité de publier uniquement des liens", "La limitation de caractères dans les légendes", "L'utilisation exclusive de vidéos en direct", "L'accent sur le partage visuel de photos et de vidéos"],
+      "correct_answer": "L'accent sur le partage visuel de photos et de vidéos"
+    },
+    {
+      "question": "Quelle est la principale utilisation de WordPress dans le contexte d'Instagram ?",
+      "options": ["La publication de photos et de vidéos en direct", "La création de stories interactives", "La gestion d'un blog ou d'un site web", "La gestion des commentaires sur Instagram"],
+      "correct_answer": "La gestion d'un blog ou d'un site web"
+    },
+    {
+      "question": "Quel type de contenu est le mieux adapté pour Instagram ?",
+      "options": ["Des articles de blog longs", "Des infographies complexes", "Des images et des vidéos visuellement attrayantes", "Des documents PDF"],
+      "correct_answer": "Des images et des vidéos visuellement attrayantes"
+    },
+    {
+      "question": "Comment les entreprises utilisent-elles Instagram et WordPress pour le marketing ?",
+      "options": ["Elles n'utilisent jamais Instagram ou WordPress à des fins marketing", "Elles publient uniquement du contenu payant", "Elles partagent du contenu engageant, promeuvent des produits et interagissent avec leur audience", "Elles suppriment régulièrement leurs comptes"],
+      "correct_answer": "Elles partagent du contenu engageant, promeuvent des produits et interagissent avec leur audience"
+    }
+  ]
+}

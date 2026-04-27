@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce qu'un entremets en pâtisserie ?",
+      "options": [
+        "A. Un plat principal salé",
+        "B. Un dessert composé de plusieurs couches de crème et de gâteau",
+        "C. Une boisson chaude à base de café",
+        "D. Un plat de viande grillée"
+      ],
+      "correct_answer": "B. Un dessert composé de plusieurs couches de crème et de gâteau"
+    },
+    {
+      "question": "Quelle est la principale caractéristique d'un petit gâteau (ou cupcake) ?",
+      "options": [
+        "A. Il est généralement servi en plat principal",
+        "B. Il est de grande taille",
+        "C. Il est individuel, de petite taille et décoré",
+        "D. Il est toujours salé"
+      ],
+      "correct_answer": "C. Il est individuel, de petite taille et décoré"
+    },
+    {
+      "question": "Quel est l'ingrédient de base pour la réalisation d'une ganache au chocolat ?",
+      "options": [
+        "A. Fruits exotiques",
+        "B. Légumes verts",
+        "C. Crème et chocolat",
+        "D. Viande hachée"
+      ],
+      "correct_answer": "C. Crème et chocolat"
+    }
+  ]
+}

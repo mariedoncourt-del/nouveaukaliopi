@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce qu'un 'petit gâteau' dans le contexte d'un restaurant ?",
+      "options": ["Un gâteau de grande taille pour partager", "Un gâteau miniature, souvent servi en dessert individuel", "Un gâteau au chocolat", "Un gâteau sans sucre"],
+      "correct_answer": "Un gâteau miniature, souvent servi en dessert individuel"
+    },
+    {
+      "question": "Quel est l'ingrédient principal de la pâte à choux, qui est couramment utilisée pour créer des petits gâteaux comme les éclairs et les choux à la crème ?",
+      "options": ["Le chocolat", "Le beurre", "La farine, l'eau et les œufs", "Le sucre"],
+      "correct_answer": "La farine, l'eau et les œufs"
+    },
+    {
+      "question": "Quelle est la garniture classique d'un petit gâteau Tiramisu ?",
+      "options": ["Crème au beurre", "Crème pâtissière", "Crème au café et mascarpone", "Ganache au chocolat"],
+      "correct_answer": "Crème au café et mascarpone"
+    },
+    {
+      "question": "Quel petit gâteau est célèbre pour ses couches de biscuit, de crème au beurre et de ganache au chocolat ?",
+      "options": ["Le cheesecake", "Le macaron", "L'opéra", "La tarte au citron"],
+      "correct_answer": "L'opéra"
+    },
+    {
+      "question": "Quel type de petit gâteau est généralement préparé en utilisant des blancs d'œufs et de la poudre d'amande, et est disponible dans une variété de saveurs et de couleurs ?",
+      "options": ["Le muffin", "Le brownie", "Le macaron", "La tartelette aux fruits"],
+      "correct_answer": "Le macaron"
+    }
+  ]
+}

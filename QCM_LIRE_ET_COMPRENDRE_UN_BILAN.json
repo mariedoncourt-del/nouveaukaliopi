@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce qu'un bilan financier d'une entreprise?",
+      "options": [
+        "A. Un résumé des actions en cours",
+        "B. Un document comptable qui récapitule la situation financière à une date donnée",
+        "C. Un rapport sur les tendances du marché",
+        "D. Un plan d'action pour l'année à venir"
+      ],
+      "correct_answer": "B. Un document comptable qui récapitule la situation financière à une date donnée"
+    },
+    {
+      "question": "Quel élément du bilan représente les dettes à court terme de l'entreprise?",
+      "options": [
+        "A. Les actifs",
+        "B. Les capitaux propres",
+        "C. Les passifs à court terme",
+        "D. Les investissements à long terme"
+      ],
+      "correct_answer": "C. Les passifs à court terme"
+    },
+    {
+      "question": "Quelle section du bilan donne un aperçu des ressources financières de l'entreprise et de son endettement?",
+      "options": [
+        "A. L'actif",
+        "B. Le passif",
+        "C. Les capitaux propres",
+        "D. Les revenus"
+      ],
+      "correct_answer": "B. Le passif"
+    }
+  ]
+}

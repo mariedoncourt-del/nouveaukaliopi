@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce qu'une marketplace de galerie d'art en ligne ?",
+      "options": ["Un espace virtuel pour vendre des voitures", "Une plateforme pour la vente d'œuvres d'art en ligne", "Un site web de recettes de cuisine", "Une application de méditation en ligne"],
+      "correct_answer": "Une plateforme pour la vente d'œuvres d'art en ligne"
+    },
+    {
+      "question": "Quel est l'avantage de l'utilisation d'une marketplace de galerie d'art pour les artistes ?",
+      "options": ["Réduire la qualité de leurs œuvres", "Obtenir une exposition mondiale pour leur art", "Augmenter les prix de leurs œuvres", "Se retirer de la scène artistique"],
+      "correct_answer": "Obtenir une exposition mondiale pour leur art"
+    },
+    {
+      "question": "Quel rôle jouent les galeries d'art traditionnelles par rapport aux marketplaces en ligne ?",
+      "options": ["Elles sont totalement incompatibles avec les marketplaces en ligne", "Elles n'ont aucun intérêt pour les artistes", "Elles servent de complément en offrant une présence physique", "Elles ont complètement remplacé les marketplaces en ligne"],
+      "correct_answer": "Elles servent de complément en offrant une présence physique"
+    },
+    {
+      "question": "Comment les marketplaces de galerie d'art peuvent-elles aider les acheteurs d'art en ligne ?",
+      "options": ["En limitant les options d'achat", "En offrant une expérience d'achat simplifiée et une variété d'œuvres d'art", "En n'acceptant que les paiements en espèces", "En facturant des frais d'inscription élevés"],
+      "correct_answer": "En offrant une expérience d'achat simplifiée et une variété d'œuvres d'art"
+    },
+    {
+      "question": "Qu'est-ce que le crowdfunding dans le contexte des marketplaces de galerie d'art ?",
+      "options": ["Une méthode pour collecter des fonds pour l'achat d'œuvres d'art", "Une technique pour subventionner les artistes établis", "Un outil pour réduire les prix des œuvres d'art", "Un type de commerce en ligne"],
+      "correct_answer": "Une méthode pour collecter des fonds pour l'achat d'œuvres d'art"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce qu'une machine à vendre dans le domaine du marketing en ligne ?",
+      "options": [
+        "a) Une machine utilisée pour fabriquer des produits à vendre.",
+        "b) Une stratégie de vente basée sur des canaux de télévision.",
+        "c) Un système automatisé qui génère des ventes en ligne de manière continue.",
+        "d) Un type de distributeur automatique de snacks."
+      ],
+      "correct_answer": "c) Un système automatisé qui génère des ventes en ligne de manière continue."
+    },
+    {
+      "question": "Quel est l'objectif principal d'une machine à vendre en ligne ?",
+      "options": [
+        "a) Générer du trafic vers un site web.",
+        "b) Maximiser les coûts publicitaires.",
+        "c) Automatiser le processus de vente pour générer des revenus de manière passive.",
+        "d) Créer un site web attrayant."
+      ],
+      "correct_answer": "c) Automatiser le processus de vente pour générer des revenus de manière passive."
+    },
+    {
+      "question": "Quels éléments peuvent être inclus dans une machine à vendre en ligne ?",
+      "options": [
+        "a) Uniquement des publicités payantes sur les réseaux sociaux.",
+        "b) Des emails marketing, des pages de vente, des chatbots, etc.",
+        "c) Des salons commerciaux physiques.",
+        "d) Des flyers imprimés."
+      ],
+      "correct_answer": "b) Des emails marketing, des pages de vente, des chatbots, etc."
+    },
+    {
+      "question": "Comment une machine à vendre en ligne peut-elle être améliorée pour augmenter les ventes ?",
+      "options": [
+        "a) En réduisant la qualité des produits.",
+        "b) En réduisant les prix de manière drastique.",
+        "c) En optimisant les pages de vente, en ciblant le bon public et en ajustant les stratégies marketing.",
+        "d) En augmentant les frais d'expédition."
+      ],
+      "correct_answer": "c) En optimisant les pages de vente, en ciblant le bon public et en ajustant les stratégies marketing."
+    },
+    {
+      "question": "Quelle est l'importance de la gestion continue d'une machine à vendre en ligne ?",
+      "options": [
+        "a) Aucune gestion n'est nécessaire, elle fonctionne automatiquement en permanence.",
+        "b) Une gestion continue est essentielle pour s'adapter aux changements du marché et optimiser les performances.",
+        "c) La gestion dépend entièrement de l'automatisation.",
+        "d) La gestion est nécessaire uniquement une fois par an."
+      ],
+      "correct_answer": "b) Une gestion continue est essentielle pour s'adapter aux changements du marché et optimiser les performances."
+    }
+  ]
+}

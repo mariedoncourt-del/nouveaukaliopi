@@ -1,0 +1,58 @@
+{
+   "questions":[
+      {
+         "question":"Question 1 : Quelle est la principale utilité de LinkedIn?",
+         "options":[
+            "Trouver des offres d'emploi",
+            "Partager des photos de vacances",
+            "Écrire des articles de blog"
+         ],
+         "correct_answer":[1,0,0]
+      },
+      {
+         "question":"Question 2 : Quel type de contenu est généralement partagé sur LinkedIn?",
+         "options":[
+            "Des vidéos de chats mignons",
+            "Des recettes de cuisine",
+            "Des actualités professionnelles"
+         ],
+         "correct_answer":[0,0,1]
+      },
+      {
+         "question":"Question 3 : Comment peut-on élargir son réseau sur LinkedIn?",
+         "options":[
+            "En envoyant des invitations à des inconnus",
+            "En ne connectant qu'avec des amis proches",
+            "En ne se connectant qu'avec des collègues de travail"
+         ],
+         "correct_answer":[1,0,0]
+      },
+      {
+         "question":"Question 4 : Que représente un 'profil LinkedIn'?",
+         "options":[
+            "Un résumé de vos compétences et expériences professionnelles",
+            "Un album photo de vos vacances",
+            "Un journal intime en ligne"
+         ],
+         "correct_answer":[1,0,0]
+      },
+      {
+         "question":"Question 5 : Pourquoi est-il important d'avoir une photo de profil professionnelle sur LinkedIn?",
+         "options":[
+            "Pour montrer votre amour des animaux de compagnie",
+            "Pour éviter d'avoir un profil vide",
+            "Pour donner une première impression positive"
+         ],
+         "correct_answer":[0,0,1]
+      },
+      {
+         "question":"Question 6 : Quel est l'objectif principal de la fonction 'Recommandations' sur LinkedIn?",
+         "options":[
+            "Demander à vos contacts s'ils veulent être vos amis",
+            "Obtenir des témoignages de vos collègues et superviseurs",
+            "Partager des recommandations de restaurants"
+         ],
+         "correct_answer":[0,1,0]
+      }
+   ]
+}

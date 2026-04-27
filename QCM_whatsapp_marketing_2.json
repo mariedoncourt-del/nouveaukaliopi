@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce que le WhatsApp Marketing ?",
+      "options": [
+        "a) Une méthode de marketing par courrier électronique.",
+        "b) L'utilisation de WhatsApp pour promouvoir des produits et services.",
+        "c) L'utilisation de Facebook Messenger pour le marketing.",
+        "d) Le marketing sur les médias sociaux."
+      ],
+      "correct_answer": "b) L'utilisation de WhatsApp pour promouvoir des produits et services."
+    },
+    {
+      "question": "Quelle est l'une des principales caractéristiques du marketing sur WhatsApp ?",
+      "options": [
+        "a) Les publications sur un fil d'actualité public.",
+        "b) L'envoi de messages promotionnels non sollicités.",
+        "c) La publication de vidéos en direct.",
+        "d) L'organisation de concours en ligne."
+      ],
+      "correct_answer": "b) L'envoi de messages promotionnels non sollicités."
+    },
+    {
+      "question": "Quelle est la meilleure pratique pour le marketing sur WhatsApp en ce qui concerne la collecte de contacts ?",
+      "options": [
+        "a) Acheter des listes de contacts.",
+        "b) Ajouter automatiquement tous les contacts de votre téléphone.",
+        "c) Obtenir le consentement des utilisateurs avant de les ajouter à votre liste de diffusion.",
+        "d) Ignorer complètement la collecte de contacts."
+      ],
+      "correct_answer": "c) Obtenir le consentement des utilisateurs avant de les ajouter à votre liste de diffusion."
+    },
+    {
+      "question": "Quel type de contenu est généralement le plus efficace pour le marketing sur WhatsApp ?",
+      "options": [
+        "a) Messages texte uniquement.",
+        "b) Images et vidéos attrayantes.",
+        "c) Liens vers des pages de destination complexes.",
+        "d) Fichiers PDF à télécharger."
+      ],
+      "correct_answer": "b) Images et vidéos attrayantes."
+    },
+    {
+      "question": "Pourquoi est-il important de suivre les métriques de performance dans le marketing sur WhatsApp ?",
+      "options": [
+        "a) Pour impressionner les concurrents.",
+        "b) Pour satisfaire les exigences de WhatsApp Inc.",
+        "c) Pour évaluer l'efficacité de vos campagnes et apporter des améliorations.",
+        "d) Pour collecter des données personnelles des utilisateurs."
+      ],
+      "correct_answer": "c) Pour évaluer l'efficacité de vos campagnes et apporter des améliorations."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "question": "Quel réseau social a été lancé en 2004 et est devenu l'un des plus populaires au monde ?",
+      "options": [
+        "a) Twitter",
+        "b) LinkedIn",
+        "c) Facebook",
+        "d) Instagram"
+      ],
+      "correct_answer": "c) Facebook"
+    },
+    {
+      "question": "Quelle plateforme de médias sociaux est principalement axée sur les interactions professionnelles et le réseautage professionnel ?",
+      "options": [
+        "a) Snapchat",
+        "b) Instagram",
+        "c) TikTok",
+        "d) LinkedIn"
+      ],
+      "correct_answer": "d) LinkedIn"
+    },
+    {
+      "question": "Quel réseau social se caractérise par des messages courts de 280 caractères maximum par publication ?",
+      "options": [
+        "a) Facebook",
+        "b) Instagram",
+        "c) Twitter",
+        "d) Pinterest"
+      ],
+      "correct_answer": "c) Twitter"
+    },
+    {
+      "question": "Quelle plateforme de partage de photos et de vidéos est connue pour ses filtres et ses Stories ?",
+      "options": [
+        "a) YouTube",
+        "b) Snapchat",
+        "c) TikTok",
+        "d) Pinterest"
+      ],
+      "correct_answer": "b) Snapchat"
+    },
+    {
+      "question": "Quelle application de médias sociaux est populaire auprès des jeunes pour la création et le partage de vidéos courtes et ludiques ?",
+      "options": [
+        "a) Facebook",
+        "b) Instagram",
+        "c) TikTok",
+        "d) LinkedIn"
+      ],
+      "correct_answer": "c) TikTok"
+    }
+  ]
+}

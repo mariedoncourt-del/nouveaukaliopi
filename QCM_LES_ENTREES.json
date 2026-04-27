@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce qu'une entrée en cuisine ?",
+      "options": [
+        "A. La personne qui accueille les clients à la porte du restaurant",
+        "B. Un plat servi avant le plat principal pour ouvrir le repas",
+        "C. Un plat sucré servi après le dessert",
+        "D. Une boisson chaude"
+      ],
+      "correct_answer": "B. Un plat servi avant le plat principal pour ouvrir le repas"
+    },
+    {
+      "question": "Quelle est une entrée classique de la cuisine française ?",
+      "options": [
+        "A. Pizza Margherita",
+        "B. Sushi",
+        "C. Soupe à l'oignon",
+        "D. Tacos au bœuf"
+      ],
+      "correct_answer": "C. Soupe à l'oignon"
+    },
+    {
+      "question": "Quel est l'ingrédient principal d'une salade César ?",
+      "options": [
+        "A. Pommes de terre",
+        "B. Laitue romaine, croutons, parmesan, et sauce César",
+        "C. Brocolis",
+        "D. Poisson"
+      ],
+      "correct_answer": "B. Laitue romaine, croutons, parmesan, et sauce César"
+    }
+  ]
+}

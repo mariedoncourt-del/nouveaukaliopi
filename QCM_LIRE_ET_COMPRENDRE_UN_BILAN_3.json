@@ -1,0 +1,30 @@
+{
+  
+  "questions": [
+    {
+      "question": "Quelle partie d'un bilan présente les actifs de l'entreprise ?",
+      "options": ["Le passif", "Le capital", "L'actif", "Les réserves"],
+      "correct_answer": "L'actif"
+    },
+    {
+      "question": "Quelle partie d'un bilan présente les dettes et les obligations financières de l'entreprise ?",
+      "options": ["Le capital", "Les réserves", "L'actif", "Le passif"],
+      "correct_answer": "Le passif"
+    },
+    {
+      "question": "Qu'est-ce que l'actif circulant dans un bilan ?",
+      "options": ["Les biens immobiliers", "Les actifs liquides et rapidement convertibles en espèces", "Les actifs intangibles", "Les actifs à long terme"],
+      "correct_answer": "Les actifs liquides et rapidement convertibles en espèces"
+    },
+    {
+      "question": "Que représente le 'fonds de roulement net' dans un bilan ?",
+      "options": ["La capacité de l'entreprise à payer ses dettes à court terme", "Les bénéfices non distribués", "La somme des actifs et du passif", "Les biens immobiliers de l'entreprise"],
+      "correct_answer": "La capacité de l'entreprise à payer ses dettes à court terme"
+    },
+    {
+      "question": "Qu'est-ce que l'actif net dans un bilan ?",
+      "options": ["La valeur totale des actifs de l'entreprise", "La différence entre l'actif total et le passif total", "Les revenus de l'entreprise", "Les bénéfices distribués aux actionnaires"],
+      "correct_answer": "La différence entre l'actif total et le passif total"
+    }
+  ]
+}

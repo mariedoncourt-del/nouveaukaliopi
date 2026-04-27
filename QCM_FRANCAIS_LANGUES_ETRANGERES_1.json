@@ -1,0 +1,49 @@
+{
+  "questions": [
+    {
+      "question": "Dans quelle région du monde est principalement parlé le français en tant que langue maternelle ?",
+      "options": [
+        "Amérique du Nord",
+        "Europe",
+        "Afrique"
+      ],
+      "correct_answer": "Europe"
+    },
+    {
+      "question": "Combien de lettres comporte l'alphabet français ?",
+      "options": [
+        "26 lettres",
+        "28 lettres",
+        "30 lettres"
+      ],
+      "correct_answer": "26 lettres"
+    },
+    {
+      "question": "Quelle est la deuxième langue la plus parlée en France après le français ?",
+      "options": [
+        "Allemand",
+        "Espagnol",
+        "Arabe"
+      ],
+      "correct_answer": "Arabe"
+    },
+    {
+      "question": "Quel mot français signifie 'bon appétit' en anglais ?",
+      "options": [
+        "Au revoir",
+        "S'il vous plaît",
+        "Bonne appétit"
+      ],
+      "correct_answer": "Bonne appétit"
+    },
+    {
+      "question": "Comment dit-on 'merci' en français ?",
+      "options": [
+        "Hello",
+        "Thank you",
+        "Merci"
+      ],
+      "correct_answer": "Merci"
+    }
+  ]
+}

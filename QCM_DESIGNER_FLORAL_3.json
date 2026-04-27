@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce qu'un designer floral ?",
+      "options": ["Un photographe de paysages", "Un spécialiste des revêtements de sol", "Un artiste qui crée des arrangements floraux et des compositions florales", "Un tailleur de pierres précieuses"],
+      "correct_answer": "Un artiste qui crée des arrangements floraux et des compositions florales"
+    },
+    {
+      "question": "Quel type de fleurs est souvent utilisé pour les mariages en raison de leur signification traditionnelle de pureté et d'innocence ?",
+      "options": ["Roses rouges", "Tulipes jaunes", "Lys blancs", "Pivoines roses"],
+      "correct_answer": "Lys blancs"
+    },
+    {
+      "question": "Quelle est l'importance de la palette de couleurs dans la conception florale ?",
+      "options": ["Aucune importance, toutes les couleurs conviennent", "La palette de couleurs peut influencer l'ambiance et l'émotion d'un arrangement floral", "La palette de couleurs est principalement utilisée pour identifier les fleurs", "La palette de couleurs est utilisée uniquement dans la peinture artistique"],
+      "correct_answer": "La palette de couleurs peut influencer l'ambiance et l'émotion d'un arrangement floral"
+    },
+    {
+      "question": "Quel outil est essentiel pour couper les tiges des fleurs de manière propre et précise ?",
+      "options": ["Un ciseau de cuisine", "Un couteau à steak", "Un sécateur de jardin", "Une scie à métaux"],
+      "correct_answer": "Un sécateur de jardin"
+    },
+    {
+      "question": "Quel type de composition florale est généralement utilisé comme pièce maîtresse lors d'une réception de mariage ou d'une fête ?",
+      "options": ["Un bouquet de mariée", "Un boutonnière", "Un arrangement de table ou de buffet", "Une couronne de fleurs"],
+      "correct_answer": "Un arrangement de table ou de buffet"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Pourquoi est-il important de prendre des photos de haute qualité pour le web ?",
+      "options": ["Les photos de faible qualité sont moins chères à héberger en ligne", "Les photos de haute qualité attirent plus de visiteurs", "Les photos de faible qualité se chargent plus rapidement", "Les photos de haute qualité ne sont pas adaptées au web"],
+      "correct_answer": "Les photos de haute qualité attirent plus de visiteurs"
+    },
+    {
+      "question": "Quelle est l'une des principales règles de composition en photographie pour le web ?",
+      "options": ["Centrer le sujet de la photo", "Inclure autant d'éléments que possible dans le cadre", "Négliger l'éclairage", "Utiliser des angles de vue inhabituels"],
+      "correct_answer": "Centrer le sujet de la photo"
+    },
+    {
+      "question": "Quel format de fichier est généralement recommandé pour les images sur le web en raison de sa compression sans perte de qualité ?",
+      "options": ["JPEG", "PNG", "GIF", "TIFF"],
+      "correct_answer": "PNG"
+    },
+    {
+      "question": "Quelle est l'importance de l'éclairage lors de la prise de photos pour le web ?",
+      "options": ["Aucune importance, car l'édition peut tout corriger", "L'éclairage n'affecte pas la qualité des photos", "L'éclairage influence la clarté, les couleurs et l'atmosphère de la photo", "Il est préférable de prendre des photos dans le noir total"],
+      "correct_answer": "L'éclairage influence la clarté, les couleurs et l'atmosphère de la photo"
+    },
+    {
+      "question": "Pourquoi est-il essentiel de respecter les droits d'auteur lors de l'utilisation d'images trouvées sur Internet pour votre site web ?",
+      "options": ["Parce que les droits d'auteur n'existent pas sur Internet", "Pour économiser de l'argent", "Pour éviter des problèmes juridiques et des amendes", "Parce que les images sur Internet sont toutes libres de droits"],
+      "correct_answer": "Pour éviter des problèmes juridiques et des amendes"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Quelle est la première étape essentielle pour lancer une boutique en ligne ?",
+      "options": ["Trouver un nom de domaine", "Créer un compte sur les réseaux sociaux", "Choisir un fournisseur d'hébergement web", "Identifier un créneau de marché"],
+      "correct_answer": "Identifier un créneau de marché"
+    },
+    {
+      "question": "Quel type de plateforme est Shopify dans le domaine de l'e-commerce ?",
+      "options": ["Un service de livraison", "Un CMS (Système de Gestion de Contenu)", "Un système de paiement en ligne", "Un réseau social"],
+      "correct_answer": "Un CMS (Système de Gestion de Contenu)"
+    },
+    {
+      "question": "Quelle méthode de paiement en ligne est l'une des plus courantes pour les boutiques en ligne ?",
+      "options": ["Carte postale", "Chèque personnel", "Virement bancaire", "PayPal"],
+      "correct_answer": "PayPal"
+    },
+    {
+      "question": "Qu'est-ce que le SEO (Optimisation des moteurs de recherche) dans le contexte de l'e-commerce ?",
+      "options": ["Un acronyme pour 'Service En Ligne Optimisé'", "Une stratégie marketing sur les réseaux sociaux", "Une technique d'optimisation des moteurs de recherche pour améliorer la visibilité en ligne", "Un programme de fidélité pour les clients"],
+      "correct_answer": "Une technique d'optimisation des moteurs de recherche pour améliorer la visibilité en ligne"
+    },
+    {
+      "question": "Quelle stratégie est souvent utilisée pour inciter les clients à acheter davantage en offrant des produits complémentaires lors de l'achat initial ?",
+      "options": ["Remises importantes", "Cross-selling", "Prix de réserve", "Programmes de fidélité"],
+      "correct_answer": "Cross-selling"
+    }
+  ]
+}

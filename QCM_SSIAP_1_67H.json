@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "question": "Quel est l'objectif principal du SSIAP 1 ?",
+      "options": [
+        "A. Préparer des gâteaux",
+        "B. Assurer la sécurité incendie dans les établissements recevant du public (ERP)",
+        "C. Gérer les ressources humaines d'une entreprise",
+        "D. Effectuer des opérations de sauvetage en montagne"
+      ],
+      "correct_answer": "B. Assurer la sécurité incendie dans les établissements recevant du public (ERP)"
+    },
+    {
+      "question": "Quelles sont les missions principales d'un agent SSIAP 1 ?",
+      "options": [
+        "A. Vendre des produits en ligne",
+        "B. Prévenir les incendies, effectuer des rondes de sécurité et intervenir en cas d'incendie",
+        "C. Réparer des vélos",
+        "D. Fournir des soins médicaux d'urgence"
+      ],
+      "correct_answer": "B. Prévenir les incendies, effectuer des rondes de sécurité et intervenir en cas d'incendie"
+    },
+    {
+      "question": "Quelle est la durée minimale de formation pour obtenir le SSIAP 1 (en heures) ?",
+      "options": [
+        "A. 10 heures",
+        "B. 35 heures",
+        "C. 50 heures",
+        "D. 200 heures"
+      ],
+      "correct_answer": "C. 50 heures"
+    }
+  ]
+}

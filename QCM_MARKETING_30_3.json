@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Quelle est la principale caractéristique du Marketing 3.0 ?",
+      "options": ["Orientation sur les produits", "Orientation sur les clients", "Orientation sur la concurrence", "Orientation sur la publicité"],
+      "correct_answer": "Orientation sur les clients"
+    },
+    {
+      "question": "Qu'est-ce que la notion de 'Marketing 3.0' met en avant en termes de valeurs ?",
+      "options": ["Les valeurs économiques uniquement", "Les valeurs culturelles et sociales", "Les valeurs environnementales uniquement", "Les valeurs technologiques"],
+      "correct_answer": "Les valeurs culturelles et sociales"
+    },
+    {
+      "question": "Quel est le rôle principal des médias sociaux dans le Marketing 3.0 ?",
+      "options": ["Diffuser des publicités traditionnelles", "Créer des produits innovants", "Établir des relations avec les clients", "Augmenter les ventes en ligne"],
+      "correct_answer": "Établir des relations avec les clients"
+    },
+    {
+      "question": "Pourquoi est-il important de comprendre les besoins émotionnels des consommateurs en Marketing 3.0 ?",
+      "options": ["Pour minimiser les coûts de production", "Pour se conformer aux réglementations gouvernementales", "Pour créer une connexion authentique avec les clients", "Pour augmenter la taille de l'entreprise"],
+      "correct_answer": "Pour créer une connexion authentique avec les clients"
+    },
+    {
+      "question": "Quelle est la principale différence entre le Marketing 2.0 et le Marketing 3.0 ?",
+      "options": ["Le Marketing 3.0 se concentre sur la publicité traditionnelle", "Le Marketing 3.0 se concentre sur l'innovation technologique", "Le Marketing 3.0 se concentre sur la satisfaction client à un niveau plus profond", "Le Marketing 3.0 ne prend pas en compte les valeurs sociales"],
+      "correct_answer": "Le Marketing 3.0 se concentre sur la satisfaction client à un niveau plus profond"
+    }
+  ]
+}

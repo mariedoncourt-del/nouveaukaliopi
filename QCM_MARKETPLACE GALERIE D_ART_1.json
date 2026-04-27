@@ -1,0 +1,49 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce qu'une marketplace de galerie d'art en ligne ?",
+      "options": [
+        "Un lieu physique où l'on peut acheter de l'art",
+        "Un site web ou une plateforme en ligne où l'on peut acheter et vendre de l'art",
+        "Un magazine d'art imprimé"
+      ],
+      "correct_answer": "Un site web ou une plateforme en ligne où l'on peut acheter et vendre de l'art"
+    },
+    {
+      "question": "Quel avantage une marketplace d'art en ligne offre-t-elle aux artistes ?",
+      "options": [
+        "Moins d'exposition pour leur travail",
+        "Un accès à un public mondial plus large",
+        "Des ventes garanties à chaque fois"
+      ],
+      "correct_answer": "Un accès à un public mondial plus large"
+    },
+    {
+      "question": "Qu'est-ce qu'une œuvre d'art originale ?",
+      "options": [
+        "Une copie d'une œuvre existante",
+        "Une pièce unique créée par un artiste",
+        "Une œuvre qui a été massivement produite"
+      ],
+      "correct_answer": "Une pièce unique créée par un artiste"
+    },
+    {
+      "question": "Quel est le rôle d'une galerie d'art dans une marketplace en ligne ?",
+      "options": [
+        "Vendre des produits de beauté",
+        "Promouvoir et vendre les œuvres d'artistes",
+        "Publier des recettes de cuisine"
+      ],
+      "correct_answer": "Promouvoir et vendre les œuvres d'artistes"
+    },
+    {
+      "question": "Quelle est la principale différence entre une galerie d'art physique et une marketplace d'art en ligne ?",
+      "options": [
+        "Le prix des œuvres",
+        "La qualité des œuvres",
+        "La localisation physique"
+      ],
+      "correct_answer": "La localisation physique"
+    }
+  ]
+}

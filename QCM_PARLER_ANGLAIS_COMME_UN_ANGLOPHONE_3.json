@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Quelle est la clé pour développer un accent naturel en anglais ?",
+      "options": ["Éviter de parler anglais avec des locuteurs natifs", "Apprendre uniquement la grammaire et le vocabulaire", "Pratiquer la prononciation et l'écoute régulièrement", "Utiliser uniquement des applications d'apprentissage de langue"],
+      "correct_answer": "Pratiquer la prononciation et l'écoute régulièrement"
+    },
+    {
+      "question": "Quelle est l'importance de l'intonation en anglais ?",
+      "options": ["L'intonation n'a aucune importance en anglais", "L'intonation est essentielle pour la compréhension et la communication", "L'intonation est uniquement utilisée dans les poèmes", "L'intonation est utilisée pour montrer la politesse"],
+      "correct_answer": "L'intonation est essentielle pour la compréhension et la communication"
+    },
+    {
+      "question": "Quelle est la technique de pratique efficace pour améliorer votre prononciation en anglais ?",
+      "options": ["Lire silencieusement des livres en anglais", "Regarder uniquement des films en version originale", "Enregistrer et réécouter votre propre voix en parlant anglais", "Ignorer complètement la prononciation"],
+      "correct_answer": "Enregistrer et réécouter votre propre voix en parlant anglais"
+    },
+    {
+      "question": "Pourquoi est-il utile de s'immerger dans un environnement anglophone si l'on souhaite parler anglais comme un natif ?",
+      "options": ["Il n'y a pas d'avantage à s'immerger dans un environnement anglophone", "Cela permet de comprendre les cultures anglophones", "Cela favorise l'apprentissage passif de la langue", "Cela offre une exposition constante à la langue, la culture et la communication en anglais"],
+      "correct_answer": "Cela offre une exposition constante à la langue, la culture et la communication en anglais"
+    },
+    {
+      "question": "Quelle est la meilleure façon d'apprendre l'argot et les expressions idiomatiques en anglais ?",
+      "options": ["Les éviter car ils sont trop informels", "Les apprendre uniquement à partir de livres", "Les utiliser dans des conversations et des contextes réels", "Demander aux locuteurs natifs de ne pas utiliser d'argot"],
+      "correct_answer": "Les utiliser dans des conversations et des contextes réels"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Quel est l'ingrédient essentiel pour faire une ganache au chocolat ?",
+      "options": ["Farine", "Sucre glace", "Crème et chocolat", "Beurre"],
+      "correct_answer": "Crème et chocolat"
+    },
+    {
+      "question": "Quelle technique est utilisée pour rendre un gâteau plus léger en incorporant de l'air ?",
+      "options": ["Caramélisation", "Coulis", "Crépage", "Fouettage"],
+      "correct_answer": "Fouettage"
+    },
+    {
+      "question": "Quel est l'ingrédient clé pour donner du moelleux à un gâteau au chocolat ?",
+      "options": ["Sel", "Levure chimique", "Poudre d'amandes", "Extrait de vanille"],
+      "correct_answer": "Levure chimique"
+    },
+    {
+      "question": "Quelle est la différence entre la pâte à sucre et la pâte d'amande en pâtisserie ?",
+      "options": ["La couleur", "L'origine des ingrédients", "La saveur", "La texture"],
+      "correct_answer": "La texture"
+    },
+    {
+      "question": "Quelle est la méthode de cuisson idéale pour obtenir une meringue française ?",
+      "options": ["Cuisson à la poêle", "Cuisson au micro-ondes", "Cuisson au bain-marie", "Cuisson à la vapeur"],
+      "correct_answer": "Cuisson au bain-marie"
+    }
+  ]
+}

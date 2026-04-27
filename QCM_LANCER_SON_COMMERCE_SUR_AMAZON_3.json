@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Quel est le programme d'Amazon qui permet aux vendeurs de stocker et d'expédier leurs produits depuis les entrepôts d'Amazon ?",
+      "options": ["Amazon FBA", "Prime Seller", "Amazon S3", "Seller Express"],
+      "correct_answer": "Amazon FBA"
+    },
+    {
+      "question": "Quel pourcentage Amazon prélève-t-il sur chaque vente réalisée sur sa plateforme (hors frais d'expédition) ?",
+      "options": ["5%", "10%", "15%", "20%"],
+      "correct_answer": "15%"
+    },
+    {
+      "question": "Quelle étape est cruciale pour l'optimisation des listes de produits sur Amazon, en utilisant des mots-clés pertinents ?",
+      "options": ["Création de logo", "Révision des politiques d'Amazon", "Optimisation SEO", "Analyse des concurrents"],
+      "correct_answer": "Optimisation SEO"
+    },
+    {
+      "question": "Quel type de compte Amazon est destiné aux vendeurs individuels qui souhaitent vendre occasionnellement sur la plateforme ?",
+      "options": ["Compte Vendeur Professionnel", "Compte Amazon Business", "Compte Vendeur Individuel", "Compte Premium"],
+      "correct_answer": "Compte Vendeur Individuel"
+    },
+    {
+      "question": "Quel est l'avantage de l'utilisation du service Amazon Advertising pour les vendeurs sur Amazon ?",
+      "options": ["Réduction des frais de vente", "Promotion de produits sur eBay", "Augmentation de la TVA", "Augmentation des ventes et de la visibilité"],
+      "correct_answer": "Augmentation des ventes et de la visibilité"
+    }
+  ]
+}

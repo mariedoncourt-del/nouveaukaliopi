@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce qu'EBP Compta ?",
+      "options": ["Un logiciel de montage vidéo", "Un outil de comptabilité et de gestion financière pour les entreprises", "Un service de livraison de repas à domicile", "Un réseau social pour les comptables"],
+      "correct_answer": "Un outil de comptabilité et de gestion financière pour les entreprises"
+    },
+    {
+      "question": "À quoi sert généralement EBP Compta dans une entreprise ?",
+      "options": ["À réparer les ordinateurs", "À gérer les ressources humaines", "À effectuer la comptabilité, la gestion des finances et la préparation des déclarations fiscales", "À créer des sites web"],
+      "correct_answer": "À effectuer la comptabilité, la gestion des finances et la préparation des déclarations fiscales"
+    },
+    {
+      "question": "Quelle fonctionnalité d'EBP Compta permet de suivre les transactions financières quotidiennes d'une entreprise ?",
+      "options": ["La fonction de traitement de texte", "La gestion des stocks", "Le suivi des comptes bancaires", "La création de graphiques et de présentations"],
+      "correct_answer": "Le suivi des comptes bancaires"
+    },
+    {
+      "question": "Comment EBP Compta aide-t-il les entreprises à respecter leurs obligations fiscales ?",
+      "options": ["En ne fournissant aucune assistance fiscale", "En automatisant la génération des déclarations fiscales et en facilitant la conformité aux réglementations fiscales", "En fournissant des conseils fiscaux personnalisés", "En encourageant l'évasion fiscale"],
+      "correct_answer": "En automatisant la génération des déclarations fiscales et en facilitant la conformité aux réglementations fiscales"
+    },
+    {
+      "question": "Quelle est l'importance de l'utilisation d'un logiciel de comptabilité comme EBP Compta pour une entreprise ?",
+      "options": ["Aucune importance, la comptabilité manuelle suffit", "Il réduit la productivité et augmente les coûts", "Il améliore la gestion financière, permet de gagner du temps et assure la précision des données financières", "Il génère automatiquement des bénéfices pour l'entreprise"],
+      "correct_answer": "Il améliore la gestion financière, permet de gagner du temps et assure la précision des données financières"
+    }
+  ]
+}

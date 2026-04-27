@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce que SketchUp ?",
+      "options": ["Un logiciel de dessin animé", "Un outil de sculpture sur bois", "Un logiciel de modélisation 3D", "Un logiciel de retouche photo"],
+      "correct_answer": "Un logiciel de modélisation 3D"
+    },
+    {
+      "question": "Quel est le but principal de SketchUp ?",
+      "options": ["Créer des dessins en 2D", "Concevoir des plans d'architecture en 3D", "Éditer des vidéos", "Créer des sites web interactifs"],
+      "correct_answer": "Concevoir des plans d'architecture en 3D"
+    },
+    {
+      "question": "Quels sont les trois principales versions de SketchUp ?",
+      "options": ["SketchUp Free, SketchUp Pro, SketchUp Mobile", "SketchUp Viewer, SketchUp Lite, SketchUp Studio", "SketchUp Classic, SketchUp Deluxe, SketchUp Premium", "SketchUp Make, SketchUp Go, SketchUp Ultimate"],
+      "correct_answer": "SketchUp Free, SketchUp Pro, SketchUp Mobile"
+    },
+    {
+      "question": "Quels types de fichiers peuvent être importés dans SketchUp pour une utilisation dans un modèle 3D ?",
+      "options": ["Uniquement des images en format JPEG", "Images et vidéos uniquement", "Images, vidéos, et fichiers PDF", "Images, vidéos, fichiers 3D, et d'autres formats de fichiers 3D"],
+      "correct_answer": "Images, vidéos, fichiers 3D, et d'autres formats de fichiers 3D"
+    },
+    {
+      "question": "Comment pouvez-vous ajouter des textures et des couleurs à des objets dans SketchUp ?",
+      "options": ["En utilisant uniquement des couleurs unies", "En important des images depuis Internet", "En utilisant l'outil Pot de Peinture (Paint Bucket) pour appliquer des textures et des couleurs", "Cela n'est pas possible dans SketchUp"],
+      "correct_answer": "En utilisant l'outil Pot de Peinture (Paint Bucket) pour appliquer des textures et des couleurs"
+    }
+  ]
+}

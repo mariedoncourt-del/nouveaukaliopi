@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "question": "Quelle est la langue des signes utilisée en France et dans les communautés francophones?",
+      "options": [
+        "a) La Langue des Signes Américaine (ASL).",
+        "b) La Langue des Signes Britannique (BSL).",
+        "c) La Langue des Signes Espagnole (LSE).",
+        "d) La Langue des Signes Française (LSF)."
+      ],
+      "correct_answer": "d) La Langue des Signes Française (LSF)."
+    },
+    {
+      "question": "Combien de doigts utilise-t-on généralement pour épeler les mots en LSF ?",
+      "options": [
+        "a) 3 doigts.",
+        "b) 5 doigts.",
+        "c) 7 doigts.",
+        "d) 10 doigts."
+      ],
+      "correct_answer": "b) 5 doigts."
+    },
+    {
+      "question": "Quel est le signe en LSF pour 'bonjour' ?",
+      "options": [
+        "a) Pointant vers le front.",
+        "b) Tapant deux fois sur la poitrine.",
+        "c) Levant la main droite vers le ciel.",
+        "d) Agitant la main ouverte devant soi."
+      ],
+      "correct_answer": "d) Agitant la main ouverte devant soi."
+    },
+    {
+      "question": "Comment dit-on 'merci' en LSF ?",
+      "options": [
+        "a) En pliant les coudes et en touchant les épaules.",
+        "b) En frottant les mains ensemble.",
+        "c) En levant le pouce vers le haut.",
+        "d) En posant la main ouverte sur la poitrine et en inclinant la tête légèrement."
+      ],
+      "correct_answer": "d) En posant la main ouverte sur la poitrine et en inclinant la tête légèrement."
+    },
+    {
+      "question": "Quel est le signe en LSF pour 'famille' ?",
+      "options": [
+        "a) Faire un cercle avec les bras.",
+        "b) Pointer vers la bouche.",
+        "c) Croiser les bras sur la poitrine.",
+        "d) Montrer les doigts entrelacés des deux mains."
+      ],
+      "correct_answer": "d) Montrer les doigts entrelacés des deux mains."
+    }
+  ]
+}

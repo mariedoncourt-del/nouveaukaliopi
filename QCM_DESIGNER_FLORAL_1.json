@@ -1,0 +1,49 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce qu'un designer floral ?",
+      "options": [
+        "Un architecte de jardins",
+        "Un professionnel qui conçoit des arrangements et des décorations avec des fleurs",
+        "Un botaniste"
+      ],
+      "correct_answer": "Un professionnel qui conçoit des arrangements et des décorations avec des fleurs"
+    },
+    {
+      "question": "Quel est l'élément central d'un arrangement floral typique ?",
+      "options": [
+        "Le vase",
+        "Les feuilles",
+        "Les fleurs"
+      ],
+      "correct_answer": "Les fleurs"
+    },
+    {
+      "question": "Quelle est la saison traditionnellement associée aux mariages et aux arrangements floraux de mariage ?",
+      "options": [
+        "Hiver",
+        "Printemps",
+        "Automne"
+      ],
+      "correct_answer": "Printemps"
+    },
+    {
+      "question": "Quel outil est couramment utilisé par les designers floraux pour couper les tiges des fleurs ?",
+      "options": [
+        "Un couteau à steak",
+        "Des ciseaux de cuisine",
+        "Des ciseaux de fleuriste ou un sécateur"
+      ],
+      "correct_answer": "Des ciseaux de fleuriste ou un sécateur"
+    },
+    {
+      "question": "Quel type de fleurs est souvent utilisé pour symboliser l'amour et la passion dans les arrangements floraux ?",
+      "options": [
+        "Les roses rouges",
+        "Les tulipes jaunes",
+        "Les orchidées blanches"
+      ],
+      "correct_answer": "Les roses rouges"
+    }
+  ]
+}

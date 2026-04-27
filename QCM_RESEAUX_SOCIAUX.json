@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "question": "Quel réseau social est principalement axé sur le partage de photos et de vidéos éphémères?",
+      "options": [
+        "A. Facebook",
+        "B. Twitter",
+        "C. Instagram",
+        "D. LinkedIn"
+      ],
+      "correct_answer": "C. Instagram"
+    },
+    {
+      "question": "Quel réseau social est connu pour ses messages de 280 caractères maximum, appelés 'tweets'?",
+      "options": [
+        "A. Instagram",
+        "B. Snapchat",
+        "C. Twitter",
+        "D. Pinterest"
+      ],
+      "correct_answer": "C. Twitter"
+    },
+    {
+      "question": "Quel réseau social est principalement axé sur les interactions professionnelles et la création de réseaux d'affaires?",
+      "options": [
+        "A. Facebook",
+        "B. Twitter",
+        "C. Instagram",
+        "D. LinkedIn"
+      ],
+      "correct_answer": "D. LinkedIn"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Pourquoi est-il important pour les professionnels de l'industrie de la mode en fourrure de perfectionner leur portugais commercial ?",
+      "options": ["Pour organiser des défilés de mode", "Pour négocier des contrats d'exportation", "Pour concevoir des vêtements en fourrure", "Pour jouer de la guitare fado"],
+      "correct_answer": "Pour négocier des contrats d'exportation"
+    },
+    {
+      "question": "Quel terme portugais pourrait être essentiel pour discuter de la qualité des produits en fourrure ?",
+      "options": ["Bikini", "Saudade", "Pele", "Qualidade"],
+      "correct_answer": "Qualidade"
+    },
+    {
+      "question": "Quelle expression portugaise pourrait être utilisée pour négocier les prix des matières premières pour la fabrication de vêtements en fourrure ?",
+      "options": ["Adeus, meu amigo", "Quanto custa?", "Fado triste", "Pastéis de nata"],
+      "correct_answer": "Quanto custa?"
+    },
+    {
+      "question": "Quelle est la principale région productrice de fourrure au Portugal ?",
+      "options": ["Lisbonne", "Madère", "Porto", "Covilhã"],
+      "correct_answer": "Covilhã"
+    },
+    {
+      "question": "Pourquoi est-il important de connaître la culture portugaise en tant que professionnel de l'industrie de la mode en fourrure ?",
+      "options": ["Pour apprendre à danser le tango", "Pour comprendre les attentes et les préférences des clients portugais", "Pour préparer des sardines grillées", "Pour jouer au football"],
+      "correct_answer": "Pour comprendre les attentes et les préférences des clients portugais"
+    }
+  ]
+}

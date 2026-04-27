@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Quelle est la principale différence entre le marketing stratégique et le marketing opérationnel ?",
+      "options": ["Le marketing stratégique se concentre sur la gestion quotidienne des activités marketing, tandis que le marketing opérationnel se concentre sur la planification à long terme.", "Le marketing stratégique se concentre sur la planification à long terme, tandis que le marketing opérationnel se concentre sur la gestion quotidienne des activités marketing.", "Il n'y a aucune différence entre les deux.", "Le marketing stratégique concerne principalement la publicité en ligne, tandis que le marketing opérationnel concerne la publicité traditionnelle."],
+      "correct_answer": "Le marketing stratégique se concentre sur la planification à long terme, tandis que le marketing opérationnel se concentre sur la gestion quotidienne des activités marketing."
+    },
+    {
+      "question": "Qu'est-ce qu'une analyse SWOT dans le contexte du marketing stratégique ?",
+      "options": ["Une méthode pour évaluer la satisfaction client", "Une technique d'analyse des ventes", "Une analyse de la concurrence", "Une analyse des forces, faiblesses, opportunités et menaces de l'entreprise."],
+      "correct_answer": "Une analyse des forces, faiblesses, opportunités et menaces de l'entreprise."
+    },
+    {
+      "question": "Quel est l'objectif principal de la segmentation du marché dans une stratégie marketing ?",
+      "options": ["Atteindre le plus grand nombre de clients possible", "Personnaliser les offres pour répondre aux besoins spécifiques des différents groupes de clients", "Ignorer les besoins des clients pour économiser de l'argent", "Cibler uniquement un petit groupe de clients fidèles."],
+      "correct_answer": "Personnaliser les offres pour répondre aux besoins spécifiques des différents groupes de clients"
+    },
+    {
+      "question": "Que signifie le terme 'positionnement' en marketing ?",
+      "options": ["La localisation géographique de l'entreprise", "L'emplacement d'une publicité", "La manière dont une marque est perçue par les consommateurs par rapport à la concurrence", "La position d'un produit sur une étagère."],
+      "correct_answer": "La manière dont une marque est perçue par les consommateurs par rapport à la concurrence"
+    },
+    {
+      "question": "Quelle est la clé du succès d'une stratégie marketing ?",
+      "options": ["La fixation de prix élevés", "La multiplication des canaux de distribution", "La compréhension des besoins des clients et la création de valeur pour eux", "La réduction des dépenses marketing."],
+      "correct_answer": "La compréhension des besoins des clients et la création de valeur pour eux"
+    }
+  ]
+}

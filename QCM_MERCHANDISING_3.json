@@ -1,0 +1,30 @@
+{
+  
+  "questions": [
+    {
+      "question": "Qu'est-ce que le merchandising ?",
+      "options": ["Une stratégie marketing visant à promouvoir des artistes", "La vente de produits dérivés de films", "Une technique de gestion des stocks", "Un ensemble de techniques pour promouvoir et vendre des produits en magasin"],
+      "correct_answer": "Un ensemble de techniques pour promouvoir et vendre des produits en magasin"
+    },
+    {
+      "question": "Quel est l'objectif principal du merchandising visuel en magasin ?",
+      "options": ["Réduire les coûts d'exploitation", "Maximiser les bénéfices", "Améliorer l'expérience d'achat des clients", "Renforcer la sécurité en magasin"],
+      "correct_answer": "Améliorer l'expérience d'achat des clients"
+    },
+    {
+      "question": "Qu'est-ce que la planification de l'espace de vente dans le merchandising ?",
+      "options": ["La gestion des ressources humaines en magasin", "L'organisation de la distribution des produits", "La conception de l'aménagement du magasin", "L'analyse des tendances du marché"],
+      "correct_answer": "La conception de l'aménagement du magasin"
+    },
+    {
+      "question": "Quel terme désigne la pratique de placer des produits à hauteur des yeux des clients dans un magasin pour attirer leur attention ?",
+      "options": ["Upselling", "Cross-selling", "Planogramme", "Mise en avant"],
+      "correct_answer": "Mise en avant"
+    },
+    {
+      "question": "Qu'est-ce qu'un planogramme en merchandising ?",
+      "options": ["Un plan financier pour une opération marketing", "Un plan d'expansion d'une entreprise", "Un plan d'aménagement de l'espace de vente", "Un plan de marketing numérique"],
+      "correct_answer": "Un plan d'aménagement de l'espace de vente"
+    }
+  ]
+}

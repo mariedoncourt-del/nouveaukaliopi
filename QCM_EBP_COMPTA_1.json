@@ -1,0 +1,49 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce qu'EBP Compta ?",
+      "options": [
+        "Un logiciel de gestion des réseaux sociaux",
+        "Un logiciel de comptabilité",
+        "Un site web d'actualités financières"
+      ],
+      "correct_answer": "Un logiciel de comptabilité"
+    },
+    {
+      "question": "À quoi sert EBP Compta principalement ?",
+      "options": [
+        "À rédiger des articles de blog",
+        "À gérer les comptes bancaires personnels",
+        "À tenir la comptabilité d'une entreprise"
+      ],
+      "correct_answer": "À tenir la comptabilité d'une entreprise"
+    },
+    {
+      "question": "Quel type de documents peut-on générer avec EBP Compta ?",
+      "options": [
+        "Des billets d'avion",
+        "Des rapports médicaux",
+        "Des factures et des relevés comptables"
+      ],
+      "correct_answer": "Des factures et des relevés comptables"
+    },
+    {
+      "question": "Que signifie l'acronyme EBP dans EBP Compta ?",
+      "options": [
+        "Éditeur de Bilans et de Patrimoines",
+        "Entreprises et Bénéfices Provisoires",
+        "Éditions Bureautiques et Professionnelles"
+      ],
+      "correct_answer": "Éditions Bureautiques et Professionnelles"
+    },
+    {
+      "question": "Quelle est la principale fonction d'un logiciel de comptabilité comme EBP Compta ?",
+      "options": [
+        "Gérer les comptes de médias sociaux",
+        "Faciliter la gestion financière d'une entreprise",
+        "Créer des vidéos en ligne"
+      ],
+      "correct_answer": "Faciliter la gestion financière d'une entreprise"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce qu'un tableur dans le contexte des logiciels bureautiques ?",
+      "options": ["Un logiciel de traitement de texte", "Un logiciel de gestion de projets", "Un logiciel de création de présentations", "Un logiciel permettant d'organiser et d'analyser des données sous forme de feuilles de calcul."],
+      "correct_answer": "Un logiciel permettant d'organiser et d'analyser des données sous forme de feuilles de calcul."
+    },
+    {
+      "question": "Quel logiciel bureautique est principalement utilisé pour créer des présentations visuelles et diaporamas ?",
+      "options": ["Microsoft Excel", "Adobe Photoshop", "Microsoft Word", "Microsoft PowerPoint"],
+      "correct_answer": "Microsoft PowerPoint"
+    },
+    {
+      "question": "Quel est le rôle principal d'un logiciel de traitement de texte comme Microsoft Word ?",
+      "options": ["Créer des bases de données", "Créer des dessins et des illustrations", "Créer et éditer des documents texte", "Créer des feuilles de calcul"],
+      "correct_answer": "Créer et éditer des documents texte"
+    },
+    {
+      "question": "Dans un logiciel de messagerie électronique comme Microsoft Outlook, quelle est la fonction principale ?",
+      "options": ["Créer des tableaux de données", "Créer des vidéos en streaming", "Gérer des e-mails, des calendriers et des contacts", "Créer des infographies"],
+      "correct_answer": "Gérer des e-mails, des calendriers et des contacts"
+    },
+    {
+      "question": "Qu'est-ce qu'un logiciel de base de données, tel que Microsoft Access, permet de faire principalement ?",
+      "options": ["Créer des présentations professionnelles", "Gérer des informations structurées, telles que des données clients ou des inventaires", "Éditer des vidéos en ligne", "Créer des pages web interactives"],
+      "correct_answer": "Gérer des informations structurées, telles que des données clients ou des inventaires"
+    }
+  ]
+}

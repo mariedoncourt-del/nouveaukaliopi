@@ -1,0 +1,49 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce qu'un bailleur dans le contexte immobilier ?",
+      "options": [
+        "Une personne qui loue un logement",
+        "Une personne qui possède un bien immobilier et le met en location",
+        "Un agent immobilier"
+      ],
+      "correct_answer": "Une personne qui possède un bien immobilier et le met en location"
+    },
+    {
+      "question": "Quel document légal spécifie les termes et conditions d'une location immobilière ?",
+      "options": [
+        "Le contrat de vente",
+        "Le testament",
+        "Le contrat de location (bail)"
+      ],
+      "correct_answer": "Le contrat de location (bail)"
+    },
+    {
+      "question": "Quelle est la période de préavis généralement requise pour mettre fin à un bail de location résidentielle ?",
+      "options": [
+        "15 jours",
+        "3 mois",
+        "6 mois"
+      ],
+      "correct_answer": "3 mois"
+    },
+    {
+      "question": "Qu'est-ce que la caution dans un contrat de location ?",
+      "options": [
+        "Un paiement unique pour louer un logement",
+        "Une somme d'argent remise par le locataire au bailleur en garantie du paiement du loyer et des réparations",
+        "Le montant que le bailleur doit payer au locataire"
+      ],
+      "correct_answer": "Une somme d'argent remise par le locataire au bailleur en garantie du paiement du loyer et des réparations"
+    },
+    {
+      "question": "Quelle responsabilité incombe généralement au bailleur en ce qui concerne l'entretien du bien loué ?",
+      "options": [
+        "Aucune responsabilité",
+        "Toute responsabilité",
+        "L'entretien courant et les réparations majeures"
+      ],
+      "correct_answer": "L'entretien courant et les réparations majeures"
+    }
+  ]
+}

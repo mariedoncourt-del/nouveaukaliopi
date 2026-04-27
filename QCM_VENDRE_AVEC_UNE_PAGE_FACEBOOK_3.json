@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Quelle est la première étape essentielle pour vendre avec succès sur une Page Facebook ?",
+      "options": ["Inviter tous ses amis à aimer la Page", "Publier des photos de famille", "Créer du contenu engageant et pertinent", "Ignorer la Page et attendre que les ventes se fassent d'elles-mêmes"],
+      "correct_answer": "Créer du contenu engageant et pertinent"
+    },
+    {
+      "question": "Pourquoi est-il important d'interagir avec les commentaires et les messages des clients sur une Page Facebook commerciale ?",
+      "options": ["Cela vous permet de supprimer les commentaires négatifs", "Cela montre que vous n'avez pas d'autre travail à faire", "Cela renforce la confiance des clients, résout les problèmes potentiels et encourage l'engagement", "Cela peut entraîner une diminution de la visibilité de la Page"],
+      "correct_answer": "Cela renforce la confiance des clients, résout les problèmes potentiels et encourage l'engagement"
+    },
+    {
+      "question": "Qu'est-ce qu'une boutique Facebook ?",
+      "options": ["Un endroit où l'on peut acheter des vêtements en ligne", "Un lieu de vente en direct sur Facebook", "Une section dédiée d'une Page Facebook permettant de présenter et de vendre des produits", "Une boutique de jouets en ligne"],
+      "correct_answer": "Une section dédiée d'une Page Facebook permettant de présenter et de vendre des produits"
+    },
+    {
+      "question": "Quel outil Facebook peut être utilisé pour promouvoir des produits et des offres auprès d'un public spécifique ?",
+      "options": ["Le calendrier des événements", "Les commentaires de la Page", "La fonction 'J'aime'", "La publicité Facebook ciblée"],
+      "correct_answer": "La publicité Facebook ciblée"
+    },
+    {
+      "question": "Pourquoi est-il important de suivre les analyses de la Page Facebook lorsque vous vendez en ligne ?",
+      "options": ["Pour augmenter les frais de gestion de la Page", "Pour créer davantage de contenu promotionnel", "Pour comprendre ce qui fonctionne et ce qui ne fonctionne pas, et pour ajuster la stratégie en conséquence", "Pour bloquer les utilisateurs indésirables"],
+      "correct_answer": "Pour comprendre ce qui fonctionne et ce qui ne fonctionne pas, et pour ajuster la stratégie en conséquence"
+    }
+  ]
+}

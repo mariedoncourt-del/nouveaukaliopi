@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "question": "Quelle est la principale objectif du merchandising en magasin?",
+      "options": [
+        "A. Maximiser les profits en vendant des produits coûteux",
+        "B. Créer une expérience d'achat agréable pour les clients",
+        "C. Réduire les coûts de fonctionnement du magasin",
+        "D. Promouvoir uniquement les produits en promotion"
+      ],
+      "correct_answer": "B. Créer une expérience d'achat agréable pour les clients"
+    },
+    {
+      "question": "Quel élément du merchandising concerne la disposition des produits dans un magasin?",
+      "options": [
+        "A. Le packaging",
+        "B. La publicité",
+        "C. L'aménagement de l'espace",
+        "D. Les prix"
+      ],
+      "correct_answer": "C. L'aménagement de l'espace"
+    },
+    {
+      "question": "Qu'est-ce qu'une planogramme dans le contexte du merchandising?",
+      "options": [
+        "A. Un plan pour la publicité en ligne",
+        "B. Un guide pour les employés du magasin",
+        "C. Un schéma détaillé de l'agencement des produits en magasin",
+        "D. Une liste de contrôle pour la sécurité des produits"
+      ],
+      "correct_answer": "C. Un schéma détaillé de l'agencement des produits en magasin"
+    }
+  ]
+}

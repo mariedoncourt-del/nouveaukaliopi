@@ -1,0 +1,49 @@
+{
+  "questions": [
+    {
+      "question": "Pourquoi est-il important d'optimiser la taille des images pour le web ?",
+      "options": [
+        "Pour rendre les images plus floues",
+        "Pour économiser de l'espace de stockage",
+        "Pour rendre les images plus grandes"
+      ],
+      "correct_answer": "Pour économiser de l'espace de stockage"
+    },
+    {
+      "question": "Quel format d'image est couramment utilisé sur le web pour les photographies ?",
+      "options": [
+        "Format PDF",
+        "Format RAW",
+        "Format JPEG"
+      ],
+      "correct_answer": "Format JPEG"
+    },
+    {
+      "question": "Que signifie l'acronyme 'HDR' en photographie ?",
+      "options": [
+        "Haute Définition Résolue",
+        "Haute Dynamique Range",
+        "Haute Diffusion Rapide"
+      ],
+      "correct_answer": "Haute Dynamique Range"
+    },
+    {
+      "question": "Qu'est-ce que la règle des tiers en photographie ?",
+      "options": [
+        "Une règle qui interdit de photographier des tiers",
+        "Une technique pour diviser une image en neuf parties égales",
+        "Une règle qui interdit de photographier des objets en mouvement"
+      ],
+      "correct_answer": "Une technique pour diviser une image en neuf parties égales"
+    },
+    {
+      "question": "Pourquoi est-il important d'utiliser un trépied lors de la prise de photos pour le web ?",
+      "options": [
+        "Pour rendre les photos floues",
+        "Pour stabiliser l'appareil photo et éviter le flou de bougé",
+        "Pour ajouter des effets artistiques"
+      ],
+      "correct_answer": "Pour stabiliser l'appareil photo et éviter le flou de bougé"
+    }
+  ]
+}

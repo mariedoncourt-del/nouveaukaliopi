@@ -1,0 +1,30 @@
+{
+ 
+  "questions": [
+    {
+      "question": "Quel est le signe en langue des signes pour 'bonjour' ?",
+      "options": ["Un mouvement circulaire de la main droite", "Un V avec les doigts", "Un poing fermé en l'air", "Un doigt pointant vers le bas"],
+      "correct_answer": "Un V avec les doigts"
+    },
+    {
+      "question": "Comment signe-t-on 'merci' en Langue des Signes Française ?",
+      "options": ["Un mouvement circulaire de la main gauche", "Un doigt pointant vers le bas", "Un poing fermé en l'air", "Un pouce levé"],
+      "correct_answer": "Un mouvement circulaire de la main gauche"
+    },
+    {
+      "question": "Quel est le signe pour 'famille' en langue des signes française ?",
+      "options": ["Un doigt pointant vers la droite", "Un V avec les doigts à droite", "Un mouvement de haut en bas avec la main droite", "Un pouce levé"],
+      "correct_answer": "Un V avec les doigts à droite"
+    },
+    {
+      "question": "Que signifie le signe en langue des signes pour 'chien' ?",
+      "options": ["Un mouvement circulaire de la main gauche", "Deux doigts en V", "Un doigt pointant vers le haut", "Un mouvement de haut en bas avec la main droite"],
+      "correct_answer": "Un mouvement de haut en bas avec la main droite"
+    },
+    {
+      "question": "Comment signe-t-on 'école' en Langue des Signes Française ?",
+      "options": ["Un mouvement circulaire de la main droite", "Un mouvement circulaire de la main gauche", "Un V avec les doigts", "Un pouce levé"],
+      "correct_answer": "Un mouvement circulaire de la main droite"
+    }
+  ]
+}

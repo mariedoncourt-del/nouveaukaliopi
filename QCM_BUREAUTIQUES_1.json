@@ -1,0 +1,49 @@
+{
+  "questions": [
+    {
+      "question": "Quel logiciel est principalement utilisé pour créer des présentations visuelles et des diaporamas ?",
+      "options": [
+        "Microsoft Word",
+        "Adobe Photoshop",
+        "Microsoft PowerPoint"
+      ],
+      "correct_answer": "Microsoft PowerPoint"
+    },
+    {
+      "question": "Quel outil de bureautique est utilisé pour créer des feuilles de calcul avec des formules et des tableaux ?",
+      "options": [
+        "Microsoft Excel",
+        "Microsoft Outlook",
+        "Adobe InDesign"
+      ],
+      "correct_answer": "Microsoft Excel"
+    },
+    {
+      "question": "Quel logiciel est principalement utilisé pour rédiger et formater des documents texte ?",
+      "options": [
+        "Microsoft Excel",
+        "Microsoft PowerPoint",
+        "Microsoft Word"
+      ],
+      "correct_answer": "Microsoft Word"
+    },
+    {
+      "question": "Quel programme de messagerie électronique est souvent utilisé pour gérer les e-mails professionnels ?",
+      "options": [
+        "Microsoft Excel",
+        "Microsoft Outlook",
+        "Microsoft PowerPoint"
+      ],
+      "correct_answer": "Microsoft Outlook"
+    },
+    {
+      "question": "Quelle suite bureautique open source offre des alternatives gratuites à Microsoft Office ?",
+      "options": [
+        "LibreOffice",
+        "Apple iWork",
+        "Google Workspace"
+      ],
+      "correct_answer": "LibreOffice"
+    }
+  ]
+}

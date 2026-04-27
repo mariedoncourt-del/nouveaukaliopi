@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Quel est le temps verbal utilisé pour exprimer une action passée complétée en portugais ?",
+      "options": ["Futur simple", "Passé composé", "Imparfait", "Présent"],
+      "correct_answer": "Passé composé"
+    },
+    {
+      "question": "Quelle est la préposition utilisée pour indiquer la provenance en portugais ?",
+      "options": ["em", "para", "de", "por"],
+      "correct_answer": "de"
+    },
+    {
+      "question": "Comment dit-on 'aujourd'hui' en portugais ?",
+      "options": ["ontem", "hoje", "amanhã", "agora"],
+      "correct_answer": "hoje"
+    },
+    {
+      "question": "Quel est le mot portugais pour 'merci' ?",
+      "options": ["por favor", "desculpa", "obrigado", "sim"],
+      "correct_answer": "obrigado"
+    },
+    {
+      "question": "Quel est le pluriel de 'amigo' en portugais ?",
+      "options": ["amiga", "amigos", "amigas", "amigus"],
+      "correct_answer": "amigos"
+    }
+  ]
+}
