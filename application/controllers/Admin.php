@@ -18,21 +18,41 @@ class Admin extends CI_Controller {
 			$this->load->view('admin/index',$data);
 
 			}else{
-				$login = $this->input->post('login');
-				$password = md5($this->input->post('password'));
+				// SECURITY P0.1 - Le mot de passe est désormais transmis en clair au modèle
+				// qui se charge lui-même de la vérification bcrypt + migration MD5 transparente.
+				// SECURITY P1.1 - Rate limiting (5 tentatives / 15 min / IP)
+				$this->load->library('rate_limiter');
+				$ip = $this->input->ip_address();
+				if (!$this->rate_limiter->allow('admin_login', $ip, 5, 900)) {
+					log_message('warning', 'Rate limit dépassé pour admin login depuis IP ' . $ip);
+					$this->session->set_flashdata('login_failed', 'Trop de tentatives. Réessayez dans 15 minutes.');
+					redirect('/admin/index');
+					return;
+				}
 
-				$loginid = $this->WelcomeModel->login_admin($login,$password);
+				$login = $this->input->post('login');
+				$password = $this->input->post('password'); // Plus de md5() ici
+
+				$loginid = $this->WelcomeModel->login_admin($login, $password);
 
 				if($loginid){
+					// SECURITY - Régénération de l'ID de session après authentification (anti session-fixation)
+					$this->session->sess_regenerate(TRUE);
+
 					$user_data = array(
 						'user_id' => $loginid,
-						'logged_admin' => true
+						'logged_admin' => true,
+						'login_time' => time(),
+						'login_ip'   => $ip
 					);
 
 					$this->session->set_userdata($user_data);
+					$this->rate_limiter->reset('admin_login', $ip);
 
+					log_message('info', 'Connexion admin réussie : ' . $login . ' depuis ' . $ip);
 					redirect('admin/dashboard');
 				}else{
+					log_message('warning', 'Échec connexion admin login=' . $login . ' depuis ' . $ip);
 					$this->session->set_flashdata('login_failed', 'Login ou mot de passe invalide');
 					redirect('/admin/index');
 				}		

@@ -6,6 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <?= csrf_meta() ?>
   <title>KALIOPI - MAF</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
   <link href="<?php echo base_url('/assets/vendor/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">

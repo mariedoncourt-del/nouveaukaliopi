@@ -24,6 +24,17 @@ uploads/*
 # Config locale
 application/config/database.php.local
 .env
+.env.local
+.env.*.local
+
+# SECURITY - Cache rate limiting (ne pas committer les compteurs de tentatives)
+application/cache/rate_limit/*
+!application/cache/rate_limit/.htaccess
+
+# SECURITY - Backups SQL
+*.sql.bak
+backup_*.sql
+dump_*.sql
 
 # IDE
 .vscode/
